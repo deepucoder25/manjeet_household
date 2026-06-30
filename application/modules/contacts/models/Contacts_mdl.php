@@ -30,7 +30,27 @@ public function bookings()
     $phone = $this->input->post('phone');
     $mfrom = $this->input->post('mfrom');
     $mto = $this->input->post('mto');
+    
+    // Additional Form Fields
+    $mdate = $this->input->post('mdate');
+    $mtype = $this->input->post('mtype');
+    $comments = $this->input->post('comments');
     $msg = $this->input->post('message');
+
+    $full_msg = "";
+    if ($mtype) {
+        $full_msg .= "Type of Move: " . $mtype . "\n";
+    }
+    if ($mdate) {
+        $full_msg .= "Moving Date: " . $mdate . "\n";
+    }
+    if ($comments) {
+        $full_msg .= "Additional Details: " . $comments . "\n";
+    }
+    if ($msg) {
+        $full_msg .= "Message: " . $msg;
+    }
+    $msg = trim($full_msg);
 
     // Insert booking data into the database
     $this->db->insert('bookings', array(
@@ -44,7 +64,7 @@ public function bookings()
 
     // Admin notification email
     $msgd = "Services Needed";
-    $adminMessage = "<div style='padding:30px;background:#e6e6e6;font-size: 18px !important;'>Client's Query: <b><q>$msgd</q></b><br><br>Client's Name:  <b>$name</b><br><br>From: <b>$mfrom</b><br><br>To: <b>$mto</b><br><br>Phone Number: <b><a href='tel:$phone'>$phone</a></b><br><br>Email: <b> $email</b><br><br>Client Msg: <b>$msg</b></div>";
+    $adminMessage = "<div style='padding:30px;background:#e6e6e6;font-size: 18px !important;'>Client's Query: <b><q>$msgd</q></b><br><br>Client's Name:  <b>$name</b><br><br>From: <b>$mfrom</b><br><br>To: <b>$mto</b><br><br>Phone Number: <b><a href='tel:$phone'>$phone</a></b><br><br>Email: <b> $email</b><br><br>Client Msg: <b>" . nl2br(htmlentities($msg)) . "</b></div>";
 
     $this->email->to("");
     $this->email->from("");

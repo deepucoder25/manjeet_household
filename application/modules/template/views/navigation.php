@@ -24,121 +24,41 @@
   }
   ?>
 
-  <!-- Slim Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <!-- Desktop Top Bar -->
-      <div class="top-bar-desktop d-none d-lg-flex justify-content-between align-items-center">
-        <!-- Left Side: Email & Phone -->
-        <div class="top-bar-left d-flex align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
-          </a>
-          <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
-          </a>
-        </div>
-        
-        <!-- Middle-Left: Trust Badge & Happy Customers -->
-        <div class="top-bar-middle d-flex align-items-center gap-3">
-          <span class="top-badge-text d-flex align-items-center gap-2">
-            <i class="bi bi-shield-check text-primary-light"></i> <span>Verified & Trusted</span>
-          </span>
-          <span class="divider-line">|</span>
-          <span class="top-badge-text d-flex align-items-center gap-2">
-            <i class="bi bi-people"></i> <span><?= $happyClients ?> Happy Customers</span>
-          </span>
-        </div>
-        
-        <!-- Right Side: Offer & Reviews Badges -->
-        <div class="top-bar-right d-flex align-items-center gap-2">
-          <span class="top-badge-pill highlight-offer">
-            <i class="bi bi-lightning-fill text-warning"></i> 10% OFF ON YOUR FIRST MOVE
-          </span>
-          <span class="top-badge-pill highlight-rating">
-            <i class="bi bi-star-fill text-warning"></i> <?= $ratingValue ?> Google Reviews
-          </span>
-        </div>
-      </div>
-
-      <!-- Mobile Top Bar -->
-      <div class="top-bar-mobile d-flex d-lg-none flex-column gap-2 py-1">
-        <!-- Row 1: Contact Info -->
-        <div class="d-flex justify-content-center align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
-          </a>
-          <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
-          </a>
-        </div>
-        <!-- Row 2: Offer & Google Reviews -->
-        <div class="d-flex justify-content-center align-items-center gap-2">
-          <span class="top-badge-pill highlight-offer">
-            <i class="bi bi-lightning-fill text-warning"></i> 10% OFF ON YOUR FIRST MOVE
-          </span>
-          <span class="top-badge-pill highlight-rating">
-            <i class="bi bi-star-fill text-warning"></i> <?= $ratingValue ?> Google Reviews
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php
+  $is_home = (empty($segment1) || $segment1 === 'home' || $class === 'home');
+  ?>
 
   <!-- Main Sticky Header -->
-  <header class="main-header" id="mainHeader">
+  <header class="main-header <?= $is_home ? 'header-on-slider' : '' ?>" id="mainHeader">
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap">
         <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="desktop-nav d-none d-lg-flex align-items-center gap-4">
-        <a href="<?= site_url() ?>" class="nav-link<?= $active_tab === 'home' ? ' active' : '' ?>">Home</a>
-        <div class="nav-item dropdown">
-          <a href="<?= site_url('about-us') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'about' ? ' active' : '' ?>">About Us <i class="bi bi-chevron-down ms-1"></i></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item<?= $segment1 === 'about-us' ? ' active' : '' ?>" href="<?= site_url('about-us') ?>">About Us</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'why-choose-us' ? ' active' : '' ?>" href="<?= site_url('why-choose-us') ?>">Why Choose Us</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'faqs' ? ' active' : '' ?>" href="<?= site_url('faqs') ?>">FAQ</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'testimonials' ? ' active' : '' ?>" href="<?= site_url('testimonials') ?>">Testimonial</a></li>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <a href="<?= site_url('our-services') ?>" class="nav-link dropdown-toggle<?= $active_tab === 'services' ? ' active' : '' ?>">Services <i class="bi bi-chevron-down ms-1"></i></a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item<?= $segment1 === 'home-shifting' ? ' active' : '' ?>" href="<?= site_url('home-shifting') ?>">Home Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'office-relocation' ? ' active' : '' ?>" href="<?= site_url('office-relocation') ?>">Office Relocation</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'car-transportation' ? ' active' : '' ?>" href="<?= site_url('car-transportation') ?>">Car Transportation</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'bike-transportation' ? ' active' : '' ?>" href="<?= site_url('bike-transportation') ?>">Bike Transportation</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'warehouse-and-storage' || $segment1 === 'storage-services' ? ' active' : '' ?>" href="<?= site_url('warehouse-and-storage') ?>">Warehouse &amp; Storage</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'domestic-relocation' ? ' active' : '' ?>" href="<?= site_url('domestic-relocation') ?>">Domestic Relocation</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'international-shifting' ? ' active' : '' ?>" href="<?= site_url('international-shifting') ?>">International Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'corporate-shifting' ? ' active' : '' ?>" href="<?= site_url('corporate-shifting') ?>">Corporate Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'intercity-shifting' ? ' active' : '' ?>" href="<?= site_url('intercity-shifting') ?>">Intercity Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'local-shifting' ? ' active' : '' ?>" href="<?= site_url('local-shifting') ?>">Local Shifting</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'logistic-services' ? ' active' : '' ?>" href="<?= site_url('logistic-services') ?>">Logistic Services</a></li>
-            <li><a class="dropdown-item<?= $segment1 === 'pet-relocation' ? ' active' : '' ?>" href="<?= site_url('pet-relocation') ?>">Pet Relocation</a></li>
-          </ul>
-        </div>
-        <a href="<?= site_url('our-branches') ?>" class="nav-link<?= $active_tab === 'locations' ? ' active' : '' ?>">Locations</a>
-        <a href="<?= site_url('blog') ?>" class="nav-link<?= $active_tab === 'blog' ? ' active' : '' ?>">Blog</a>
-        <a href="<?= site_url('contact-us') ?>" class="nav-link<?= $active_tab === 'contact' ? ' active' : '' ?>">Contact Us</a>
-      </nav>
-
       <!-- Header Action Buttons -->
       <div class="d-flex align-items-center gap-3">
-        <!-- Get a Quote Button -->
-        <a href="#" class="btn-quote d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+        <!-- Call Us Anytime (Mobile & Tablet only) -->
+        <div class="header-phone-callout d-flex d-lg-none align-items-center gap-2">
+          <div class="header-phone-icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="header-phone-text">
+            <span>Call Us Anytime</span>
+            <a href="tel:<?= !empty($indore_phonehtml) ? str_replace('tel:', '', $indore_phonehtml) : '+919893701992' ?>">
+              <?= !empty($indore_phone) ? $indore_phone : '+91 98937 01992' ?>
+            </a>
+          </div>
+        </div>
+
+        <!-- Get a Quote Button (Desktop only) -->
+        <a href="#" class="btn-quote d-none d-lg-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
           <i class="bi bi-file-earmark-text"></i>
           <span>Get a Quote</span>
         </a>
 
-        <!-- Hamburger for Mobile -->
-        <button class="hamburger d-flex d-lg-none" id="openMenu" aria-label="Open navigation menu">
+        <!-- Hamburger for Mobile & Desktop -->
+        <button class="hamburger d-flex" id="openMenu" aria-label="Open navigation menu">
           <span></span>
           <span></span>
           <span></span>
@@ -149,70 +69,120 @@
 
   <!-- Full Screen Mega Menu (overlay menu when clicking hamburger) -->
   <nav class="mega-overlay" id="megaMenu" aria-label="Main navigation">
-    <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
-      <i class="bi bi-x"></i>
-    </button>
+    <div class="mega-modal-card container-fluid">
+      <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
+        <i class="bi bi-x"></i>
+      </button>
 
-    <div class="mega-inner">
+      <div class="row w-100 g-0">
+        <!-- Column 1: Leftmost Sidebar -->
+        <aside class="col-12 col-lg-3 mega-sidebar">
+          <!-- Logo -->
+          <a href="<?= site_url() ?>" class="sidebar-logo-wrap">
+            <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= !empty($company3) ? $company3 : 'Manjeet Packers' ?> Logo" class="sidebar-logo">
+          </a>
+          <p class="sidebar-tagline">Safe. Secure. On Time. Every Time.</p>
+          <hr class="sidebar-divider">
+          <p class="sidebar-description">
+            Reliable packing, moving and logistics solutions for homes, offices & industries across India.
+          </p>
 
-      <!-- Navigation Accordion -->
-      <div class="mobile-nav-list">
-        <div class="mobile-nav-item<?= $active_tab === 'home' ? ' active' : '' ?>">
-          <a href="<?= site_url() ?>" class="mobile-nav-link">Home</a>
-        </div>
-        
-        <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'about' ? ' active' : '' ?>">
-          <button class="mobile-nav-link mobile-dropdown-toggle">
-            <span>About Us</span>
-            <i class="bi bi-chevron-down toggle-icon"></i>
-          </button>
-          <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('about-us') ?>" class="<?= $segment1 === 'about-us' ? 'active' : '' ?>">About Us</a>
-            <a href="<?= site_url('why-choose-us') ?>" class="<?= $segment1 === 'why-choose-us' ? 'active' : '' ?>">Why Choose Us</a>
-            <a href="<?= site_url('faqs') ?>" class="<?= $segment1 === 'faqs' ? 'active' : '' ?>">FAQ</a>
-            <a href="<?= site_url('testimonials') ?>" class="<?= $segment1 === 'testimonials' ? 'active' : '' ?>">Testimonial</a>
+          <!-- Sidebar Contact Numbers -->
+          <div class="sidebar-stats row g-3">
+            <div class="col-6 col-md-4 col-lg-12">
+              <div class="sidebar-stat-item">
+                <div class="sidebar-stat-icon"><i class="bi bi-telephone"></i></div>
+                <div class="sidebar-stat-text">
+                  <strong>Indore Office</strong>
+                  <a href="<?= $indore_phonehtml ?>" class="sidebar-phone-link">
+                    <?= $indore_phone ?>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-12">
+              <div class="sidebar-stat-item">
+                <div class="sidebar-stat-icon"><i class="bi bi-telephone-plus"></i></div>
+                <div class="sidebar-stat-text">
+                  <strong>Indore Support</strong>
+                  <a href="<?= $indore_phonehtml1 ?>" class="sidebar-phone-link">
+                    <?= $indore_phone1 ?>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-12">
+              <div class="sidebar-stat-item">
+                <div class="sidebar-stat-icon"><i class="bi bi-telephone"></i></div>
+                <div class="sidebar-stat-text">
+                  <strong>Bhopal Office</strong>
+                  <a href="<?= $bhopal_phonehtml ?>" class="sidebar-phone-link">
+                    <?= $bhopal_phone ?>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="mobile-nav-item mobile-dropdown<?= $active_tab === 'services' ? ' active' : '' ?>">
-          <button class="mobile-nav-link mobile-dropdown-toggle">
-            <span>Services</span>
-            <i class="bi bi-chevron-down toggle-icon"></i>
-          </button>
-          <div class="mobile-dropdown-menu">
-            <a href="<?= site_url('home-shifting') ?>" class="<?= $segment1 === 'home-shifting' ? 'active' : '' ?>">Home Shifting</a>
-            <a href="<?= site_url('office-relocation') ?>" class="<?= $segment1 === 'office-relocation' ? 'active' : '' ?>">Office Relocation</a>
-            <a href="<?= site_url('car-transportation') ?>" class="<?= $segment1 === 'car-transportation' ? 'active' : '' ?>">Car Transportation</a>
-            <a href="<?= site_url('bike-transportation') ?>" class="<?= $segment1 === 'bike-transportation' ? 'active' : '' ?>">Bike Transportation</a>
-            <a href="<?= site_url('warehouse-and-storage') ?>" class="<?= $segment1 === 'warehouse-and-storage' || $segment1 === 'storage-services' ? 'active' : '' ?>">Warehouse &amp; Storage</a>
-            <a href="<?= site_url('domestic-relocation') ?>" class="<?= $segment1 === 'domestic-relocation' ? 'active' : '' ?>">Domestic Relocation</a>
-            <a href="<?= site_url('international-shifting') ?>" class="<?= $segment1 === 'international-shifting' ? 'active' : '' ?>">International Shifting</a>
-            <a href="<?= site_url('corporate-shifting') ?>" class="<?= $segment1 === 'corporate-shifting' ? 'active' : '' ?>">Corporate Shifting</a>
-            <a href="<?= site_url('intercity-shifting') ?>" class="<?= $segment1 === 'intercity-shifting' ? 'active' : '' ?>">Intercity Shifting</a>
-            <a href="<?= site_url('local-shifting') ?>" class="<?= $segment1 === 'local-shifting' ? 'active' : '' ?>">Local Shifting</a>
-            <a href="<?= site_url('logistic-services') ?>" class="<?= $segment1 === 'logistic-services' ? 'active' : '' ?>">Logistic Services</a>
-            <a href="<?= site_url('pet-relocation') ?>" class="<?= $segment1 === 'pet-relocation' ? 'active' : '' ?>">Pet Relocation</a>
+          <!-- Sidebar Footer -->
+          <div class="sidebar-footer">
+            <strong>ISO 9001:2015 Certified</strong>
+            <span>Door To Door Delivery</span>
+            <i class="bi bi-patch-check map-faint-bg"></i>
           </div>
+        </aside>
+
+        <!-- Column 2: COMPANY -->
+        <div class="col-6 col-lg-3 mega-column">
+          <div class="mega-column-title">
+            <i class="bi bi-building"></i>
+            <span>COMPANY</span>
+          </div>
+          <ul class="mega-links-list">
+            <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-person"></i> About Us</a></li>
+            <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-geo-alt"></i> Our Cities</a></li>
+            <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chat-left-quote"></i> Testimonials</a></li>
+            <li><a href="<?= site_url('blog') ?>"><i class="bi bi-file-earmark-text"></i> Blog</a></li>
+            <li><a href="<?= site_url('reviews') ?>"><i class="bi bi-chat-left-heart"></i> Reviews</a></li>
+            <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-telephone"></i> Contact Us</a></li>
+          </ul>
         </div>
 
-        <div class="mobile-nav-item<?= $active_tab === 'locations' ? ' active' : '' ?>">
-          <a href="<?= site_url('our-branches') ?>" class="mobile-nav-link">Locations</a>
+        <!-- Column 3: SERVICES -->
+        <div class="col-6 col-lg-3 mega-column">
+          <div class="mega-column-title">
+            <i class="bi bi-truck"></i>
+            <span>SERVICES</span>
+          </div>
+          <ul class="mega-links-list">
+            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-box"></i> Packing &amp; Unpacking</a></li>
+            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-arrow-down-up"></i> Loading &amp; Unloading</a></li>
+            <li><a href="<?= site_url('home-shifting') ?>"><i class="bi bi-house"></i> Household Shifting</a></li>
+            <li><a href="<?= site_url('office-relocation') ?>"><i class="bi bi-building"></i> Office Shifting</a></li>
+            <li><a href="<?= site_url('corporate-shifting') ?>"><i class="bi bi-briefcase"></i> Industrial Shifting</a></li>
+            <li><a href="<?= site_url('home-shifting') ?>"><i class="bi bi-geo-alt"></i> Local Shifting</a></li>
+            <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front"></i> Car Transportation</a></li>
+            <li><a href="<?= site_url('domestic-relocation') ?>"><i class="bi bi-shield-check"></i> General Insurance</a></li>
+          </ul>
         </div>
-        <div class="mobile-nav-item<?= $active_tab === 'blog' ? ' active' : '' ?>">
-          <a href="<?= site_url('blog') ?>" class="mobile-nav-link">Blog</a>
-        </div>
-        <div class="mobile-nav-item<?= $active_tab === 'contact' ? ' active' : '' ?>">
-          <a href="<?= site_url('contact-us') ?>" class="mobile-nav-link">Contact Us</a>
+
+        <!-- Column 4: SUPPORT & TOOLS -->
+        <div class="col-6 col-lg-3 mega-column">
+          <div class="mega-column-title">
+            <i class="bi bi-headset"></i>
+            <span>SUPPORT &amp; TOOLS</span>
+          </div>
+          <ul class="mega-links-list">
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal"><i class="bi bi-file-earmark-medical"></i> Get a Free Quote</a></li>
+            <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-lightbulb"></i> Moving Tips</a></li>
+            <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-question-circle"></i> FAQ's</a></li>
+            <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-file-earmark-ruled"></i> Terms &amp; Conditions</a></li>
+            <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-shield-lock"></i> Privacy Policy</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- Secondary Links -->
-      <div class="mobile-sec-links">
-        <a href="<?= site_url('photo-gallery') ?>">Gallery</a>
-        <a href="<?= site_url('reviews') ?>">Reviews</a>
-        <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
-        <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
-        <a href="<?= $megaWhatsappLink ?>" target="_blank" rel="noopener">WhatsApp</a>
+
       </div>
     </div>
   </nav>
@@ -234,20 +204,11 @@
       body.classList.remove('menu-open');
     });
 
-    // Toggle mobile dropdown accordions
-    document.querySelectorAll('.mobile-dropdown-toggle').forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        const parent = button.closest('.mobile-nav-item');
-        
-        // Close other open dropdowns (accordion style)
-        document.querySelectorAll('.mobile-nav-item.mobile-dropdown').forEach(item => {
-          if (item !== parent) {
-            item.classList.remove('active');
-          }
-        });
-
-        parent.classList.toggle('active');
+    // Close overlay when clicking elements triggering modals (e.g. Get a Quote)
+    megaMenu.querySelectorAll('[data-bs-toggle="modal"]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        megaMenu.classList.remove('active');
+        body.classList.remove('menu-open');
       });
     });
 
