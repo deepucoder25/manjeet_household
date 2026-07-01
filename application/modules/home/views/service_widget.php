@@ -71,7 +71,7 @@ $services = [
             
             <div class="service-img-circle-wrap">
               <div class="service-img-circle-inner">
-                <img src="<?= base_url('assets/images/home_modules/' . $service['image']) ?>" alt="<?= $service['title'] ?>" class="service-circle-img" onerror="this.src='<?= base_url('assets/images/logo/logo.png') ?>'">
+                <img src="<?= base_url('assets/images/home_modules/' . $service['image']) ?>" alt="<?= $service['title'] ?>" class="service-circle-img" loading="lazy">
               </div>
             </div>
             

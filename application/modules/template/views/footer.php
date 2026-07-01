@@ -22,7 +22,7 @@
         <div class="col-lg-3 col-md-6 footer-col-new">
           <div class="footer-brand-new">
             <a href="<?= site_url() ?>" class="footer-logo-img-wrap">
-              <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="footer-logo-img">
+              <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="footer-logo-img" loading="lazy">
             </a>
             <p class="footer-desc-new mt-3">
               <?= $company3 ?> is India's premier relocation partner, specializing in household shifting, office relocation, industrial moving, and vehicle transportation. Operating out of Indore and Bhopal, we provide certified, affordable, and safe packers and movers services with door-to-door execution nationwide.

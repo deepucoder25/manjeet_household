@@ -33,7 +33,7 @@
     <div class="container d-flex align-items-center justify-content-between">
       <!-- Brand Logo -->
       <a href="<?= site_url() ?>" class="brand-wrap">
-        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
+        <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo" loading="lazy">
       </a>
 
       <!-- Header Action Buttons -->
@@ -79,7 +79,7 @@
         <aside class="col-12 col-lg-3 mega-sidebar">
           <!-- Logo -->
           <a href="<?= site_url() ?>" class="sidebar-logo-wrap">
-            <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= !empty($company3) ? $company3 : 'Manjeet Packers' ?> Logo" class="sidebar-logo">
+            <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= !empty($company3) ? $company3 : 'Manjeet Packers' ?> Logo" class="sidebar-logo" loading="lazy">
           </a>
           <p class="sidebar-tagline">Safe. Secure. On Time. Every Time.</p>
           <hr class="sidebar-divider">
