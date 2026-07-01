@@ -1,4 +1,4 @@
-﻿@import "footer.css";
+@import "footer.css";
 @import "slider.css";
 @import "navigation.css";
 @import "home_modules.css";
@@ -6,6 +6,7 @@
 @import "contact_modules.css";
 @import "services_modules.css";
 @import "service_widget.css";
+@import "process_widget.css";
 @import "city_list.css";
 
 /* New Module Imports */
