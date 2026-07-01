@@ -272,20 +272,6 @@
 
 </footer>
 
-  <div class="floating-actions">
-    <a href="<?= $phonehtml ?>" class="float-btn float-call" title="Call Now" aria-label="Call <?= $company3 ?> now">
-      <div class="icon-wrap"><i class="bi bi-telephone-fill"></i></div>
-      <span>Call Now</span>
-    </a>
-    <a href="<?= $floatingWhatsappLink ?>" class="float-btn float-whatsapp" title="WhatsApp Us" target="_blank" rel="noopener" aria-label="Message <?= $company3 ?> on WhatsApp">
-      <div class="icon-wrap"><i class="bi bi-whatsapp"></i></div>
-      <span>WhatsApp Us</span>
-    </a>
-    <button type="button" class="float-btn float-callback" data-bs-toggle="modal" data-bs-target="#callMeBackModal" title="Call Me Back" aria-label="Request a Call Back">
-      <div class="icon-wrap"><i class="bi bi-headset"></i></div>
-      <span>Call Me Back</span>
-    </button>
-  </div>
 
   <?php $this->load->view('contacts/quotemodal'); ?>
   <?php $this->load->view('contacts/callmeback_modal'); ?>
