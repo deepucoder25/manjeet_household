@@ -173,9 +173,11 @@ html, body {
     transition: background-color 0.25s ease;
 }
 
-/* On transparent header, hamburger spans should be white */
-.main-header.header-on-slider:not(.scrolled) .hamburger span {
-    background-color: var(--white);
+/* On transparent header, hamburger spans should be white (Desktop only) */
+@media (min-width: 992px) {
+    .main-header.header-on-slider:not(.scrolled) .hamburger span {
+        background-color: var(--white);
+    }
 }
 
 .hamburger:hover span {
@@ -552,7 +554,12 @@ body.menu-open {
     }
 
     .brand-logo {
-        width: 140px;
-        height: 50px;
+        width: 110px;
+        height: 40px;
+    }
+
+    .btn-quote {
+        padding: 6px 10px;
+        font-size: 11px;
     }
 }

@@ -28,7 +28,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 100%);
     z-index: 1;
 }
 
@@ -479,6 +479,9 @@
         background-position: top center;
         background-repeat: no-repeat;
         background-color: #faf8f5;
+    }
+    .home-page-slider::before {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.5) 100%) !important;
     }
     .hero-text-col {
         text-align: center !important;

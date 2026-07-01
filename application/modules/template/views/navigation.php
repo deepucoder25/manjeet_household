@@ -37,9 +37,9 @@
       </a>
 
       <!-- Header Action Buttons -->
-      <div class="d-flex align-items-center gap-3">
-        <!-- Call Us Anytime (Mobile & Tablet only) -->
-        <div class="header-phone-callout d-flex d-lg-none align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2 gap-sm-3">
+        <!-- Call Us Anytime (Hidden as per desktop layout requirement) -->
+        <div class="header-phone-callout d-none align-items-center gap-2">
           <div class="header-phone-icon">
             <i class="bi bi-telephone-fill"></i>
           </div>
@@ -51,9 +51,9 @@
           </div>
         </div>
 
-        <!-- Get a Quote Button (Desktop only) -->
-        <a href="#" class="btn-quote d-none d-lg-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
-          <i class="bi bi-file-earmark-text"></i>
+        <!-- Get a Quote Button (Visible on both desktop & mobile) -->
+        <a href="#" class="btn-quote d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
+          <i class="bi bi-file-earmark-text d-none d-sm-inline-block"></i>
           <span>Get a Quote</span>
         </a>
 

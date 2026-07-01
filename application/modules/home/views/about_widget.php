@@ -1,124 +1,154 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-// Fetch site-wide dynamic company settings (loaded from MX_Controller or system context)
-$companyName = isset($company3) ? $company3 : 'MyCompany';
-$companyPhone = isset($phone) ? $phone : '+91 ';
-$companyPhoneHtml = isset($phonehtml) ? $phonehtml : 'tel:+';
-$companyEmail = isset($mail) ? $mail : '';
-$companyEmailHtml = isset($mailhtml) ? $mailhtml : '';
-$companyExperience = isset($experience) ? $experience : '';
-$companyLocation = isset($addressRegion) ? $addressRegion : '';
-$companyState = isset($companystate) ? $companystate : '';
-?>
-
-<section class="about-section py-5">
-    <!-- Background Decor Grid Patterns -->
-    <div class="about-decor decor-top-right"></div>
-    <div class="about-decor decor-bottom-left"></div>
-
-    <div class="container position-relative about-z2">
-        <div class="row align-items-center g-4 g-lg-5">
+<section class="about-section-new">
+    <div class="container">
+        
+        <!-- Subsection 1: Top Side-By-Side Showcase -->
+        <div class="row align-items-center g-4 g-lg-5 mb-5 pb-lg-4">
             
-            <!-- Left Side: Image Showcase -->
+            <!-- Left Side: Content & Milestones (col-lg-6 col-12) -->
             <div class="col-lg-6 col-12">
-                <div class="about-image-wrap position-relative">
-                    <div class="about-img-bg-shape"></div>
-                    <img src="<?= base_url('assets/images/about/about-showcase.webp') ?>" 
-                         alt="Reliable Packers and Movers Service - <?= htmlspecialchars($companyName) ?>" 
-                         class="about-img img-fluid rounded-4 shadow-lg position-relative about-z2" 
-                         loading="lazy">
+                <div class="about-top-content">
                     
-                    <!-- Floating Experience Badge -->
-                    <div class="about-experience-badge d-flex align-items-center shadow-lg">
-                        <div class="exp-number"><?= htmlspecialchars($companyExperience) ?></div>
-                        <div class="exp-text">
-                            <span class="d-block text-uppercase font-weight-bold">Years of</span>
-                            <span class="d-block text-uppercase">Trusted service</span>
-                        </div>
+                    <!-- Subheading Badge -->
+                    <div class="about-badge-new mb-3">
+                        <span class="pill-line"></span>
+                        <span class="text-danger fw-bold text-uppercase small letter-spacing-1">MANJEET HOUSE HOLD PACKERS AND MOVERS</span>
                     </div>
+
+                    <!-- Left Aligned Large Header -->
+                    <h2 class="about-title-main-new fw-bold text-dark text-uppercase">
+                        ABOUT <span class="text-danger about-title-underline-new">US</span>
+                    </h2>
+
+                    <!-- Descriptive Paragraph -->
+                    <p class="about-desc-lead-new">
+                        At Manjeet House Hold Packers and Movers, we make every move simple, safe, and stress-free. With years of experience and a highly trained relocation team, we provide customized packing, loading, and transit solutions tailored to your unique requirements. We utilize premium packaging materials and advanced carrier vehicles to ensure that your household belongings, office goods, and vehicles are shifted securely without any hassle or delays. Whether you are shifting locally within Indore or Bhopal, or relocating to any destination across India, we stand by our promise of safety, efficiency, and absolute peace of mind for every single customer.
+                    </p>
+
+                    <!-- About Us Button -->
+                    <div class="mt-4 pt-2">
+                        <a href="<?= site_url('about-us') ?>" class="about-btn-red">
+                            ABOUT US <i class="bi bi-arrow-right-short font-weight-bold"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Right Side: Content Details -->
-            <div class="col-lg-6 col-12">
-                <div class="about-content">
+            <!-- Right Side: Overlapping Image Showcase (col-lg-6 col-12) -->
+            <div class="col-lg-6 col-12 text-center">
+                <div class="about-overlap-showcase-new position-relative">
                     
-                    <!-- Subheading Badge -->
-                    <div class="about-badge-wrap d-flex align-items-center mb-3">
-                        <span class="about-badge-line"></span>
-                        <span class="about-pill-badge text-uppercase">Who We Are</span>
-                    </div>
-
-                    <!-- SEO-Friendly Heading -->
-                    <h2 class="about-title mb-3">
-                        Reliable Shifting &amp; Relocation Services by <span class="text-primary-blue"><?= htmlspecialchars($companyName) ?></span>
-                    </h2>
-
-                    <!-- Descriptive Paragraphs -->
-                    <p class="about-desc-lead mb-3">
-                        Moving to a new home, office, or transporting vehicles can feel overwhelming. At <strong><?= htmlspecialchars($companyName) ?></strong>, we are committed to making your relocation journey smooth, secure, and stress-free. Whether shifting locally within <?= htmlspecialchars($companyLocation) ?> or relocating across <?= htmlspecialchars($companyState) ?> and all over India, our team handles every aspect of your move with extreme care and precision.
-                    </p>
+                    <!-- Decorative background dots -->
+                    <div class="about-overlap-dots-new"></div>
                     
-                    <p class="about-desc mb-4">
-                        With over <strong><?= htmlspecialchars($companyExperience) ?> years</strong> of professional experience, we have established ourselves as one of India's most trusted packing and moving brands. We use industry-standard packaging materials, modern cargo carriers, and structured loading systems to ensure all your precious goods and vehicles reach their destination safely, on time, and damage-free.
-                    </p>
-
-                    <!-- Features List Grid -->
-                    <div class="row g-3 mb-4">
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-shield-check"></i>
-                                </div>
-                                <span class="feature-text">Fully Insured Shifting</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <span class="feature-text">Modern GPS Fleet</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-person-check"></i>
-                                </div>
-                                <span class="feature-text">Trained Packing Crew</span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-12">
-                            <div class="about-feature-item d-flex align-items-center">
-                                <div class="feature-icon-circle mr-3">
-                                    <i class="bi bi-clock-history"></i>
-                                </div>
-                                <span class="feature-text">On-Time Safe Delivery</span>
-                            </div>
-                        </div>
+                    <!-- Main Large Image -->
+                    <div class="about-img-main-wrap-new">
+                        <img src="<?= base_url('assets/images/home_modules/household.jpg') ?>" 
+                             alt="Household Shifting Service" 
+                             class="about-img-main-new" 
+                             loading="lazy">
                     </div>
-
-                    <!-- Call To Actions -->
-                    <div class="d-flex flex-wrap align-items-center gap-3">
-                        <a href="<?= site_url('about-us') ?>" class="btn btn-primary-blue shadow-sm d-flex align-items-center">
-                            Read More About Us
-                            <i class="bi bi-arrow-right-short ml-2 font-weight-bold about-cta-icon"></i>
-                        </a>
-                        <div class="about-contact-wrap d-flex align-items-center ml-md-4 mt-2 mt-md-0">
-                            <div class="about-contact-icon d-flex align-items-center justify-content-center">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-                            <div class="about-contact-details ml-2">
-                                <span class="d-block contact-label text-muted">Talk to an Expert</span>
-                                <a href="<?= htmlspecialchars($companyPhoneHtml) ?>" class="contact-number font-weight-bold text-decoration-none">
-                                    <?= htmlspecialchars($companyPhone) ?>
-                                </a>
-                            </div>
-                        </div>
+                    
+                    <!-- Secondary Small Overlapping Image -->
+                    <div class="about-img-sub-wrap-new shadow-lg">
+                        <img src="<?= base_url('assets/images/home_modules/packing.jpg') ?>" 
+                             alt="Packing and Shifting Service" 
+                             class="about-img-sub-new" 
+                             loading="lazy">
+                    </div>
+                    
+                    <!-- Small Trust Floating Badge -->
+                    <div class="about-trust-tag-new shadow-lg">
+                        <i class="bi bi-patch-check-fill text-danger me-1"></i>
+                        <span class="text-uppercase fw-bold text-dark small letter-spacing-05">100% Reliable</span>
                     </div>
 
                 </div>
+            </div>
+
+        </div>
+
+        <!-- Subsection 2: Middle Section (Who We Are) -->
+        <div class="about-middle-wrap-new">
+            
+            <!-- Section Header (Shared services heading design) -->
+            <div class="services-header-new text-center mb-5">
+                <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
+                    <span class="pill-line"></span>
+                    <span class="pill-text text-danger fw-bold">WHO WE ARE</span>
+                    <span class="pill-line"></span>
+                </div>
+                <h2 class="services-main-title fw-bold text-dark">
+                    WE MAKE MOVING A <span class="text-danger position-relative d-inline-block">BETTER EXPERIENCE<span class="title-accent-line-new"></span></span>
+                </h2>
+            </div>
+
+            <!-- Grid Layout -->
+            <div class="row g-4 g-lg-5 align-items-center">
+                
+                <!-- Left Side: Paragraphs and Buttons (col-lg-6 col-12) -->
+                <div class="col-lg-6 col-12">
+                    <p class="about-middle-desc">
+                        Manjeet House Hold Packers and Movers is a trusted name in the relocation industry, known for reliability, transparency, and care. We understand that moving is more than just shifting items—it's about moving your life. That's why we handle every belonging as if it were our own.
+                    </p>
+                    <p class="about-middle-desc">
+                        From careful packing to safe transportation and on-time delivery, our team ensures a smooth and hassle-free moving experience from start to finish.
+                    </p>
+                </div>
+
+                <!-- Right Side: Checklist Card (col-lg-6 col-12) -->
+                <div class="col-lg-6 col-12">
+                    <div class="about-features-card-new">
+                        
+                        <!-- Feature 1 -->
+                        <div class="feature-item-new">
+                            <div class="feature-check-icon">
+                                <i class="bi bi-check2"></i>
+                            </div>
+                            <div class="feature-content-new">
+                                <h4 class="feature-title-new">Professional & Experienced Team</h4>
+                                <p class="feature-desc-new">Trained experts who handle your belongings with care and precision.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature-item-new">
+                            <div class="feature-check-icon">
+                                <i class="bi bi-check2"></i>
+                            </div>
+                            <div class="feature-content-new">
+                                <h4 class="feature-title-new">Safe & Secure Moving</h4>
+                                <p class="feature-desc-new">High-quality packing materials and modern equipment for complete safety.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="feature-item-new">
+                            <div class="feature-check-icon">
+                                <i class="bi bi-check2"></i>
+                            </div>
+                            <div class="feature-content-new">
+                                <h4 class="feature-title-new">On-Time Delivery</h4>
+                                <p class="feature-desc-new">We value your time and ensure timely and efficient relocation.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="feature-item-new">
+                            <div class="feature-check-icon">
+                                <i class="bi bi-check2"></i>
+                            </div>
+                            <div class="feature-content-new">
+                                <h4 class="feature-title-new">Affordable Pricing</h4>
+                                <p class="feature-desc-new">Transparent pricing with no hidden charges—best value for your money.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
         </div>
