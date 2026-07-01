@@ -1,24 +1,20 @@
-
 <footer class="footer-section">
 
-  
   <div class="footer-wave-wrap">
     <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-      
+
       <path d="M0,60 C360,100 720,20 1080,60 C1260,80 1350,80 1440,60 L1440,120 L0,120 Z" fill="rgba(214, 9, 18, 0.04)"></path>
-      
+
       <path d="M0,70 C360,110 720,30 1080,70 C1260,90 1350,90 1440,70 L1440,120 L0,120 Z" fill="#ffffff"></path>
-      
+
       <path d="M0,70 C360,110 720,30 1080,70 C1260,90 1350,90 1440,70" stroke="var(--primary-red)" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </div>
 
-  
   <div class="footer-main-new py-4">
     <div class="container">
       <div class="row g-4 justify-content-between align-items-start">
-        
-        
+
         <div class="col-lg-3 col-md-6 footer-col-new">
           <div class="footer-brand-new">
             <a href="<?= site_url() ?>" class="footer-logo-img-wrap">
@@ -35,8 +31,7 @@
             </div>
           </div>
         </div>
-        
-        
+
         <div class="col-lg-2 col-md-6 col-6 footer-col-new">
           <h5 class="footer-widget-title">Our Services</h5>
           <ul class="footer-links-new">
@@ -90,8 +85,7 @@
             </li>
           </ul>
         </div>
-        
-        
+
         <div class="col-lg-2 col-md-6 col-6 footer-col-new">
           <h5 class="footer-widget-title">Company</h5>
           <ul class="footer-links-new">
@@ -103,8 +97,7 @@
             <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-telephone text-danger"></i> Contact Us</a></li>
           </ul>
         </div>
-        
-        
+
         <div class="col-lg-2 col-md-6 col-6 footer-col-new">
           <h5 class="footer-widget-title">Support</h5>
           <ul class="footer-links-new">
@@ -114,12 +107,11 @@
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-shield-lock text-danger"></i> Privacy Policy</a></li>
           </ul>
         </div>
-        
-        
+
         <div class="col-lg-3 col-md-12 col-12 footer-col-new">
           <h5 class="footer-widget-title">Contact Us</h5>
           <div class="footer-contact-box-new row g-4 row-cols-1 row-cols-md-2 row-cols-lg-1">
-            
+
             <div class="col branch-block">
               <h6 class="branch-subtitle text-danger fw-bold mb-2">Indore Office</h6>
               <div class="contact-info-item-new mb-2">
@@ -146,8 +138,7 @@
                 </div>
               </div>
             </div>
-            
-            
+
             <div class="col branch-block">
               <h6 class="branch-subtitle text-danger fw-bold mb-2">Bhopal Office</h6>
               <div class="contact-info-item-new mb-2">
@@ -175,19 +166,15 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
 
-
-
-  
   <div class="footer-features-bar-section py-4 bg-white border-top border-bottom border-light-subtle">
     <div class="container">
       <div class="row g-3 justify-content-between align-items-center text-center text-md-start">
-        
-        
+
         <div class="col-lg-2-4 col-md-4 col-6 border-end-md">
           <div class="feature-bar-item d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
             <div class="feature-bar-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
@@ -199,8 +186,7 @@
             </div>
           </div>
         </div>
-        
-        
+
         <div class="col-lg-2-4 col-md-4 col-6 border-end-md">
           <div class="feature-bar-item d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
             <div class="feature-bar-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
@@ -212,8 +198,7 @@
             </div>
           </div>
         </div>
-        
-        
+
         <div class="col-lg-2-4 col-md-4 col-6 border-end-md">
           <div class="feature-bar-item d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
             <div class="feature-bar-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
@@ -225,8 +210,7 @@
             </div>
           </div>
         </div>
-        
-        
+
         <div class="col-lg-2-4 col-md-4 col-6 border-end-md">
           <div class="feature-bar-item d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
             <div class="feature-bar-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
@@ -238,8 +222,7 @@
             </div>
           </div>
         </div>
-        
-        
+
         <div class="col-lg-2-4 col-md-4 col-6">
           <div class="feature-bar-item d-flex align-items-center gap-3 justify-content-center justify-content-md-start">
             <div class="feature-bar-icon-wrap rounded-circle d-flex align-items-center justify-content-center">
@@ -251,12 +234,11 @@
             </div>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
 
-  
   <div class="footer-bottom-new py-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 text-center text-md-start">
@@ -272,7 +254,6 @@
 
 </footer>
 
-
   <?php $this->load->view('contacts/quotemodal'); ?>
   <?php $this->load->view('contacts/callmeback_modal'); ?>
   <?php $this->load->view('contacts/review_modal'); ?>
@@ -281,3 +262,4 @@
 </body>
 
 </html>
+

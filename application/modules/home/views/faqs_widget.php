@@ -49,8 +49,7 @@ $faqs = [
     <div class="faq-decor decor-bottom-right"></div>
 
     <div class="container position-relative about-z2">
-        
-        <!-- Section Header -->
+
         <div class="services-header-new text-center mb-5">
           <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
             <span class="pill-line"></span>
@@ -65,7 +64,6 @@ $faqs = [
           </p>
         </div>
 
-        <!-- Accordion Grid -->
         <div class="row g-3 align-items-start" id="faq-accordion-group">
             <?php foreach ($faqs as $index => $faq): ?>
                 <div class="col-lg-6 col-12">
@@ -75,20 +73,20 @@ $faqs = [
                              data-bs-target="#faq-collapse-<?= $index ?>" 
                              aria-expanded="false" 
                              role="button">
-                            
+
                             <div class="faq-icon-wrap d-flex align-items-center justify-content-center">
                                 <i class="bi <?= $faq['icon'] ?> faq-card-icon"></i>
                             </div>
-                            
+
                             <div class="faq-question-wrap flex-grow-1">
                                 <h3 class="faq-question m-0"><?= htmlspecialchars($faq['question']) ?></h3>
                             </div>
-                            
+
                             <div class="faq-toggle-btn d-flex align-items-center justify-content-center">
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
                         </div>
-                        
+
                         <div id="faq-collapse-<?= $index ?>" class="collapse" data-bs-parent="#faq-accordion-group">
                             <div class="faq-card-body">
                                 <p class="faq-answer m-0">
@@ -102,3 +100,4 @@ $faqs = [
         </div>
     </div>
 </section>
+

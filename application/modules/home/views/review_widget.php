@@ -36,8 +36,7 @@ $reviews = [
 
 <section class="reviews-section-new py-5">
   <div class="container">
-    
-    <!-- Section Header -->
+
     <div class="services-header-new text-center mb-5">
       <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
         <span class="pill-line"></span>
@@ -52,14 +51,12 @@ $reviews = [
       </p>
     </div>
 
-    <!-- Swappable Testimonials Slider -->
     <div class="testimonial-slider-container-new">
       <div class="testimonial-viewport-new">
         <div class="testimonial-track-new" id="testimonial-track-new">
           <?php foreach ($reviews as $idx => $review): ?>
             <div class="testimonial-card-new">
-              
-              <!-- Card Header Row (Avatar on Left, Stars on Right) -->
+
               <div class="d-flex align-items-center justify-content-between mb-3">
                 <div class="testimonial-avatar-letter-new avatar-gradient-<?= $idx ?>"><?= substr($review['name'], 0, 1) ?></div>
                 <div class="testimonial-star-rating-new">
@@ -76,13 +73,10 @@ $reviews = [
                 </div>
               </div>
 
-              <!-- Quote Decoration -->
               <div class="testimonial-quote-wrap">“</div>
 
-              <!-- Content Text -->
               <p class="testimonial-text-new italic"><?= $review['text'] ?></p>
 
-              <!-- Bottom Author details -->
               <div class="mt-auto">
                 <span class="testimonial-line-new"></span>
                 <h6 class="testimonial-author-name-new fw-bold mb-1"><?= $review['name'] ?></h6>
@@ -94,12 +88,11 @@ $reviews = [
         </div>
       </div>
 
-      <!-- Pagination Controls (Dots with Left and Right Arrows) -->
       <div class="testimonial-controls-wrap-new">
         <button type="button" class="testimonial-arrow-new" id="testimonial-prev-btn" aria-label="Previous slide">
           <i class="bi bi-chevron-left"></i>
         </button>
-        
+
         <div class="testimonial-dots-wrap-new">
           <span class="testimonial-dot-new active" data-index="0"></span>
           <span class="testimonial-dot-new" data-index="1"></span>
@@ -114,11 +107,9 @@ $reviews = [
       </div>
     </div>
 
-    <!-- Bottom Stats Strip -->
     <div class="reviews-stats-bar-new mt-5 p-4 mx-auto" style="max-width: 1140px;">
       <div class="row g-4 align-items-center justify-content-between">
-        
-        <!-- Stat Item 1 -->
+
         <div class="col-3">
           <div class="stat-item-wrap-new">
             <div class="stat-icon-circle-new">
@@ -131,7 +122,6 @@ $reviews = [
           </div>
         </div>
 
-        <!-- Stat Item 2 -->
         <div class="col-3">
           <div class="stat-item-wrap-new">
             <div class="stat-icon-circle-new">
@@ -144,7 +134,6 @@ $reviews = [
           </div>
         </div>
 
-        <!-- Stat Item 3 -->
         <div class="col-3">
           <div class="stat-item-wrap-new">
             <div class="stat-icon-circle-new">
@@ -157,7 +146,6 @@ $reviews = [
           </div>
         </div>
 
-        <!-- Stat Item 4 -->
         <div class="col-3">
           <div class="stat-item-wrap-new">
             <div class="stat-icon-circle-new">
@@ -176,7 +164,6 @@ $reviews = [
   </div>
 </section>
 
-<!-- Minimal JS Reviews Slider utilizing CSS Scroll Snap -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const viewport = document.querySelector('.testimonial-viewport-new');
@@ -212,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
     viewport.addEventListener('scroll', () => {
         const cardWidth = getCardWidth();
         const index = Math.round(viewport.scrollLeft / cardWidth);
-        
+
         dots.forEach((dot, idx) => {
             dot.classList.toggle('active', idx === index);
         });
@@ -227,3 +214,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+

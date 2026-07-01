@@ -2,31 +2,25 @@
 
 <section class="about-section-new">
     <div class="container">
-        
-        <!-- Subsection 1: Top Side-By-Side Showcase -->
+
         <div class="row align-items-center g-4 g-lg-5 mb-5 pb-lg-4">
-            
-            <!-- Left Side: Content & Milestones (col-lg-6 col-12) -->
+
             <div class="col-lg-6 col-12">
                 <div class="about-top-content">
-                    
-                    <!-- Subheading Badge -->
+
                     <div class="about-badge-new mb-3">
                         <span class="pill-line"></span>
                         <span class="text-danger fw-bold text-uppercase small letter-spacing-1">MANJEET HOUSE HOLD PACKERS AND MOVERS</span>
                     </div>
 
-                    <!-- Left Aligned Large Header -->
                     <h2 class="about-title-main-new fw-bold text-dark text-uppercase">
                         ABOUT <span class="text-danger about-title-underline-new">US</span>
                     </h2>
 
-                    <!-- Descriptive Paragraph -->
                     <p class="about-desc-lead-new">
                         At Manjeet House Hold Packers and Movers, we make every move simple, safe, and stress-free. With years of experience and a highly trained relocation team, we provide customized packing, loading, and transit solutions tailored to your unique requirements. We utilize premium packaging materials and advanced carrier vehicles to ensure that your household belongings, office goods, and vehicles are shifted securely without any hassle or delays. Whether you are shifting locally within Indore or Bhopal, or relocating to any destination across India, we stand by our promise of safety, efficiency, and absolute peace of mind for every single customer.
                     </p>
 
-                    <!-- About Us Button -->
                     <div class="mt-4 pt-2">
                         <a href="<?= site_url('about-us') ?>" class="about-btn-red">
                             ABOUT US <i class="bi bi-arrow-right-short font-weight-bold"></i>
@@ -36,30 +30,25 @@
                 </div>
             </div>
 
-            <!-- Right Side: Overlapping Image Showcase (col-lg-6 col-12) -->
             <div class="col-lg-6 col-12 text-center">
                 <div class="about-overlap-showcase-new position-relative">
-                    
-                    <!-- Decorative background dots -->
+
                     <div class="about-overlap-dots-new"></div>
-                    
-                    <!-- Main Large Image -->
+
                     <div class="about-img-main-wrap-new">
                         <img src="<?= base_url('assets/images/home_modules/household.jpg') ?>" 
                              alt="Household Shifting Service" 
                              class="about-img-main-new" 
                              loading="lazy">
                     </div>
-                    
-                    <!-- Secondary Small Overlapping Image -->
+
                     <div class="about-img-sub-wrap-new shadow-lg">
                         <img src="<?= base_url('assets/images/home_modules/packing.jpg') ?>" 
                              alt="Packing and Shifting Service" 
                              class="about-img-sub-new" 
                              loading="lazy">
                     </div>
-                    
-                    <!-- Small Trust Floating Badge -->
+
                     <div class="about-trust-tag-new shadow-lg">
                         <i class="bi bi-patch-check-fill text-danger me-1"></i>
                         <span class="text-uppercase fw-bold text-dark small letter-spacing-05">100% Reliable</span>
@@ -70,10 +59,8 @@
 
         </div>
 
-        <!-- Subsection 2: Middle Section (Who We Are) -->
         <div class="about-middle-wrap-new">
-            
-            <!-- Section Header (Shared services heading design) -->
+
             <div class="services-header-new text-center mb-5">
                 <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
                     <span class="pill-line"></span>
@@ -85,10 +72,8 @@
                 </h2>
             </div>
 
-            <!-- Grid Layout -->
             <div class="row g-4 g-lg-5 align-items-center">
-                
-                <!-- Left Side: Paragraphs and Buttons (col-lg-6 col-12) -->
+
                 <div class="col-lg-6 col-12">
                     <p class="about-middle-desc">
                         Manjeet House Hold Packers and Movers is a trusted name in the relocation industry, known for reliability, transparency, and care. We understand that moving is more than just shifting items—it's about moving your life. That's why we handle every belonging as if it were our own.
@@ -98,11 +83,9 @@
                     </p>
                 </div>
 
-                <!-- Right Side: Checklist Card (col-lg-6 col-12) -->
                 <div class="col-lg-6 col-12">
                     <div class="about-features-card-new">
-                        
-                        <!-- Feature 1 -->
+
                         <div class="feature-item-new">
                             <div class="feature-check-icon">
                                 <i class="bi bi-check2"></i>
@@ -113,7 +96,6 @@
                             </div>
                         </div>
 
-                        <!-- Feature 2 -->
                         <div class="feature-item-new">
                             <div class="feature-check-icon">
                                 <i class="bi bi-check2"></i>
@@ -124,7 +106,6 @@
                             </div>
                         </div>
 
-                        <!-- Feature 3 -->
                         <div class="feature-item-new">
                             <div class="feature-check-icon">
                                 <i class="bi bi-check2"></i>
@@ -135,7 +116,6 @@
                             </div>
                         </div>
 
-                        <!-- Feature 4 -->
                         <div class="feature-item-new">
                             <div class="feature-check-icon">
                                 <i class="bi bi-check2"></i>
@@ -154,3 +134,4 @@
         </div>
     </div>
 </section>
+

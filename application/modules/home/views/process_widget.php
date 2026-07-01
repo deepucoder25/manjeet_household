@@ -43,7 +43,6 @@ $steps = [
 <section class="process-section-new py-5">
   <div class="container">
 
-    <!-- Section Header -->
     <div class="services-header-new text-center mb-5">
       <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
         <span class="pill-line"></span>
@@ -62,8 +61,7 @@ $steps = [
       <?php foreach ($steps as $step): ?>
         <div class="col-lg-2 col-md-6 col-6 d-flex process-step-col position-relative">
           <div class="process-step-wrap w-100 d-flex flex-column align-items-center text-center">
-            
-            <!-- Step Circle Wrapper -->
+
             <div class="process-circle-outer-wrap mb-4">
               <div class="process-circle-inner d-flex align-items-center justify-content-center">
                 <?= $step['icon'] ?>
@@ -71,7 +69,6 @@ $steps = [
               <div class="process-step-number-badge"><?= $step['number'] ?></div>
             </div>
 
-            <!-- Step Card -->
             <div class="process-step-card flex-grow-1 p-4 w-100 d-flex flex-column align-items-center">
               <h5 class="process-step-title fw-bold text-dark mb-2"><?= $step['title'] ?></h5>
               <span class="process-step-line mb-3"></span>
@@ -85,3 +82,4 @@ $steps = [
 
   </div>
 </section>
+

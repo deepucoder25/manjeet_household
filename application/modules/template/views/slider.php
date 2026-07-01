@@ -1,9 +1,9 @@
 <section class="home-page-slider">
   <div class="home-page-slider-content">
     <div class="container">
-      <!-- Main Content Row -->
+
       <div class="row align-items-center justify-content-between hero-main-row">
-        <!-- Left Side: Copy and Badges -->
+
         <div class="col-lg-6 col-xl-6 text-start hero-text-col">
           <div class="hero-eyebrow">
             <i class="bi bi-shield-check text-danger"></i> Safe. Secure. On Time. Every Time.
@@ -18,7 +18,6 @@
             Reliable packing, moving and logistics solutions for homes, offices & industries across India.
           </p>
 
-          <!-- Left Side Trust Badges bubble container -->
           <div class="trust-badge-bubble">
             <div class="trust-badge-item">
               <div class="trust-badge-icon"><i class="bi bi-shield-check"></i></div>
@@ -48,13 +47,11 @@
           </div>
         </div>
 
-        <!-- Right Side: Form Card -->
         <div class="col-lg-5 col-xl-4 hero-form-col">
           <?php $this->load->view('contacts/quoteform.php')?>
         </div>
       </div>
 
-      <!-- Statistics Panel Bar (Desktop & Responsive) -->
       <div class="row">
         <div class="col-12">
           <div class="stats-bar-wrapper">
@@ -127,8 +124,7 @@
         </div>
       </div>
 
-
-
     </div>
   </div>
 </section>
+

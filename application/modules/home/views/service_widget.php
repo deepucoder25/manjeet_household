@@ -48,7 +48,7 @@ $services = [
 
 <section class="services-section-new py-5">
   <div class="container">
-    
+
     <div class="services-header-new text-center mb-5">
       <div class="services-pill-badge d-inline-flex align-items-center gap-2 mb-3">
         <span class="pill-line"></span>
@@ -68,13 +68,13 @@ $services = [
       <?php foreach ($services as $service): ?>
         <div class="col d-flex">
           <a href="<?= site_url($service['link']) ?>" class="service-card-wrap w-100 position-relative d-flex align-items-center text-decoration-none">
-            
+
             <div class="service-img-circle-wrap">
               <div class="service-img-circle-inner">
                 <img src="<?= base_url('assets/images/home_modules/' . $service['image']) ?>" alt="<?= $service['title'] ?>" class="service-circle-img" loading="lazy">
               </div>
             </div>
-            
+
             <div class="service-card-box-new w-100">
               <div class="service-card-header d-flex align-items-center gap-2 mb-2">
                 <span class="service-number-badge"><?= $service['number'] ?></span>
@@ -87,8 +87,6 @@ $services = [
         </div>
       <?php endforeach; ?>
     </div>
-
-
 
     <div class="cta-banner-card-new mt-5 position-relative">
       <div class="row g-0 align-items-stretch">
@@ -137,3 +135,4 @@ $services = [
 
   </div>
 </section>
+

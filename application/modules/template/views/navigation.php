@@ -28,17 +28,15 @@
   $is_home = (empty($segment1) || $segment1 === 'home' || $class === 'home');
   ?>
 
-  <!-- Main Sticky Header -->
   <header class="main-header <?= $is_home ? 'header-on-slider' : '' ?>" id="mainHeader">
     <div class="container d-flex align-items-center justify-content-between">
-      <!-- Brand Logo -->
+
       <a href="<?= site_url() ?>" class="brand-wrap">
         <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo" loading="lazy">
       </a>
 
-      <!-- Header Action Buttons -->
       <div class="d-flex align-items-center gap-2 gap-sm-3">
-        <!-- Call Us Anytime (Hidden as per desktop layout requirement) -->
+
         <div class="header-phone-callout d-none align-items-center gap-2">
           <div class="header-phone-icon">
             <i class="bi bi-telephone-fill"></i>
@@ -51,13 +49,11 @@
           </div>
         </div>
 
-        <!-- Get a Quote Button (Visible on both desktop & mobile) -->
         <a href="#" class="btn-quote d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
           <i class="bi bi-file-earmark-text d-none d-sm-inline-block"></i>
           <span>Get a Quote</span>
         </a>
 
-        <!-- Hamburger for Mobile & Desktop -->
         <button class="hamburger d-flex" id="openMenu" aria-label="Open navigation menu">
           <span></span>
           <span></span>
@@ -67,7 +63,6 @@
     </div>
   </header>
 
-  <!-- Full Screen Mega Menu (overlay menu when clicking hamburger) -->
   <nav class="mega-overlay" id="megaMenu" aria-label="Main navigation">
     <div class="mega-modal-card container-fluid">
       <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
@@ -75,9 +70,9 @@
       </button>
 
       <div class="row w-100 g-0">
-        <!-- Column 1: Leftmost Sidebar -->
+
         <aside class="col-12 col-lg-3 mega-sidebar">
-          <!-- Logo -->
+
           <a href="<?= site_url() ?>" class="sidebar-logo-wrap">
             <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= !empty($company3) ? $company3 : 'Manjeet Packers' ?> Logo" class="sidebar-logo" loading="lazy">
           </a>
@@ -87,7 +82,6 @@
             Reliable packing, moving and logistics solutions for homes, offices & industries across India.
           </p>
 
-          <!-- Sidebar Contact Numbers -->
           <div class="sidebar-stats row g-3">
             <div class="col-6 col-md-4 col-lg-12">
               <div class="sidebar-stat-item">
@@ -124,7 +118,6 @@
             </div>
           </div>
 
-          <!-- Sidebar Footer -->
           <div class="sidebar-footer">
             <strong>ISO 9001:2015 Certified</strong>
             <span>Door To Door Delivery</span>
@@ -132,7 +125,6 @@
           </div>
         </aside>
 
-        <!-- Column 2: COMPANY -->
         <div class="col-6 col-lg-3 mega-column">
           <div class="mega-column-title">
             <i class="bi bi-building"></i>
@@ -148,7 +140,6 @@
           </ul>
         </div>
 
-        <!-- Column 3: SERVICES -->
         <div class="col-6 col-lg-3 mega-column">
           <div class="mega-column-title">
             <i class="bi bi-truck"></i>
@@ -166,7 +157,6 @@
           </ul>
         </div>
 
-        <!-- Column 4: SUPPORT & TOOLS -->
         <div class="col-6 col-lg-3 mega-column">
           <div class="mega-column-title">
             <i class="bi bi-headset"></i>
@@ -181,7 +171,6 @@
           </ul>
         </div>
       </div>
-
 
       </div>
     </div>
@@ -231,3 +220,4 @@
       mainHeader.classList.toggle('scrolled', window.scrollY > 20);
     });
   </script>
+
