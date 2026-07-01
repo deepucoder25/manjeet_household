@@ -61,28 +61,28 @@
             <div class="stats-bar-item">
               <div class="stats-icon"><i class="bi bi-award"></i></div>
               <div class="stats-text">
-                <strong>15+</strong>
+                <strong><?= $yearsExperience ?></strong>
                 <span>Years of Experience</span>
               </div>
             </div>
             <div class="stats-bar-item">
               <div class="stats-icon"><i class="bi bi-people"></i></div>
               <div class="stats-text">
-                <strong>25K+</strong>
+                <strong><?= $happyClients ?></strong>
                 <span>Happy Customers</span>
               </div>
             </div>
             <div class="stats-bar-item">
               <div class="stats-icon"><i class="bi bi-geo-alt"></i></div>
               <div class="stats-text">
-                <strong>500+</strong>
-                <span>Cities Covered</span>
+                <strong><?= $statesCovered ?></strong>
+                <span>statesCovered Covered</span>
               </div>
             </div>
             <div class="stats-bar-item">
               <div class="stats-icon"><i class="bi bi-box-seam"></i></div>
               <div class="stats-text">
-                <strong>1M+</strong>
+                <strong><?= $successfulMoves ?></strong>
                 <span>Successful Moves</span>
               </div>
             </div>
