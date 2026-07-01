@@ -7,6 +7,27 @@ class Services extends MX_Controller
         redirect('', 'location', 301);
     }
 
+    // 1. Packing & Unpacking
+    function packingUnpacking()
+    {
+        $data['title'] = "Best Packing & Unpacking Services | " . $this->comp['company3'];
+        $data['description'] = "Get professional household packing and unpacking services from " . $this->comp['company3'] . ". High-quality bubble wraps and custom cartons for safe damage-free relocation.";
+        $data['module'] = "services";
+        $data['view_file'] = "packing_unpacking";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    // 2. Loading & Unloading
+    function loadingUnloading()
+    {
+        $data['title'] = "Safe Loading & Unloading Services | " . $this->comp['company3'];
+        $data['description'] = "Secure loading and unloading services from " . $this->comp['company3'] . ". Expert handlers and modern lifting equipment for scratch-free heavy items handling.";
+        $data['module'] = "services";
+        $data['view_file'] = "loading_unloading";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    // 3. Household Shifting
     function homeShifting()
     {
         $data['title'] = "Best Home Shifting Services | " . $this->comp['company3'];
@@ -16,6 +37,7 @@ class Services extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
+    // 4. Office Shifting
     function office()
     {
         $data['title'] = "Professional Office Relocation Services | " . $this->comp['company3'];
@@ -25,6 +47,27 @@ class Services extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
+    // 5. Industrial Shifting
+    function industrial()
+    {
+        $data['title'] = "Industrial Shifting & Machinery Transport | " . $this->comp['company3'];
+        $data['description'] = "Reliable industrial shifting and heavy cargo transport by " . $this->comp['company3'] . ". Complete heavy industrial relocation with certified safety measures.";
+        $data['module'] = "services";
+        $data['view_file'] = "industrial_shifting";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    // 6. Local Shifting
+    function local()
+    {
+        $data['title'] = "Fast Local Shifting Services | " . $this->comp['company3'];
+        $data['description'] = "Affordable and quick local home & office shifting services by " . $this->comp['company3'] . ". Experienced local moving team and cargo carriers.";
+        $data['module'] = "services";
+        $data['view_file'] = "local_shifting";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    // 7. Car Transportation
     function car()
     {
         $data['title'] = "Safe Car Transportation Services | " . $this->comp['company3'];
@@ -34,84 +77,23 @@ class Services extends MX_Controller
         echo Modules::run('template/layout2', $data);
     }
 
+    // 8. General Insurance
+    function insurance()
+    {
+        $data['title'] = "General Transit Insurance Services | " . $this->comp['company3'];
+        $data['description'] = "Protect your household goods with comprehensive transit and general insurance from " . $this->comp['company3'] . ". Fast and hassle-free claim handling.";
+        $data['module'] = "services";
+        $data['view_file'] = "general_insurance";
+        echo Modules::run('template/layout2', $data);
+    }
+
+    // 9. Bike Transportation
     function bike()
     {
         $data['title'] = "Reliable Bike Transportation Services | " . $this->comp['company3'];
         $data['description'] = "Hire trusted two-wheeler and bike shifting services from " . $this->comp['company3'] . ". We ensure scratch-free and timely delivery.";
         $data['module'] = "services";
         $data['view_file'] = "bike";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function storage()
-    {
-        $data['title'] = "Secure Warehousing & Storage Services | " . $this->comp['company3'];
-        $data['description'] = "Safe and spacious household & commercial storage services from " . $this->comp['company3'] . ". Clean, fire-safe, and 24/7 monitored warehouses.";
-        $data['module'] = "services";
-        $data['view_file'] = "storage";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function international()
-    {
-        $data['title'] = "Hassle-Free International Shifting | " . $this->comp['company3'];
-        $data['description'] = "Reliable overseas relocation and international shifting services by " . $this->comp['company3'] . ". Complete customs clearance and secure transport.";
-        $data['module'] = "services";
-        $data['view_file'] = "international";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function corporate()
-    {
-        $data['title'] = "Corporate Shifting & Employee Relocation | " . $this->comp['company3'];
-        $data['description'] = "Premium corporate relocation services by " . $this->comp['company3'] . ". Safe packing and movement of office inventory, computers, and furniture.";
-        $data['module'] = "services";
-        $data['view_file'] = "corporate";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function domestic()
-    {
-        $data['title'] = "Trusted Domestic Shifting Services | " . $this->comp['company3'];
-        $data['description'] = "Interstate and long-distance domestic relocation services by " . $this->comp['company3'] . ". Secure packaging and fast transit across India.";
-        $data['module'] = "services";
-        $data['view_file'] = "domestic";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function intercity()
-    {
-        $data['title'] = "Intercity Packers and Movers Services | " . $this->comp['company3'];
-        $data['description'] = "Efficient intercity shifting services from " . $this->comp['company3'] . ". Smooth household relocation between cities with tracking.";
-        $data['module'] = "services";
-        $data['view_file'] = "intercity";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function local()
-    {
-        $data['title'] = "Fast Local Shifting Services | " . $this->comp['company3'];
-        $data['description'] = "Affordable and quick local home & office shifting services by " . $this->comp['company3'] . ". Experienced local moving team and cargo carriers.";
-        $data['module'] = "services";
-        $data['view_file'] = "local";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function logistic()
-    {
-        $data['title'] = "B2B Logistics & Commercial Supply Chain Services | " . $this->comp['company3'];
-        $data['description'] = "Reliable logistics and freight transport services from " . $this->comp['company3'] . ". High-quality supply chain solutions for corporate clients.";
-        $data['module'] = "services";
-        $data['view_file'] = "logistic";
-        echo Modules::run('template/layout2', $data);
-    }
-
-    function pet()
-    {
-        $data['title'] = "Safe Pet Relocation & Animal Transportation | " . $this->comp['company3'];
-        $data['description'] = "Caring and secure pet shifting services by " . $this->comp['company3'] . ". We transport your pets safely, ensuring comfort and wellness throughout the journey.";
-        $data['module'] = "services";
-        $data['view_file'] = "pet";
         echo Modules::run('template/layout2', $data);
     }
 }

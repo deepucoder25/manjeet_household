@@ -36,13 +36,13 @@
           <h5 class="footer-widget-title">Our Services</h5>
           <ul class="footer-links-new">
             <li>
-              <a href="<?= site_url('our-services') ?>">
+              <a href="<?= site_url('packing-unpacking') ?>">
                 <i class="bi bi-box text-danger"></i>
                 <span>Packing &amp; Unpacking</span>
               </a>
             </li>
             <li>
-              <a href="<?= site_url('our-services') ?>">
+              <a href="<?= site_url('loading-unloading') ?>">
                 <i class="bi bi-arrow-down-up text-danger"></i>
                 <span>Loading &amp; Unloading</span>
               </a>
@@ -54,19 +54,19 @@
               </a>
             </li>
             <li>
-              <a href="<?= site_url('office-relocation') ?>">
+              <a href="<?= site_url('office-shifting') ?>">
                 <i class="bi bi-building text-danger"></i>
                 <span>Office Shifting</span>
               </a>
             </li>
             <li>
-              <a href="<?= site_url('corporate-shifting') ?>">
+              <a href="<?= site_url('industrial-shifting') ?>">
                 <i class="bi bi-briefcase text-danger"></i>
                 <span>Industrial Shifting</span>
               </a>
             </li>
             <li>
-              <a href="<?= site_url('home-shifting') ?>">
+              <a href="<?= site_url('local-shifting') ?>">
                 <i class="bi bi-geo-alt text-danger"></i>
                 <span>Local Shifting</span>
               </a>
@@ -78,7 +78,13 @@
               </a>
             </li>
             <li>
-              <a href="<?= site_url('domestic-relocation') ?>">
+              <a href="<?= site_url('bike-transportation') ?>">
+                <i class="bi bi-bicycle text-danger"></i>
+                <span>Bike Transportation</span>
+              </a>
+            </li>
+            <li>
+              <a href="<?= site_url('general-insurance') ?>">
                 <i class="bi bi-shield-check text-danger"></i>
                 <span>General Insurance</span>
               </a>
@@ -101,7 +107,7 @@
         <div class="col-lg-2 col-md-6 col-6 footer-col-new">
           <h5 class="footer-widget-title">Support</h5>
           <ul class="footer-links-new">
-            <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-lightbulb text-danger"></i> Moving Tips</a></li>
+            <li><a href="<?= site_url('moving-tips') ?>"><i class="bi bi-lightbulb text-danger"></i> Moving Tips</a></li>
             <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-question-circle text-danger"></i> FAQ's</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-file-earmark-ruled text-danger"></i> Terms & Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-shield-lock text-danger"></i> Privacy Policy</a></li>

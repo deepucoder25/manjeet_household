@@ -7,26 +7,21 @@
         <ul class="sidebar-services-list" id="sidebarServiceList">
             <?php
             $sidebar_services = [
-                ['slug' => 'home-shifting',        'name' => 'Home Shifting',        'icon' => 'bi-house-heart'],
-                ['slug' => 'office-relocation',    'name' => 'Office Relocation',    'icon' => 'bi-building-gear'],
+                ['slug' => 'packing-unpacking',    'name' => 'Packing & Unpacking',  'icon' => 'bi-box'],
+                ['slug' => 'loading-unloading',    'name' => 'Loading & Unloading',  'icon' => 'bi-arrow-down-up'],
+                ['slug' => 'home-shifting',        'name' => 'Household Shifting',   'icon' => 'bi-house-heart'],
+                ['slug' => 'office-shifting',      'name' => 'Office Shifting',      'icon' => 'bi-building-gear'],
+                ['slug' => 'industrial-shifting',  'name' => 'Industrial Shifting',  'icon' => 'bi-briefcase'],
+                ['slug' => 'local-shifting',       'name' => 'Local Shifting',       'icon' => 'bi-geo-alt'],
                 ['slug' => 'car-transportation',   'name' => 'Car Transportation',   'icon' => 'bi-car-front'],
                 ['slug' => 'bike-transportation',  'name' => 'Bike Transportation',  'icon' => 'bi-bicycle'],
-                ['slug' => 'warehouse-and-storage','name' => 'Warehouse & Storage',  'icon' => 'bi-box-seam'],
-                ['slug' => 'domestic-relocation',  'name' => 'Domestic Relocation',  'icon' => 'bi-truck'],
-                ['slug' => 'international-shifting','name' => 'International Shifting','icon' => 'bi-globe-americas'],
-                ['slug' => 'corporate-shifting',   'name' => 'Corporate Shifting',   'icon' => 'bi-briefcase'],
-                ['slug' => 'intercity-shifting',   'name' => 'Intercity Shifting',   'icon' => 'bi-signpost-split'],
-                ['slug' => 'local-shifting',       'name' => 'Local Shifting',       'icon' => 'bi-geo-alt'],
-                ['slug' => 'logistic-services',    'name' => 'Logistic Services',    'icon' => 'bi-truck-flatbed'],
-                ['slug' => 'pet-relocation',       'name' => 'Pet Relocation',       'icon' => 'bi-heart-pulse'],
+                ['slug' => 'general-insurance',    'name' => 'General Insurance',    'icon' => 'bi-shield-check'],
             ];
 
             foreach ($sidebar_services as $index => $s):
                 $is_active = ($active_service === $s['slug']) ? 'active' : '';
-                // If the current service is beyond index 5, it starts hidden (unless active)
-                $hidden_class = ($index >= 6 && !$is_active) ? 'sidebar-service-hidden' : '';
             ?>
-                <li class="<?= $hidden_class ?>">
+                <li>
                     <a href="<?= site_url($s['slug']) ?>" class="d-flex align-items-center justify-content-between <?= $is_active ?>">
                         <span class="d-flex align-items-center gap-2">
                             <i class="bi <?= $s['icon'] ?> service-icon"></i>
@@ -37,13 +32,6 @@
                 </li>
             <?php endforeach; ?>
         </ul>
-
-        <!-- Show All / Show Less Toggle -->
-        <a href="<?= site_url('our-services') ?>" class="sidebar-show-all-btn" id="sidebarToggleBtn">
-            <i class="bi bi-grid-3x3-gap-fill me-2"></i>
-            View All Services
-            <i class="bi bi-arrow-right ms-1"></i>
-        </a>
     </div>
 
     <!-- Contact & Action CTA Widget -->

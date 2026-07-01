@@ -13,7 +13,7 @@
       $active_tab = 'home';
   } elseif ($class === 'about' || in_array($segment1, ['about-us', 'why-choose-us', 'faqs', 'testimonials'])) {
       $active_tab = 'about';
-  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'home-shifting', 'office-relocation', 'car-transportation', 'bike-transportation', 'warehouse-and-storage', 'domestic-relocation', 'international-shifting', 'corporate-shifting', 'intercity-shifting', 'local-shifting', 'logistic-services', 'pet-relocation', 'home-relocation', 'storage-services', 'car-transportation-service'])) {
+  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-unpacking', 'loading-unloading', 'home-shifting', 'office-shifting', 'industrial-shifting', 'local-shifting', 'car-transportation', 'bike-transportation', 'general-insurance', 'office-relocation', 'corporate-shifting', 'logistic-services', 'domestic-relocation'])) {
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches') {
       $active_tab = 'locations';
@@ -146,14 +146,15 @@
             <span>SERVICES</span>
           </div>
           <ul class="mega-links-list">
-            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-box"></i> Packing &amp; Unpacking</a></li>
-            <li><a href="<?= site_url('our-services') ?>"><i class="bi bi-arrow-down-up"></i> Loading &amp; Unloading</a></li>
+            <li><a href="<?= site_url('packing-unpacking') ?>"><i class="bi bi-box"></i> Packing &amp; Unpacking</a></li>
+            <li><a href="<?= site_url('loading-unloading') ?>"><i class="bi bi-arrow-down-up"></i> Loading &amp; Unloading</a></li>
             <li><a href="<?= site_url('home-shifting') ?>"><i class="bi bi-house"></i> Household Shifting</a></li>
-            <li><a href="<?= site_url('office-relocation') ?>"><i class="bi bi-building"></i> Office Shifting</a></li>
-            <li><a href="<?= site_url('corporate-shifting') ?>"><i class="bi bi-briefcase"></i> Industrial Shifting</a></li>
-            <li><a href="<?= site_url('home-shifting') ?>"><i class="bi bi-geo-alt"></i> Local Shifting</a></li>
+            <li><a href="<?= site_url('office-shifting') ?>"><i class="bi bi-building"></i> Office Shifting</a></li>
+            <li><a href="<?= site_url('industrial-shifting') ?>"><i class="bi bi-briefcase"></i> Industrial Shifting</a></li>
+            <li><a href="<?= site_url('local-shifting') ?>"><i class="bi bi-geo-alt"></i> Local Shifting</a></li>
             <li><a href="<?= site_url('car-transportation') ?>"><i class="bi bi-car-front"></i> Car Transportation</a></li>
-            <li><a href="<?= site_url('domestic-relocation') ?>"><i class="bi bi-shield-check"></i> General Insurance</a></li>
+            <li><a href="<?= site_url('bike-transportation') ?>"><i class="bi bi-bicycle"></i> Bike Transportation</a></li>
+            <li><a href="<?= site_url('general-insurance') ?>"><i class="bi bi-shield-check"></i> General Insurance</a></li>
           </ul>
         </div>
 
@@ -164,7 +165,7 @@
           </div>
           <ul class="mega-links-list">
             <li><a href="#" data-bs-toggle="modal" data-bs-target="#qteModal"><i class="bi bi-file-earmark-medical"></i> Get a Free Quote</a></li>
-            <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-lightbulb"></i> Moving Tips</a></li>
+            <li><a href="<?= site_url('moving-tips') ?>"><i class="bi bi-lightbulb"></i> Moving Tips</a></li>
             <li><a href="<?= site_url('faqs') ?>"><i class="bi bi-question-circle"></i> FAQ's</a></li>
             <li><a href="<?= site_url('terms-and-conditions') ?>"><i class="bi bi-file-earmark-ruled"></i> Terms &amp; Conditions</a></li>
             <li><a href="<?= site_url('privacy-policy') ?>"><i class="bi bi-shield-lock"></i> Privacy Policy</a></li>

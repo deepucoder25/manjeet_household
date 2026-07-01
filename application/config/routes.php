@@ -19,6 +19,7 @@ $route['blog/([a-z0-9-]+)'] = 'blog/read/$1';
 $route['blog'] = 'blog/view';
 $route['privacy-policy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
+$route['moving-tips'] = 'about/moving_tips';
 
 
 // City Services Routes
@@ -29,18 +30,25 @@ $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 
 // Services Routes
 $route["our-services"] = "services/index";
-$route["bike-transportation"] = "services/bike";
-$route["car-transportation"] = "services/car";
-$route["corporate-shifting"] = "services/corporate";
-$route["domestic-relocation"] = "services/domestic";
+$route["packing-unpacking"] = "services/packingUnpacking";
+$route["loading-unloading"] = "services/loadingUnloading";
 $route["home-shifting"] = "services/homeShifting";
-$route["intercity-shifting"] = "services/intercity";
-$route["international-shifting"] = "services/international";
+$route["office-shifting"] = "services/office";
+$route["industrial-shifting"] = "services/industrial";
 $route["local-shifting"] = "services/local";
-$route["logistic-services"] = "services/logistic";
+$route["car-transportation"] = "services/car";
+$route["general-insurance"] = "services/insurance";
+$route["bike-transportation"] = "services/bike";
+
+// Legacy/Compatibility Mappings
 $route["office-relocation"] = "services/office";
-$route["pet-relocation"] = "services/pet";
-$route["warehouse-and-storage"] = "services/storage";
+$route["corporate-shifting"] = "services/industrial";
+$route["logistic-services"] = "services/industrial";
+$route["domestic-relocation"] = "services/insurance";
+$route["warehouse-and-storage"] = "home/error";
+$route["international-shifting"] = "home/error";
+$route["intercity-shifting"] = "home/error";
+$route["pet-relocation"] = "home/error";
 
 // Legacy/Compatibility Routes
 $route["home-relocation"] = "services/homeShifting";

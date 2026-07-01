@@ -1,36 +1,26 @@
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
+<section class="service-breadcrumbs text-center">
     <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Our Branches</span>
-        </nav>
-        <h1><span class="bc-title-white">Our</span> <span class="bc-title-orange">Branches</span></h1>
-        <p class="bc-desc"><?= $company3 ?> Packers and Movers — Delivering trusted relocation services across 20+ states in India.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-clock-history"></i></div>
-                <div class="pill-text"><strong>Since <?= $startYear ?></strong><small><?= $experience ?> Years Legacy</small></div>
+        <h1 class="bc-title-main text-uppercase text-white fw-bold">Our Branches</h1>
+        <div class="bc-divider-wrap d-flex align-items-center justify-content-center gap-3 my-3">
+            <span class="bc-divider-line"></span>
+            <div class="bc-icon-hexagon">
+                <i class="bi bi-hexagon-fill hex-bg"></i>
+                <i class="bi bi-map-fill hex-icon"></i>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-patch-check-fill"></i></div>
-                <div class="pill-text"><strong>ISO Certified</strong><small>Licensed &amp; Verified</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-people-fill"></i></div>
-                <div class="pill-text"><strong>Expert Team</strong><small>CMD to Branch Staff</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="pill-text"><strong>Pan-India</strong><small>100+ Branches</small></div>
-            </div>
+            <span class="bc-divider-line"></span>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
+        <div class="bc-capsule-container d-inline-flex align-items-center justify-content-between p-1 bg-white border border-danger shadow-sm">
+            <div class="d-flex align-items-center gap-2">
+                <div class="bc-home-icon-wrap">
+                    <i class="bi bi-house-door-fill"></i>
+                </div>
+                <div class="bc-links d-flex align-items-center gap-2 text-dark font-weight-bold">
+                    <a href="<?= site_url() ?>" class="text-decoration-none text-dark">Home</a>
+                    <i class="bi bi-chevron-right text-muted small"></i>
+                </div>
+            </div>
+            <span class="bc-current-pill text-white bg-danger font-weight-bold">Our Branches</span>
+        </div>
     </div>
 </section>
 
@@ -60,11 +50,9 @@ $state = [
 ];
 ?>
 
-<!-- Branch Section -->
 <section class="portfolio-area py-5 bg-light">
     <div class="container">
 
-        <!-- Section Heading -->
         <div class="text-center mb-5">
             <h2 class="fw-bold">
                 Our Presence Across <span class="pm-states-title-span">India</span>
@@ -77,13 +65,11 @@ $state = [
         <div class="row g-4">
 
             <?php foreach ($state as $item): ?>
-                
-                <!-- 4 Columns in One Row on Desktop -->
+
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
 
                     <div class="pm-states-card bg-white rounded-4 overflow-hidden shadow-sm h-100">
 
-                        <!-- Image -->
                         <div class="pm-states-img position-relative overflow-hidden">
                             <img class="img-fluid w-100"
                                 src="<?= base_url() ?>/assets/images/state/<?= $item['image'] ?>"
@@ -96,7 +82,6 @@ $state = [
                             </div>
                         </div>
 
-                        <!-- Content -->
                         <div class="p-3 text-start d-flex align-items-center gap-2">
                             <span class="pm-states-yellow-dash"></span>
                             <h6 class="fw-semibold mb-0">
@@ -116,6 +101,4 @@ $state = [
         </div>
     </div>
 </section>
-
-
 

@@ -1,13 +1,29 @@
 <main class="main">
-    <div class="site-breadcrumb home-error-breadcrumb">
+    <section class="service-breadcrumbs text-center">
         <div class="container">
-            <h2 class="breadcrumb-title">Our Reviews</h2>
-            <ul class="breadcrumb-menu">
-                <li><a href="<?= site_url() ?>">Home</a></li>
-                <li class="active">Reviews</li>
-            </ul>
+            <h1 class="bc-title-main text-uppercase text-white fw-bold">Our Reviews</h1>
+            <div class="bc-divider-wrap d-flex align-items-center justify-content-center gap-3 my-3">
+                <span class="bc-divider-line"></span>
+                <div class="bc-icon-hexagon">
+                    <i class="bi bi-hexagon-fill hex-bg"></i>
+                    <i class="bi bi-star-fill hex-icon"></i>
+                </div>
+                <span class="bc-divider-line"></span>
+            </div>
+            <div class="bc-capsule-container d-inline-flex align-items-center justify-content-between p-1 bg-white border border-danger shadow-sm">
+                <div class="d-flex align-items-center gap-2">
+                    <div class="bc-home-icon-wrap">
+                        <i class="bi bi-house-door-fill"></i>
+                    </div>
+                    <div class="bc-links d-flex align-items-center gap-2 text-dark font-weight-bold">
+                        <a href="<?= site_url() ?>" class="text-decoration-none text-dark">Home</a>
+                        <i class="bi bi-chevron-right text-muted small"></i>
+                    </div>
+                </div>
+                <span class="bc-current-pill text-white bg-danger font-weight-bold">Reviews</span>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="reviews-service-page reviews-feature-content-section">
         <div ng-app="reviewsApp" ng-controller="reviewsctrl">
@@ -22,7 +38,7 @@
                     </button>
                     <div class="reviews-header-line"></div>
                 </div>
-                
+
                 <div class="reviews-single-reviewr mt-4 pb-4">
                     <?php
                     if ($reviews->num_rows() == 0) {
@@ -42,7 +58,7 @@
                                     <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness">
                                         <meta itemprop="name" content="<?= $company3 ?>" />
                                     </div>
-                                    
+
                                     <div class="reviews-review-rating">
                                         <?php for ($i = 0; $i < $r->stars; $i++) { ?>
                                             <i class="bi bi-star-fill"></i>
@@ -51,9 +67,9 @@
                                             <span itemprop="ratingValue"><?= $r->stars ?></span> stars
                                         </span>
                                     </div>
-                                    
+
                                     <p itemprop="reviewBody">"<?=$r->r_desc?>"</p>
-                                    
+
                                     <div class="reviews-review-author">
                                         <div class="reviews-review-avatar"><?= strtoupper(substr($r->name, 0, 1)) ?></div>
                                         <div>
@@ -80,5 +96,4 @@
     </div>
 
 </main>
-
 

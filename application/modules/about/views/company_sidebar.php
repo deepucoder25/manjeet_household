@@ -10,6 +10,7 @@
                 ['slug' => 'about-us',          'name' => 'About Us',          'icon' => 'bi-info-circle'],
                 ['slug' => 'why-choose-us',     'name' => 'Why Choose Us',     'icon' => 'bi-patch-question'],
                 ['slug' => 'faqs',              'name' => 'FAQ',               'icon' => 'bi-chat-left-text'],
+                ['slug' => 'moving-tips',       'name' => 'Moving Tips',       'icon' => 'bi-lightbulb'],
                 ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote'],
                 ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-half'],
                 ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],

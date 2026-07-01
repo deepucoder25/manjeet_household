@@ -1,38 +1,32 @@
-
-<div class="scs-breadcrumb position-relative text-white"
-     style="background: linear-gradient(rgba(66,66,68,0.8), rgba(57,58,59,0.8)), url('<?php echo base_url("assets/images/about/packers.jpg"); ?>') center/cover no-repeat;">
-
-    <div class="container text-center py-5">
-        <h1 class="fw-bold mb-3">Track Your Congsignment</h1>
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center bg-transparent mb-0">
-
-                <!-- Home -->
-                <li class="breadcrumb-item">
-                    <a href="<?=site_url()?>"
-                       class="text-warning text-decoration-none fw-semibold">
-                        Home
-                    </a>
-                </li>
-
-                <!-- Contact -->
-                <li class="breadcrumb-item active text-light fw-semibold"
-                    aria-current="page">
-                   Track Your Congsignment
-                </li>
-
-            </ol>
-        </nav>
+<section class="service-breadcrumbs text-center">
+    <div class="container">
+        <h1 class="bc-title-main text-uppercase text-white fw-bold">Track Your Consignment</h1>
+        <div class="bc-divider-wrap d-flex align-items-center justify-content-center gap-3 my-3">
+            <span class="bc-divider-line"></span>
+            <div class="bc-icon-hexagon">
+                <i class="bi bi-hexagon-fill hex-bg"></i>
+                <i class="bi bi-search hex-icon"></i>
+            </div>
+            <span class="bc-divider-line"></span>
+        </div>
+        <div class="bc-capsule-container d-inline-flex align-items-center justify-content-between p-1 bg-white border border-danger shadow-sm">
+            <div class="d-flex align-items-center gap-2">
+                <div class="bc-home-icon-wrap">
+                    <i class="bi bi-house-door-fill"></i>
+                </div>
+                <div class="bc-links d-flex align-items-center gap-2 text-dark font-weight-bold">
+                    <a href="<?= site_url() ?>" class="text-decoration-none text-dark">Home</a>
+                    <i class="bi bi-chevron-right text-muted small"></i>
+                </div>
+            </div>
+            <span class="bc-current-pill text-white bg-danger font-weight-bold">Track Your Consignment</span>
+        </div>
     </div>
-</div>
-
-
-
+</section>
 
 <div class="container py-5">
     <div class="row">
-        <!-- Left Column -->
+
         <div class="col-lg-12 d-flex justify-content-center align-items-center">
             <div class="contact-tracking-form mb-3 w-100">
                 <form action="" id="tracking_form">
@@ -44,7 +38,6 @@
                     <button type="reset" class="btn btn-danger mt-3">Clear</button>
                 </form>
 
-                <!-- Tracking Details (hidden until data loads) -->
                 <div class="contact-tracking-details-card mt-4">
                     <div class="card">
                         <div class="card-header bg-light">
@@ -80,7 +73,6 @@
                                 </div>
                             </div>
 
-                            <!-- Progress Bar Tracking -->
                             <div class="contact-tracking-progress mb-4">
                                 <div class="contact-progress-bar-container">
                                     <div class="contact-progress">
@@ -111,7 +103,6 @@
                                 </div>
                             </div>
 
-                            <!-- Tracking Details Table -->
                             <div class="contact-tracking-table mt-4">
                                 <h6 class="border-bottom pb-2">TRACKING HISTORY</h6>
                                 <div class="table-responsive">
@@ -124,7 +115,7 @@
                                             </tr>
                                         </thead>
                                         <tbody id="trackingTableBody">
-                                            <!-- Table rows will be injected here -->
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -149,7 +140,6 @@
         </div>
     </div>
 </div>
-
 
 <script>
     $(function () {
@@ -263,3 +253,4 @@
         });
     });
 </script>
+

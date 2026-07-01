@@ -1,70 +1,55 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
+<section class="service-breadcrumbs text-center">
     <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Office Relocation</span>
-        </nav>
-        <h1><span class="bc-title-white">Office</span> <span class="bc-title-orange">Relocation</span></h1>
-        <p class="bc-desc">Minimize business disruption with our highly organized corporate office shifting services. We handle IT equipment, files, and modular furniture with utmost security.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-lightning-charge-fill"></i></div>
-                <div class="pill-text"><strong>Fast Setup</strong><small>Quick commercial restart</small></div>
+        <h1 class="bc-title-main text-uppercase text-white fw-bold">Office Shifting</h1>
+        <div class="bc-divider-wrap d-flex align-items-center justify-content-center gap-3 my-3">
+            <span class="bc-divider-line"></span>
+            <div class="bc-icon-hexagon">
+                <i class="bi bi-hexagon-fill hex-bg"></i>
+                <i class="bi bi-briefcase-fill hex-icon"></i>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-pc-display-horizontal"></i></div>
-                <div class="pill-text"><strong>IT Transit</strong><small>Secure server handling</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-moon-stars-fill"></i></div>
-                <div class="pill-text"><strong>Weekend Shift</strong><small>Zero workday loss</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-file-earmark-lock-fill"></i></div>
-                <div class="pill-text"><strong>Confidential</strong><small>Secure file moving</small></div>
-            </div>
+            <span class="bc-divider-line"></span>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
+        <div class="bc-capsule-container d-inline-flex align-items-center justify-content-between p-1 bg-white border border-danger shadow-sm">
+            <div class="d-flex align-items-center gap-2">
+                <div class="bc-home-icon-wrap">
+                    <i class="bi bi-house-door-fill"></i>
+                </div>
+                <div class="bc-links d-flex align-items-center gap-2 text-dark font-weight-bold">
+                    <a href="<?= site_url() ?>" class="text-decoration-none text-dark">Home</a>
+                    <i class="bi bi-chevron-right text-muted small"></i>
+                </div>
+            </div>
+            <span class="bc-current-pill text-white bg-danger font-weight-bold">Office Shifting</span>
+        </div>
     </div>
 </section>
 
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
+
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Professional Office Relocation for Minimal Downtime</h2>
+                    <h2 class="service-section-title">Professional Office Shifting for Minimal Downtime</h2>
                     <div class="about-service-text">
                         <p>
-                            <strong><?= $company3 ?></strong> is an organization that please let provides the best services for office relocation with a professional approach. The team at Move Your Business empathizes with the need to relocate a business hence making sure that downtimes are kept to a minimum as possible.
+                            <strong><?= $company3 ?></strong> is an organization that please let provides the best services for office shifting with a professional approach. The team at Move Your Business empathizes with the need to relocate a business hence making sure that downtimes are kept to a minimum as possible.
                         </p>
                         <p>
-                            We guarantee continuity of service and make arrangements so that your office can get on fully and as soon as possible. Our corporate office moving services are reliable as well as affordable at the same time. Rest assured that when we move your office equipment and documents to your new office, all items are packed with only the best packing materials and methods.
+                            We guarantee continuity of service and make arrangements so that your office can get on fully and as soon as possible. Our corporate office shifting services are reliable as well as affordable at the same time. Rest assured that when we move your office equipment and documents to your new office, all items are packed with only the best packing materials and methods.
                         </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/office.jpg') ?>" alt="office relocation" class="img-fluid rounded my-3 w-100">
+                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/office.jpg') ?>" alt="office shifting" class="img-fluid rounded my-3 w-100">
                         <p>
-                            Hiring us means that you get to enjoy our fair prices and even better services in the course of the move. Hire the experts of <strong><?= $company3 ?></strong> for office moving services and enjoy the best-shifting services.
+                            Hiring us means that you get to enjoy our fair prices and even better services in the course of the move. Hire the experts of <strong><?= $company3 ?></strong> for office shifting services and enjoy the best-shifting services.
                         </p>
                         <p>
                             In our pro team, we ensure that our work brings positive results offering the most efficient move needed for a business. Let us take full responsibility for doing that with the standard that you expect from any office removals.
                         </p>
                     </div>
 
-                    <!-- How We Process Section -->
-                    <h2 class="service-section-title mt-5">Our Office Relocation Process</h2>
+                    <h2 class="service-section-title mt-5">Our Office Shifting Process</h2>
                     <p class="text-muted">A carefully planned process to move your office without business interruption:</p>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -89,7 +74,6 @@
                         </div>
                     </div>
 
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us</h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -122,7 +106,6 @@
                         </div>
                     </div>
 
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -143,7 +126,6 @@
                         </div>
                     </div>
 
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
@@ -187,10 +169,10 @@
                 </div>
             </div>
 
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
-                <?php $this->load->view('services/service_sidebar', ['active_service' => 'office-relocation']); ?>
+                <?php $this->load->view('services/service_sidebar', ['active_service' => 'office-shifting']); ?>
             </div>
         </div>
     </div>
 </section>
+

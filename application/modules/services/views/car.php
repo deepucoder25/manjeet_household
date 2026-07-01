@@ -1,48 +1,35 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
+<section class="service-breadcrumbs text-center">
     <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-services') ?>">Services</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Car Transportation</span>
-        </nav>
-        <h1><span class="bc-title-white">Car</span> <span class="bc-title-orange">Transportation</span></h1>
-        <p class="bc-desc">We transport your car safely using flatbed carriers and enclosed trailers with GPS tracking. Whether it's a sedan, SUV, or luxury vehicle, every car is insured and delivered damage-free.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-truck-flatbed"></i></div>
-                <div class="pill-text"><strong>Open Carrier</strong><small>Cost-effective transport</small></div>
+        <h1 class="bc-title-main text-uppercase text-white fw-bold">Car Transportation</h1>
+        <div class="bc-divider-wrap d-flex align-items-center justify-content-center gap-3 my-3">
+            <span class="bc-divider-line"></span>
+            <div class="bc-icon-hexagon">
+                <i class="bi bi-hexagon-fill hex-bg"></i>
+                <i class="bi bi-car-front-fill hex-icon"></i>
             </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-lock-fill"></i></div>
-                <div class="pill-text"><strong>Enclosed Transport</strong><small>Premium protection</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-house-fill"></i></div>
-                <div class="pill-text"><strong>Door-to-Door</strong><small>Pickup &amp; delivery</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="pill-text"><strong>GPS Tracked</strong><small>Live location updates</small></div>
-            </div>
+            <span class="bc-divider-line"></span>
         </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
+        <div class="bc-capsule-container d-inline-flex align-items-center justify-content-between p-1 bg-white border border-danger shadow-sm">
+            <div class="d-flex align-items-center gap-2">
+                <div class="bc-home-icon-wrap">
+                    <i class="bi bi-house-door-fill"></i>
+                </div>
+                <div class="bc-links d-flex align-items-center gap-2 text-dark font-weight-bold">
+                    <a href="<?= site_url() ?>" class="text-decoration-none text-dark">Home</a>
+                    <i class="bi bi-chevron-right text-muted small"></i>
+                </div>
+            </div>
+            <span class="bc-current-pill text-white bg-danger font-weight-bold">Car Transportation</span>
+        </div>
     </div>
 </section>
 
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
+
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <h2 class="service-section-title">Precision in Car Transportation Excellence</h2>
@@ -67,30 +54,29 @@
                             To avail the best car transportation services you should transport with <strong><?= $company3 ?></strong>.
                         </p>
                     </div>
-                    
-                    <!-- How We Process Section -->
+
                     <h2 class="service-section-title mt-5">Our Car Relocation Process</h2>
                     <p class="text-muted">We execute a rigorous loading and transit process for vehicle safety:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
+
                         <div class="process-step">
                             <span class="step-number">1</span>
                             <h4>Detailed Pre-Move Audit</h4>
                             <p>We check the tires, engine oil, fuel levels, and note down all pre-existing scratches or dents on a standard car condition report.</p>
                         </div>
-                        <!-- Step 2 -->
+
                         <div class="process-step">
                             <span class="step-number">2</span>
                             <h4>Parts Wrapping &amp; Preparation</h4>
                             <p>We wrap key exterior components like side-view mirrors, antenna, and body spoilers with thick foam padding to prevent scratching.</p>
                         </div>
-                        <!-- Step 3 -->
+
                         <div class="process-step">
                             <span class="step-number">3</span>
                             <h4>Hydraulic Loading &amp; Anchoring</h4>
                             <p>The car is carefully driven onto our double-deck car carrier trailer. The wheels are locked with chocks and tied securely to the truck deck.</p>
                         </div>
-                        <!-- Step 4 -->
+
                         <div class="process-step">
                             <span class="step-number">4</span>
                             <h4>Safe Destination Drop-Off</h4>
@@ -98,7 +84,6 @@
                         </div>
                     </div>
 
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us</h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -131,7 +116,6 @@
                         </div>
                     </div>
 
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -152,10 +136,9 @@
                         </div>
                     </div>
 
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
+
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -168,7 +151,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
+
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -181,7 +164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
+
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -199,10 +182,10 @@
                 </div>
             </div>
 
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('services/service_sidebar', ['active_service' => 'car-transportation']); ?>
             </div>
         </div>
     </div>
 </section>
+
