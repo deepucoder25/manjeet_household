@@ -18,25 +18,28 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
+                            <label for="reviews_name" class="visually-hidden">Full Name</label>
                             <div class="form-icon">
                                 <i class="bi bi-person"></i>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
+                                <input type="text" class="form-control" id="reviews_name" name="name" placeholder="Full Name">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
+                            <label for="reviews_email" class="visually-hidden">Email Address</label>
                             <div class="form-icon">
                                 <i class="bi bi-envelope"></i>
-                                <input type="email" class="form-control" name="email" placeholder="Email Address">
+                                <input type="email" class="form-control" id="reviews_email" name="email" placeholder="Email Address">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
+                            <label for="reviews_title" class="visually-hidden">Review Title</label>
                             <div class="form-icon">
                                 <i class="bi bi-chat-left-dots"></i>
-                                <input type="text" class="form-control" name="title" placeholder="Review Title">
+                                <input type="text" class="form-control" id="reviews_title" name="title" placeholder="Review Title">
                             </div>
                         </div>
                     </div>
@@ -54,9 +57,10 @@
                     </div>
                     <div class="col-12">
                         <div class="form-group">
+                            <label for="reviews_desc" class="visually-hidden">Write Your Experience</label>
                             <div class="form-icon">
                                 <i class="bi bi-chat-left-dotss"></i>
-                                <textarea class="form-control" name="desc" rows="3" placeholder="Write Your Experience"></textarea>
+                                <textarea class="form-control" id="reviews_desc" name="desc" rows="3" placeholder="Write Your Experience"></textarea>
                             </div>
                         </div>
                     </div>

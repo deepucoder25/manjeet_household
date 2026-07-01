@@ -85,20 +85,20 @@
                     <form id="contactform" class="ajax-form" data-url="<?php echo site_url('contacts/contact') ?>" data-result="contactformresults" onsubmit="return false;">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold text-dark">Your Name *</label>
-                                <input type="text" name="name" class="form-control py-2 contact-input-rounded" placeholder="John Doe">
+                                <label for="contact_name" class="form-label fw-semibold text-dark">Your Name *</label>
+                                <input type="text" name="name" id="contact_name" class="form-control py-2 contact-input-rounded" placeholder="John Doe">
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold text-dark">Phone Number *</label>
-                                <input type="tel" name="phone" class="form-control py-2 contact-input-rounded" placeholder="Mobile Number">
+                                <label for="contact_phone" class="form-label fw-semibold text-dark">Phone Number *</label>
+                                <input type="tel" name="phone" id="contact_phone" class="form-control py-2 contact-input-rounded" placeholder="Mobile Number">
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold text-dark">Email Address</label>
-                                <input type="email" name="email" class="form-control py-2 contact-input-rounded" placeholder="hello@example.com">
+                                <label for="contact_email" class="form-label fw-semibold text-dark">Email Address</label>
+                                <input type="email" name="email" id="contact_email" class="form-control py-2 contact-input-rounded" placeholder="hello@example.com">
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold text-dark">Your Message</label>
-                                <textarea name="message" class="form-control py-2 contact-input-rounded" rows="5" placeholder="How can we help you?"></textarea>
+                                <label for="contact_message" class="form-label fw-semibold text-dark">Your Message</label>
+                                <textarea name="message" id="contact_message" class="form-control py-2 contact-input-rounded" rows="5" placeholder="How can we help you?"></textarea>
                             </div>
                             <div class="col-12 mt-4">
                                 <button type="submit" class="theme-btn w-100 py-3 contact-btn-rounded">

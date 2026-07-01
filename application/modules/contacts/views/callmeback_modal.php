@@ -15,11 +15,13 @@
         <form id="callMeBackForm" class="ajax-form" data-url="<?= site_url('contacts/call_back') ?>" data-result="resultcallbackmodal" onsubmit="return false;">
           
           <div class="mb-3">
-            <input type="text" name="name" class="form-control contact-modal-input" placeholder="Enter Your Name">
+            <label for="callback_name" class="visually-hidden">Enter Your Name</label>
+            <input type="text" name="name" id="callback_name" class="form-control contact-modal-input" placeholder="Enter Your Name">
           </div>
           
           <div class="mb-4">
-            <input type="tel" name="phone" class="form-control contact-modal-input" placeholder="Enter 10 Digit Mobile No." pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+            <label for="callback_phone" class="visually-hidden">Enter 10 Digit Mobile No.</label>
+            <input type="tel" name="phone" id="callback_phone" class="form-control contact-modal-input" placeholder="Enter 10 Digit Mobile No." pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
           </div>
           
           <button type="submit" class="btn w-100 contact-modal-btn">

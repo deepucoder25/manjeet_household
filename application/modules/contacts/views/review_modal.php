@@ -9,17 +9,17 @@
             </div>
             <div class="modal-body p-4">
                 <form action="<?= site_url('reviews/submit') ?>" method="POST">
-                    <div class="mb-3">
-                        <label class="contact-review-form-label">Your Full Name</label>
-                        <input type="text" name="name" class="form-control contact-review-form-control" placeholder="Enter your name" required>
+                     <div class="mb-3">
+                        <label for="review_name" class="contact-review-form-label">Your Full Name</label>
+                        <input type="text" name="name" id="review_name" class="form-control contact-review-form-control" placeholder="Enter your name" required>
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your Email</label>
-                        <input type="email" name="email" class="form-control contact-review-form-control" placeholder="Enter your email address" required>
+                        <label for="review_email" class="contact-review-form-label">Your Email</label>
+                        <input type="email" name="email" id="review_email" class="form-control contact-review-form-control" placeholder="Enter your email address" required>
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your City</label>
-                        <input type="text" name="city" class="form-control contact-review-form-control" placeholder="e.g. Lucknow" value="<?= isset($city) ? $city : '' ?>" required>
+                        <label for="review_city" class="contact-review-form-label">Your City</label>
+                        <input type="text" name="city" id="review_city" class="form-control contact-review-form-control" placeholder="e.g. Lucknow" value="<?= isset($city) ? $city : '' ?>" required>
                     </div>
                     <div class="mb-3">
                         <label class="contact-review-form-label">Your Rating</label>
@@ -39,8 +39,8 @@
                         <input type="hidden" name="rating" id="rating-input" value="5">
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your Message</label>
-                        <textarea name="review" class="form-control contact-review-form-control" rows="4" placeholder="Write your feedback here..." required></textarea>
+                        <label for="review_text" class="contact-review-form-label">Your Message</label>
+                        <textarea name="review" id="review_text" class="form-control contact-review-form-control" rows="4" placeholder="Write your feedback here..." required></textarea>
                     </div>
                     <button type="submit" class="contact-btn-submit-review mt-3">Submit Review</button>
                 </form>
