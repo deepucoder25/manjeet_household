@@ -1,95 +1,151 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+<?php 
+if (!defined('BASEPATH')) exit('No direct script access allowed'); 
+
+// Define default operational photos here so it's easy to add/modify in the future!
+$default_photos = array(
+    array(
+        'image' => 'packing.jpg',
+        'alt' => 'Household packaging services with multi-layer bubble wrapping by Manjeet Packers and Movers',
+        'title' => 'Multi-Layer Bubble Wrapping',
+        'is_default' => true
+    ),
+    array(
+        'image' => 'loading.jpg',
+        'alt' => 'Professional loaders handling freight stacking at cargo terminal by Manjeet Packers and Movers',
+        'title' => 'Organized Cargo Loading',
+        'is_default' => true
+    ),
+    array(
+        'image' => 'household.jpg',
+        'alt' => 'Secure local and intercity household goods relocation delivery truck by Manjeet Packers and Movers',
+        'title' => 'Household Shifting',
+        'is_default' => true
+    ),
+    array(
+        'image' => 'office.jpg',
+        'alt' => 'IT servers and modular desks office relocation setup by Manjeet Packers and Movers',
+        'title' => 'Office Shifting',
+        'is_default' => true
+    ),
+    array(
+        'image' => 'industrial.jpg',
+        'alt' => 'Heavy duty machinery rigging and plant logistics transfer using cranes by Manjeet Packers and Movers',
+        'title' => 'Industrial Shifting',
+        'is_default' => true
+    ),
+    array(
+        'image' => 'car.jpg',
+        'alt' => 'Enclosed double-deck automobile shipping carrier loading passenger cars by Manjeet Packers and Movers',
+        'title' => 'Car Transportation',
+        'is_default' => true
+    )
+);
+
+// Merge database custom uploads with default ones
+$photos = !empty($db_photos) ? array_merge($db_photos, $default_photos) : $default_photos;
+?>
 
 <?php $this->load->view('template/breadcrumb', array('breadcrumb_title' => 'Photo Gallery', 'breadcrumb_icon' => 'bi-images')); ?>
 
-<section class="service-details-section mb-5 pb-5">
+<section class="gallery-section py-5 mb-5 pb-5">
     <div class="container">
-        <div class="row">
+        <div class="row g-5">
 
+            <!-- Main Content Area -->
             <div class="col-lg-8">
-                <div class="service-main-content">
+                <div class="gallery-main-content">
+                    
+                    <h1 class="fw-bold mb-3 text-dark">Our Relocation Operations in Action</h1>
+                    <p class="text-muted mb-5">
+                        Explore visual highlights of our packaging quality, warehouse storage, specialized container carriers, and relocation operations at <strong><?= $company3 ?></strong>.
+                    </p>
 
-                    <h2 class="service-section-title">Our Relocation Operations in Action</h2>
-                    <div class="about-service-text mb-4">
-                        <p>
-                            Take a look at our on-field photos demonstrating our dedication to safety, careful packaging, and organized logistics. Our photo gallery highlights our packing standards, secure warehouse storage, and specialized fleets.
-                        </p>
+                    <!-- Gallery Grid -->
+                    <div class="row g-4">
+                        <?php 
+                        $count = 0;
+                        foreach ($photos as $i => $photo): 
+                            $count++;
+                            $isHidden = ($count > 4) ? 'gallery-item-hidden d-none' : '';
+                            
+                            // Determine the dynamic URL for the image variable
+                            $photo_url = $photo['is_default'] 
+                                ? base_url('assets/images/gallery/' . $photo['image']) 
+                                : base_url('assets/uploads/album/' . $photo['image']);
+                        ?>
+                        <!-- Item <?= $count ?> -->
+                        <div class="col-md-6 col-sm-6 col-12 <?= $isHidden ?>">
+                            <div class="gallery-photo-card shadow-sm border-0 rounded-4 overflow-hidden">
+                                <div class="gallery-img-wrapper">
+                                    <img loading="lazy" src="<?= $photo_url ?>" class="gallery-img" alt="<?= htmlspecialchars($photo['alt']) ?>">
+                                    <div class="gallery-hover-overlay">
+                                        <button type="button" class="gallery-zoom-btn" data-bs-toggle="modal" data-bs-target="#galleryModal<?= $i ?>" aria-label="View <?= htmlspecialchars($photo['title']) ?> image">
+                                            <i class="bi bi-zoom-in"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
                     </div>
 
-                    <div class="row">
-
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/home-shifting-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Household Packing and Shifting Services">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Household Packing</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Multi-Layer Furniture Protection</h5>
-                                    <p class="small text-muted mb-0">Careful packing of household furniture using bubble wrap and edge guards to prevent transit scratches.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/car-transportation-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Car Transportation Carriers">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Car Carrier</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Enclosed Double-Deck Car Transport</h5>
-                                    <p class="small text-muted mb-0">Loading passenger cars inside fully enclosed containers to protect them from weather and road debris.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/bike-transportation-services.webp') ?>" class="w-100 img-fluid gallery-img" alt="Two-Wheeler Bike Shifting">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Bike Shifting</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Scratch-Free Two-Wheeler Packing</h5>
-                                    <p class="small text-muted mb-0">Secure wheel lock straps and heavy foam sheeting applied to bikes before long-distance transport.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative">
-                                    <img loading="lazy" src="<?= base_url('assets/images/services_modules/loading.webp') ?>" class="w-100 img-fluid gallery-img" alt="Cargo Loading Operations">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm">Cargo Loading</span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm">Organized Goods Stacking &amp; Loading</h5>
-                                    <p class="small text-muted mb-0">Professional loaders stacking boxes systematically inside our trucks to ensure stability during transit.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <?php if (count($photos) > 4): ?>
+                    <!-- Load More Button -->
+                    <div class="text-center mt-5" id="loadMoreContainer">
+                        <button type="button" class="btn btn-outline-danger rounded-pill px-5 py-3 fw-bold load-more-gallery-btn" id="loadMoreBtn">
+                            <i class="bi bi-arrow-clockwise me-2"></i> Load More Photos
+                        </button>
                     </div>
+                    <?php endif; ?>
 
                 </div>
             </div>
 
+            <!-- Sidebar Column -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'photo-gallery']); ?>
             </div>
+
         </div>
     </div>
 </section>
 
+<!-- Lightbox Modals for Photo Preview -->
+<?php 
+foreach ($photos as $i => $photo): 
+    $photo_url = $photo['is_default'] 
+        ? base_url('assets/images/gallery/' . $photo['image']) 
+        : base_url('assets/uploads/album/' . $photo['image']);
+?>
+<div class="modal fade" id="galleryModal<?= $i ?>" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 rounded-4 overflow-hidden">
+            <div class="modal-header border-0 bg-dark text-white py-3">
+                <h5 class="modal-title fw-bold fs-6"><i class="bi bi-images me-2 text-danger"></i><?= htmlspecialchars($photo['title']) ?></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 bg-black">
+                <img loading="lazy" src="<?= $photo_url ?>" class="w-100 img-fluid" alt="<?= htmlspecialchars($photo['alt']) ?>">
+            </div>
+        </div>
+    </div>
+</div>
+<?php endforeach; ?>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const hiddenItems = document.querySelectorAll('.gallery-item-hidden');
+    const loadMoreContainer = document.getElementById('loadMoreContainer');
+    
+    if (loadMoreBtn && hiddenItems.length > 0) {
+        loadMoreBtn.addEventListener('click', function() {
+            hiddenItems.forEach(item => {
+                item.classList.remove('d-none');
+                item.classList.add('animate-fade-in');
+            });
+            loadMoreContainer.style.display = 'none';
+        });
+    }
+});
+</script>

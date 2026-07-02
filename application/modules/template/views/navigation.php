@@ -134,6 +134,7 @@
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-person"></i> About Us</a></li>
             <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-geo-alt"></i> Our Cities</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chat-left-quote"></i> Testimonials</a></li>
+            <li><a href="<?= site_url('photo-gallery') ?>"><i class="bi bi-images"></i> Photo Gallery</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-file-earmark-text"></i> Blog</a></li>
             <li><a href="<?= site_url('reviews') ?>"><i class="bi bi-chat-left-heart"></i> Reviews</a></li>
             <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-telephone"></i> Contact Us</a></li>

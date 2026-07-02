@@ -98,6 +98,7 @@
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-person text-danger"></i> About Us</a></li>
             <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-geo-alt text-danger"></i> Our Cities</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chat-left-quote text-danger"></i> Testimonials</a></li>
+            <li><a href="<?= site_url('photo-gallery') ?>"><i class="bi bi-images text-danger"></i> Photo Gallery</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-file-earmark-text text-danger"></i> Blog</a></li>
             <li><a href="<?= site_url('reviews') ?>"><i class="bi bi-chat-left-heart text-danger"></i> Reviews</a></li>
             <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-telephone text-danger"></i> Contact Us</a></li>
