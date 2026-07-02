@@ -83,3 +83,171 @@
 .contact-tracking-success { color: green; }
 .contact-tracking-link { background-color: #28a745; padding: 4px; color: #fff; }
 .contact-tracking-underline { text-decoration: underline; }
+
+/* Contact Page Premium Upgrades */
+.contact-office-card {
+    transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
+    border: 1px solid var(--border-color) !important;
+    border-left: 5px solid var(--primary-red) !important;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px !important;
+}
+
+.contact-office-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(214, 9, 18, 0.08) !important;
+    border-color: var(--primary-red) !important;
+}
+
+.contact-circle-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background-color: color-mix(in srgb, var(--primary-red) 8%, transparent);
+    color: var(--primary-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 10px rgba(214, 9, 18, 0.04);
+}
+
+.contact-office-card:hover .contact-circle-icon {
+    background-color: var(--primary-red);
+    color: var(--white);
+    transform: scale(1.1) rotate(-8deg);
+    box-shadow: 0 8px 20px rgba(214, 9, 18, 0.2);
+}
+
+.contact-office-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.contact-office-badge-head {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+.contact-office-badge-branch {
+    background-color: var(--text-dark);
+    color: var(--white);
+}
+
+.contact-office-name {
+    font-weight: 800;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.contact-office-details p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-office-details p i {
+    font-size: 1.1rem;
+    margin-top: 2px;
+    transition: transform 0.3s ease;
+}
+
+.contact-office-card:hover .contact-office-details p i {
+    transform: scale(1.2);
+}
+
+.contact-office-details a {
+    color: var(--text-dark);
+    transition: color 0.2s ease;
+}
+
+.contact-office-details a:hover {
+    color: var(--primary-red) !important;
+    text-decoration: underline;
+}
+
+.contact-modern-form-card {
+    background-color: var(--white);
+    border: 1px solid var(--border-color) !important;
+}
+
+.contact-custom-input-group {
+    display: flex;
+    align-items: stretch;
+    border: 1.5px solid var(--border-color);
+    border-radius: 14px;
+    background-color: #fafbfc;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+.contact-custom-input-group .input-group-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 12px;
+    color: #64748b;
+    font-size: 1.15rem;
+    transition: color 0.3s ease;
+}
+
+.contact-custom-input-group .form-control {
+    border: none !important;
+    background: transparent !important;
+    padding: 14px 18px 14px 0 !important;
+    font-size: 0.95rem;
+    box-shadow: none !important;
+    color: var(--text-dark);
+}
+
+.contact-custom-input-group:focus-within {
+    border-color: var(--primary-red);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary-red) 12%, transparent);
+}
+.contact-custom-input-group:focus-within .input-group-icon {
+    color: var(--primary-red);
+}
+
+.contact-custom-input-group.align-items-start .input-group-icon {
+    padding-top: 15px;
+    align-items: flex-start;
+}
+
+.contact-submit-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color: var(--primary-red) !important;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+}
+
+.contact-submit-btn i {
+    display: inline-block;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: var(--primary-red-hover) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(214, 9, 18, 0.2) !important;
+}
+
+.contact-submit-btn:hover i {
+    transform: translate(6px, -4px) scale(1.05);
+}
+
