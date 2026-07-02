@@ -52,19 +52,19 @@
                 <div class="btn-cta-branch call-indore">
                     <span class="btn-branch-label">Call Indore Office</span>
                     <div class="d-flex flex-row flex-wrap justify-content-center align-items-center gap-2 mt-1">
-                        <a href="<?= !empty($indore_phonehtml) ? $indore_phonehtml : 'tel:+919893701992' ?>" class="btn-branch-num">
-                            <i class="bi bi-telephone-fill"></i> <?= !empty($indore_phone) ? $indore_phone : '+91 98937 01992' ?>
-                        </a>
-                        <span style="color: rgba(255,255,255,0.45); font-weight: 500;">|</span>
-                        <a href="<?= !empty($indore_phonehtml1) ? $indore_phonehtml1 : 'tel:+919111111593' ?>" class="btn-branch-num">
-                            <?= !empty($indore_phone1) ? $indore_phone1 : '+91 91111 11593' ?>
+                        <a href="<?= $indore_phonehtml ?>" class="btn-branch-num">
+                            <i class="bi bi-telephone-fill"></i> <?= $indore_phone ?>
+                        </a>   
+                        <span class="cta-btn-separator">|</span>
+                        <a href="<?= $indore_phonehtml1 ?>" class="btn-branch-num">
+                            <?= $indore_phone1 ?>
                         </a>
                     </div>
                 </div>
                 
-                <a href="tel:+919713314455" class="btn-cta-branch call-bhopal">
+                <a href="<?= $bhopal_phonehtml ?>" class="btn-cta-branch call-bhopal">
                     <span class="btn-branch-label">Call Bhopal Office</span>
-                    <span class="btn-branch-num"><i class="bi bi-telephone-fill"></i> +91 97133 14455</span>
+                    <span class="btn-branch-num"><i class="bi bi-telephone-fill"></i> <?= $bhopal_phone ?></span>
                 </a>
                 
                 <div class="cta-secondary-row d-flex gap-2">

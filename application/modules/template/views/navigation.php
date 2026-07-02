@@ -43,8 +43,8 @@
           </div>
           <div class="header-phone-text">
             <span>Call Us Anytime</span>
-            <a href="tel:<?= !empty($indore_phonehtml) ? str_replace('tel:', '', $indore_phonehtml) : '+919893701992' ?>">
-              <?= !empty($indore_phone) ? $indore_phone : '+91 98937 01992' ?>
+            <a href="<?= $indore_phonehtml ?>">
+              <?= $indore_phone ?>
             </a>
           </div>
         </div>
