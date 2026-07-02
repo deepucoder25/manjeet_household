@@ -132,7 +132,7 @@
           </div>
           <ul class="mega-links-list">
             <li><a href="<?= site_url('about-us') ?>"><i class="bi bi-person"></i> About Us</a></li>
-            <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-geo-alt"></i> Our Cities</a></li>
+            <li><a href="<?= site_url('our-branches') ?>"><i class="bi bi-geo-alt"></i> Our Branches</a></li>
             <li><a href="<?= site_url('testimonials') ?>"><i class="bi bi-chat-left-quote"></i> Testimonials</a></li>
             <li><a href="<?= site_url('photo-gallery') ?>"><i class="bi bi-images"></i> Photo Gallery</a></li>
             <li><a href="<?= site_url('blog') ?>"><i class="bi bi-file-earmark-text"></i> Blog</a></li>
