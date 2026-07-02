@@ -73,7 +73,7 @@
               <div class="stats-icon"><i class="bi bi-geo-alt"></i></div>
               <div class="stats-text">
                 <strong><?= $statesCovered ?></strong>
-                <span>statesCovered Covered</span>
+                <span>States Covered</span>
               </div>
             </div>
             <div class="stats-bar-item">

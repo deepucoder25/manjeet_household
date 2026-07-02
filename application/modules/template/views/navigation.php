@@ -25,7 +25,7 @@
   ?>
 
   <?php
-  $is_home = (empty($segment1) || $segment1 === 'home' || $class === 'home');
+  $is_home = (empty($segment1) || $segment1 === 'home' || $class === 'home' || ($class === 'packers_movers' && $method === 'city'));
   ?>
 
   <header class="main-header <?= $is_home ? 'header-on-slider' : '' ?>" id="mainHeader">

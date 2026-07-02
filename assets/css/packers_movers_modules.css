@@ -152,6 +152,24 @@
     }
 }
 
+/* City slider top padding offset compensation */
+@media (min-width: 992px) {
+    .pm-city-slider-hero {
+        padding-top: 100px !important;
+    }
+}
+@media (max-width: 991px) {
+    .pm-city-slider-hero {
+        padding-top: 80px !important;
+        background-size: 100% 720px !important;
+    }
+}
+@media (max-width: 767px) {
+    .pm-city-slider-hero {
+        background-size: 100% 770px !important;
+    }
+}
+
 /* states.php Modern Redesign */
 .pm-states-section {
     background-color: #f8fafc;
@@ -331,7 +349,49 @@
 .pm-city-srv-link:hover { color: #073c91; text-decoration: underline; }
 
 /* city_page_design/city_slider.php */
-.pm-city-slider-nav { margin-bottom: 0.5rem; }
+.pm-city-slider-nav {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 6px 16px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+}
+.pm-bc-icon {
+    color: var(--primary-red);
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+}
+.pm-city-slider-nav a,
+.pm-city-slider-nav span:not(.bc-sep):not(.bc-current) {
+    color: #334155 !important;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+    transition: color 0.25s ease;
+    letter-spacing: 0.2px;
+}
+.pm-city-slider-nav a:hover {
+    color: var(--primary-red) !important;
+}
+.pm-city-slider-nav .bc-sep {
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 500;
+}
+.pm-city-slider-nav .bc-current {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--primary-red);
+    letter-spacing: 0.2px;
+}
 .pm-city-slider { min-height: auto; background-size: cover; background-position: center; background-repeat: no-repeat; color: var(--white); position: relative; overflow: hidden; }
 @media (max-width: 991px) { .pm-city-slider { min-height: auto; background-position: 80% top; } }
 

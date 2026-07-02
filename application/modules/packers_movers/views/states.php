@@ -20,7 +20,7 @@ $state = [
             </h2>
             <div class="pm-states-divider mx-auto my-3"></div>
             <p class="text-muted col-lg-6 mx-auto mb-0">
-                Manjeet Household Packers and Movers offers reliable, safe, and professional shifting services across major cities and states. Select a state to view local branches.
+                <?= $company3 ?> offers reliable, safe, and professional shifting services across major cities and states. Select a state to view local branches.
             </p>
         </div>
 
