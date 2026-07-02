@@ -234,7 +234,14 @@
     }
 }
 
-
+.service-details-section {
+    padding-top: 60px;
+}
+@media (max-width: 768px) {
+    .service-details-section {
+        padding-top: 40px;
+    }
+}
 
 /* 2. Main Layout Grid */
 .service-main-content {
@@ -279,7 +286,7 @@
 /* 3. Reusable Sidebar Widget */
 .service-sidebar {
     position: sticky;
-    top: 100px;
+    top: 120px;
     z-index: 10;
 }
 .sidebar-widget {
@@ -362,6 +369,84 @@
     transition: color 0.3s;
 }
 
+/* New Modern 2-Column Sidebar Layout */
+.sidebar-widget-header-new {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 15px;
+}
+.sidebar-header-icon-wrap {
+    font-size: 26px;
+    color: var(--primary-red);
+    line-height: 1;
+}
+.sidebar-widget-title-new {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.sidebar-widget-subtitle-new {
+    font-size: 13px;
+}
+.sidebar-services-list-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+.sidebar-services-list-new li {
+    margin-bottom: 0;
+}
+.sidebar-service-link-new {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background-color: var(--white);
+    border: 1.5px solid var(--border-color);
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 13.5px;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sidebar-service-link-new .service-icon {
+    color: var(--primary-red);
+    font-size: 17px;
+    flex-shrink: 0;
+    transition: color 0.25s ease;
+}
+.sidebar-service-link-new .service-name {
+    line-height: 1.2;
+}
+.sidebar-service-link-new:hover {
+    border-color: var(--primary-red);
+    color: var(--primary-red);
+    background-color: rgba(214, 9, 18, 0.04);
+}
+.sidebar-service-link-new.active {
+    background-color: var(--primary-red);
+    border-color: var(--primary-red);
+    color: var(--white) !important;
+}
+.sidebar-service-link-new.active .service-icon {
+    color: var(--white) !important;
+}
+
+@media (max-width: 991px) {
+    .sidebar-services-list-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) {
+    .sidebar-services-list-new {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 /* Contact CTA Sidebar Card */
 .widget-contact-cta {
     background: linear-gradient(135deg, #0a4ebd 0%, #001846 100%);
@@ -443,21 +528,152 @@
     transform: translateY(-2px);
 }
 
-/* Trusted Checklist */
-.widget-trusted-badges .widget-sub-title {
-    font-size: 1.15rem;
+/* Trusted Checklist Redesign - Timeline Style matching user screenshot */
+.widget-trusted-badges {
+    background: var(--white) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 24px !important;
+    padding: 30px 24px 24px 24px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02) !important;
+    text-align: left !important;
+}
+
+.widget-trusted-badges .timeline-header {
+    margin-bottom: 24px;
+}
+
+.widget-trusted-badges .timeline-eyebrow {
+    font-size: 20px;
     font-weight: 800;
-    color: #001846;
+    color: var(--text-dark); /* Brand text color */
+    display: block;
+    line-height: 1.2;
 }
-.trusted-points-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+.widget-trusted-badges .timeline-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-red); /* Brand Red variable */
+    margin: 4px 0 0 0;
+    line-height: 1.25;
 }
-.trusted-points-list strong {
-    color: #001846;
+
+.widget-trusted-badges .timeline-title-underline {
+    width: 45px;
+    height: 3px;
+    background-color: var(--primary-red); /* Brand Red variable */
+    border-radius: 2px;
+    margin-top: 12px;
+}
+
+.widget-trusted-badges .timeline-container {
+    position: relative;
+}
+
+.widget-trusted-badges .timeline-line {
+    position: absolute;
+    left: 11px; /* Centered under the 24px dot container */
+    top: 36px; /* Starts at center of first dot */
+    bottom: 36px; /* Ends at center of last dot */
+    width: 2px;
+    background-color: #f7dcd5; /* Fallback light red line */
+    background-color: color-mix(in srgb, var(--primary-red) 20%, var(--white)); /* Light red line variable */
+    z-index: 1;
+}
+
+.widget-trusted-badges .timeline-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.widget-trusted-badges .timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.widget-trusted-badges .timeline-dot-container {
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.widget-trusted-badges .timeline-dot {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-red); /* Brand Red variable */
+    border-radius: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-trusted-badges .timeline-dot-inner {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-red); /* Brand Red variable */
+}
+
+.widget-trusted-badges .timeline-card {
+    background-color: #faf2f1; /* Fallback light brand background */
+    background-color: color-mix(in srgb, var(--primary-red) 5%, var(--white)); /* Light pastel red tint variable */
+    border-radius: 20px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-grow: 1;
+    border: 1px solid #f5e4e2; /* Fallback border */
+    border: 1px solid color-mix(in srgb, var(--primary-red) 8%, var(--white));
+    transition: all 0.3s ease;
+}
+
+.widget-trusted-badges .timeline-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(214, 9, 18, 0.08);
+    background-color: #f6e6e3; /* Fallback hover background */
+    background-color: color-mix(in srgb, var(--primary-red) 10%, var(--white)); /* Slightly darker red tint on hover */
+}
+
+.widget-trusted-badges .timeline-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-red); /* Solid red circle */
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+.widget-trusted-badges .timeline-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-trusted-badges .timeline-item-title {
     font-size: 14px;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.3;
+    margin-bottom: 2px;
 }
+
+.widget-trusted-badges .timeline-item-desc {
+    font-size: 12px;
+    color: #555873;
+    line-height: 1.3;
+}
+
 
 /* 4. Process Timeline Shifting */
 .process-timeline {
@@ -655,11 +871,218 @@
     .service-breadcrumbs h1 {
         font-size: 2rem;
     }
-    .service-main-content {
-        padding: 20px;
-    }
     .service-sidebar {
         margin-top: 30px;
         position: static;
     }
 }
+
+/* Premium Outbound Call CTA Widget Style */
+.widget-contact-cta-new {
+    background-color: var(--white);
+    border: 1.5px solid var(--border-color);
+    border-radius: 24px;
+    padding: 30px 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+}
+.cta-inner-card-new {
+    position: relative;
+    z-index: 2;
+}
+.cta-icon-box-new {
+    width: 68px;
+    height: 68px;
+    background: rgba(214, 9, 18, 0.05);
+    border: 1.5px solid rgba(214, 9, 18, 0.15);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: var(--primary-red);
+    box-shadow: 0 4px 10px rgba(214, 9, 18, 0.08);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.widget-contact-cta-new:hover .cta-icon-box-new {
+    transform: scale(1.08) rotate(5deg);
+    background: rgba(214, 9, 18, 0.1);
+    border-color: rgba(214, 9, 18, 0.3);
+    box-shadow: 0 6px 15px rgba(214, 9, 18, 0.15);
+}
+.cta-title-new {
+    color: var(--text-dark);
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+.cta-desc-new {
+    color: #556275;
+    font-size: 13.5px;
+    margin-bottom: 24px;
+    line-height: 1.45;
+}
+.cta-buttons-new {
+    margin-top: 10px;
+}
+.btn-cta-branch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 14px;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+/* Shimmer sweep effect */
+.btn-cta-branch::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.35) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: shimmerSweep 3.5s infinite ease-in-out;
+    pointer-events: none;
+}
+.btn-branch-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    opacity: 0.95;
+    margin-bottom: 1px;
+    position: relative;
+    z-index: 2;
+}
+.btn-branch-num {
+    font-size: 14.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    z-index: 2;
+}
+a.btn-branch-num {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+a.btn-branch-num:hover {
+    opacity: 0.85;
+    text-decoration: underline;
+    transform: scale(1.03);
+}
+/* Telephone icon shake animation */
+.btn-cta-branch .bi-telephone-fill {
+    display: inline-block;
+    animation: phoneWiggle 3.5s infinite ease-in-out;
+}
+
+.call-indore {
+    background: linear-gradient(135deg, #ff9f1c 0%, #ff5200 50%, #d60912 100%);
+    color: var(--white);
+    animation: pulse-indore 3s infinite ease-in-out;
+}
+.call-indore:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 25px rgba(255, 82, 0, 0.5);
+}
+.call-bhopal {
+    background: linear-gradient(135deg, #ff3b43 0%, var(--primary-red) 50%, var(--primary-red-hover) 100%);
+    color: var(--white);
+    animation: pulse-bhopal 3s infinite ease-in-out;
+}
+.call-bhopal:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 25px rgba(214, 9, 18, 0.5);
+}
+
+/* Animations */
+@keyframes shimmerSweep {
+    0% { left: -150%; }
+    40%, 100% { left: 150%; }
+}
+@keyframes phoneWiggle {
+    0%, 75%, 100% { transform: scale(1) rotate(0deg); }
+    80% { transform: scale(1.15) rotate(-15deg); }
+    85% { transform: scale(1.15) rotate(15deg); }
+    90% { transform: scale(1.15) rotate(-15deg); }
+    95% { transform: scale(1.15) rotate(15deg); }
+}
+@keyframes pulse-indore {
+    0% {
+        box-shadow: 0 4px 15px rgba(255, 82, 0, 0.25), 0 0 0 0 rgba(255, 82, 0, 0.5);
+    }
+    70% {
+        box-shadow: 0 4px 15px rgba(255, 82, 0, 0.25), 0 0 0 10px rgba(255, 82, 0, 0);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(255, 82, 0, 0.25), 0 0 0 0 rgba(255, 82, 0, 0);
+    }
+}
+@keyframes pulse-bhopal {
+    0% {
+        box-shadow: 0 4px 15px rgba(214, 9, 18, 0.25), 0 0 0 0 rgba(214, 9, 18, 0.5);
+    }
+    70% {
+        box-shadow: 0 4px 15px rgba(214, 9, 18, 0.25), 0 0 0 10px rgba(214, 9, 18, 0);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(214, 9, 18, 0.25), 0 0 0 0 rgba(214, 9, 18, 0);
+    }
+}
+.cta-secondary-row {
+    margin-top: 4px;
+}
+.btn-cta-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    border-radius: 12px;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.whatsapp-action {
+    background-color: #25d366;
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+.whatsapp-action:hover {
+    background-color: #20ba5a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(37, 211, 102, 0.4);
+}
+.quote-action {
+    background-color: var(--primary-red);
+    border: 1.5px solid var(--primary-red);
+    color: var(--white);
+    box-shadow: 0 4px 12px rgba(214, 9, 18, 0.2);
+}
+.quote-action:hover {
+    background-color: var(--primary-red-hover);
+    border-color: var(--primary-red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(214, 9, 18, 0.4);
+}
+

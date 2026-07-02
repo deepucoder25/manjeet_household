@@ -56,36 +56,88 @@
 
     <!-- Trusted Badge Widget -->
     <div class="sidebar-widget widget-trusted-badges">
-        <h4 class="widget-sub-title mb-3">Why Choose <?= $company3 ?> in <?= $city ?>?</h4>
-        <ul class="trusted-points-list">
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-patch-check-fill text-success mt-1"></i>
-                <div>
-                    <strong><?= $yearsExperience ?> Years Experience</strong>
-                    <p class="m-0 text-muted small">Relocating since <?= $startYear ?>.</p>
+        <div class="timeline-header">
+            <span class="timeline-eyebrow">Why Choose</span>
+            <h4 class="timeline-title"><?= $company3 ?> in <?= $city ?>?</h4>
+            <div class="timeline-title-underline"></div>
+        </div>
+        
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            
+            <div class="timeline-items">
+                <!-- Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot">
+                            <span class="timeline-dot-inner"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-icon-box">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <strong class="timeline-item-title"><?= $yearsExperience ?> Years Experience</strong>
+                            <span class="timeline-item-desc">Relocating since <?= $startYear ?>.</span>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-people-fill text-primary mt-1"></i>
-                <div>
-                    <strong><?= $happyClients ?> Happy Clients</strong>
-                    <p class="m-0 text-muted small">Trusted by families and businesses.</p>
+
+                <!-- Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot">
+                            <span class="timeline-dot-inner"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-icon-box">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <strong class="timeline-item-title"><?= $happyClients ?> Happy Clients</strong>
+                            <span class="timeline-item-desc">Trusted by families and businesses.</span>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="d-flex align-items-start gap-2 mb-3">
-                <i class="bi bi-shield-check text-warning mt-1"></i>
-                <div>
-                    <strong>Verified &amp; Licensed</strong>
-                    <p class="m-0 text-muted small">ISO certified packers and movers.</p>
+
+                <!-- Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot">
+                            <span class="timeline-dot-inner"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-icon-box">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <strong class="timeline-item-title">Verified &amp; Licensed</strong>
+                            <span class="timeline-item-desc">ISO certified packers and movers.</span>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li class="d-flex align-items-start gap-2">
-                <i class="bi bi-file-earmark-lock-fill text-danger mt-1"></i>
-                <div>
-                    <strong><?= $secureShifting ?> Secure Shifting</strong>
-                    <p class="m-0 text-muted small">Complete transit insurance options.</p>
+
+                <!-- Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot-container">
+                        <div class="timeline-dot">
+                            <span class="timeline-dot-inner"></span>
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-icon-box">
+                            <i class="bi bi-lock-fill"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <strong class="timeline-item-title"><?= $secureShifting ?> Secure Shifting</strong>
+                            <span class="timeline-item-desc">Complete transit insurance options.</span>
+                        </div>
+                    </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </aside>
