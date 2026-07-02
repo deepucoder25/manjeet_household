@@ -144,33 +144,7 @@
   </div>
 </section>
 
-<!-- Mobile Trust Badge Bar (Mobile Only, Outside the Card) -->
-<div class="mobile-trust-bar d-flex d-lg-none py-3 bg-white border-bottom">
-  <div class="container-fluid px-1">
-    <div class="row g-0 justify-content-center align-items-stretch">
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-shield-check trust-icon mb-2"></i>
-        <strong>100% Secure</strong>
-        <span>Your data is safe with us</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-clock trust-icon mb-2"></i>
-        <strong>Quick Response</strong>
-        <span>We respond within 15 mins</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-currency-rupee trust-icon-circle mb-2"></i>
-        <strong>Best Price Guarantee</strong>
-        <span>Get the most competitive rates</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-headset trust-icon mb-2"></i>
-        <strong>24/7 Support</strong>
-        <span>We are here to help</span>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 

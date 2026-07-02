@@ -1,37 +1,147 @@
-    <!-- FAQ Section -->
-        <div class="city-content-card mt-4">
-          <h3 class="city-section-title-sm"><i class="bi bi-patch-question me-2"></i>Frequently Asked Questions — Packers & Movers in <?= $city ?></h3>
-          <div class="city-faq-list mt-3" id="cityFaqAccordion">
-            <?php
-            $faqs = [
-              ["q" => "How early should I book shifting services in $city?",
-               "a" => "Booking at least 5–7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
-              ["q" => "Do you provide packing materials?",
-               "a" => "Yes. Cartons, wrapping sheets, bubble rolls, and protective materials are included based on service type."],
-              ["q" => "Can I move only a few household items?",
-               "a" => "Absolutely. Small shifting requests and part-load transportation are available in $city."],
-              ["q" => "Are goods insured during relocation?",
-               "a" => "Insurance options are available for long-distance and valuable-item transportation."],
-              ["q" => "Do you handle local office shifts in $city?",
-               "a" => "Yes, including workstation packing, file movement, and electronic equipment relocation."],
-              ["q" => "What is the cost of packers and movers in $city?",
-               "a" => "Cost depends on distance, volume of goods, floor, and service type. Contact us for a free detailed quote."],
-            ];
-            foreach ($faqs as $i => $faq):
-            ?>
-            <div class="city-faq-item">
-              <button class="city-faq-btn <?= $i === 0 ? 'active' : '' ?>" type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#cfaq<?= $i ?>"
-                      aria-expanded="<?= $i === 0 ? 'true' : 'false' ?>">
-                <i class="bi bi-patch-question-fill faq-q-icon"></i>
-                <span><?= $faq['q'] ?></span>
-                <i class="bi bi-chevron-down faq-chevron"></i>
-              </button>
-              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>">
-                <div class="city-faq-body"><?= $faq['a'] ?></div>
-              </div>
-            </div>
-            <?php endforeach; ?>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+<?php
+$faqs = [
+  ["q" => "How early should I book shifting services in $city?",
+   "a" => "Booking at least 5–7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
+  ["q" => "Do you provide packing materials?",
+   "a" => "Yes. Cartons, wrapping sheets, bubble rolls, and protective materials are included based on service type."],
+  ["q" => "Can I move only a few household items?",
+   "a" => "Absolutely. Small shifting requests and part-load transportation are available in $city."],
+  ["q" => "Are goods insured during relocation?",
+   "a" => "Insurance options are available for long-distance and valuable-item transportation."],
+  ["q" => "Do you handle local office shifts in $city?",
+   "a" => "Yes, including workstation packing, file movement, and electronic equipment relocation."],
+  ["q" => "What is the cost of packers and movers in $city?",
+   "a" => "Cost depends on distance, volume of goods, floor, and service type. Contact us for a free detailed quote."],
+];
+?>
+
+<!-- FAQ Standalone Container -->
+<div class="container my-5 pm-faq-bootstrap-container">
+  <div class="pm-city-faqs-card bg-white rounded-4 p-4 p-md-5 border border-light shadow-sm">
+    
+    <!-- Header -->
+    <div class="pm-faq-header text-center mb-5">
+      <span class="pm-faq-badge">— FAQS —</span>
+      <h2 class="pm-faq-title fw-bold mt-2">
+        FREQUENTLY ASKED <span class="text-danger">QUESTIONS</span>
+      </h2>
+      <p class="text-muted col-lg-7 mx-auto mb-0">
+        Find answers to common questions about our moving services, process, and policies in <?= htmlspecialchars($city) ?>.
+      </p>
+    </div>
+
+    <!-- Content split row -->
+    <div class="row align-items-start">
+      
+      <!-- Left help card -->
+      <div class="col-lg-4">
+        <div class="pm-faq-help-card rounded-4 p-4 text-center bg-white border shadow-sm">
+          <div class="pm-faq-help-icon mb-3 mx-auto d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-question-circle"></i>
+          </div>
+          <h4 class="fw-bold mb-2 text-dark">Still Have Questions?</h4>
+          <p class="text-danger fw-bold mb-3">We're Here to Help!</p>
+          <div class="pm-faq-card-divider mx-auto my-3"></div>
+          <p class="text-muted small mb-4">Our support team is ready to assist you with any relocation queries you may have.</p>
+          <div class="d-flex flex-column gap-3 pm-faq-phone-list">
+            <!-- Bhopal Phone -->
+            <?php if (!empty($bhopal_phone)): ?>
+              <a href="<?= $bhopal_phonehtml ?>" class="btn btn-danger py-2 rounded-3 text-white fw-bold d-flex flex-column align-items-center justify-content-center pm-faq-call-btn pm-faq-item-button-border-none">
+                <small class="text-white-50 mb-1 pm-faq-call-btn-label">Bhopal Office</small>
+                <span class="pm-faq-call-btn-phone"><?= $bhopal_phone ?></span>
+              </a>
+            <?php endif; ?>
+
+            <!-- Indore Phone -->
+            <?php if (!empty($indore_phone)): ?>
+              <a href="<?= $indore_phonehtml ?>" class="btn btn-danger py-2 rounded-3 text-white fw-bold d-flex flex-column align-items-center justify-content-center pm-faq-call-btn pm-faq-item-button-border-none">
+                <small class="text-white-50 mb-1 pm-faq-call-btn-label">Indore Office</small>
+                <span class="pm-faq-call-btn-phone"><?= $indore_phone ?></span>
+              </a>
+            <?php endif; ?>
+
+            <!-- Indore Support -->
+            <?php if (!empty($indore_phone1)): ?>
+              <a href="<?= $indore_phonehtml1 ?>" class="btn btn-danger py-2 rounded-3 text-white fw-bold d-flex flex-column align-items-center justify-content-center pm-faq-call-btn pm-faq-item-button-border-none">
+                <small class="text-white-50 mb-1 pm-faq-call-btn-label">Indore Support</small>
+                <span class="pm-faq-call-btn-phone"><?= $indore_phone1 ?></span>
+              </a>
+            <?php endif; ?>
           </div>
         </div>
+      </div>
+
+      <!-- Right accordion list -->
+      <div class="col-lg-8">
+        <div class="accordion pm-faq-accordion" id="cityFaqAccordion">
+          <?php foreach ($faqs as $i => $faq): ?>
+            <div class="pm-faq-item mb-3 bg-white rounded-3 shadow-sm border border-light">
+              <button class="pm-faq-btn w-100 text-start d-flex align-items-center justify-content-between p-3 border-0 bg-transparent <?= $i === 0 ? '' : 'collapsed' ?>" 
+                      type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#cfaq<?= $i ?>" 
+                      aria-expanded="<?= $i === 0 ? 'true' : 'false' ?>">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="pm-faq-number fw-bold text-danger pm-faq-number-font-sz"><?= sprintf("%02d", $i + 1) ?></span>
+                  <span class="pm-faq-divider pm-faq-item-divider"></span>
+                  <span class="pm-faq-question fw-bold text-dark pm-faq-question-font-sz"><?= htmlspecialchars($faq['q']) ?></span>
+                </div>
+                <div class="pm-faq-arrow-icon">
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </button>
+              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>" data-bs-parent="#cityFaqAccordion">
+                <div class="pm-faq-body p-3 pt-0 text-muted pm-faq-body-padding-override">
+                  <?= htmlspecialchars($faq['a']) ?>
+                </div>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+
+    <!-- Bottom trust bar -->
+    <div class="pm-faq-trust-bar row mt-5 pt-4 border-top text-center justify-content-center">
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="pm-faq-trust-item">
+          <i class="bi bi-shield-fill-check text-danger mb-2 fs-4"></i>
+          <h5 class="fw-bold fs-6 mb-1 text-dark">Safe & Secure</h5>
+          <p class="text-muted small mb-0">We handle your belongings with utmost care.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="pm-faq-trust-item">
+          <i class="bi bi-clock-fill text-danger mb-2 fs-4"></i>
+          <h5 class="fw-bold fs-6 mb-1 text-dark">On-Time Delivery</h5>
+          <p class="text-muted small mb-0">We value your time and deliver on schedule.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="pm-faq-trust-item">
+          <i class="bi bi-box-seam-fill text-danger mb-2 fs-4"></i>
+          <h5 class="fw-bold fs-6 mb-1 text-dark">Quality Packing</h5>
+          <p class="text-muted small mb-0">We use premium durable materials.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="pm-faq-trust-item">
+          <i class="bi bi-globe text-danger mb-2 fs-4"></i>
+          <h5 class="fw-bold fs-6 mb-1 text-dark">Pan India Service</h5>
+          <p class="text-muted small mb-0">Nationwide presence, local expertise.</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2-4">
+        <div class="pm-faq-trust-item">
+          <i class="bi bi-headset text-danger mb-2 fs-4"></i>
+          <h5 class="fw-bold fs-6 mb-1 text-dark">24/7 Support</h5>
+          <p class="text-muted small mb-0">We are always available whenever you need.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
