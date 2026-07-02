@@ -13,9 +13,9 @@
 
                         <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
                             <?php 
-                            $image_path = FCPATH . 'uploads/blogs/' . @$query[0]->image;
+                            $image_path = FCPATH . 'assets/uploads/blog/' . @$query[0]->image;
                             if (@$query[0]->image && file_exists($image_path)): ?>
-                                <img src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
+                                <img src="<?= base_url('assets/uploads/blog/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
                             <?php else: ?>
                                 <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
                             <?php endif; ?>
@@ -49,8 +49,8 @@
                                     <?php foreach ($recent_posts as $post_arr): $post = (object)$post_arr; ?>
                                         <?php
                                         $image_file = $post->image;
-                                        $full_path = FCPATH . 'uploads/blogs/' . $image_file;
-                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('uploads/blogs/' . $image_file) : base_url('assets/images/about/packers_movers.jpg');
+                                        $full_path = FCPATH . 'assets/uploads/blog/' . $image_file;
+                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('assets/uploads/blog/' . $image_file) : base_url('assets/images/about/packers_movers.jpg');
                                         $custom_slug = !empty($post->slug) ? $post->slug : rtrim(str_replace("--", "-", urlencode(str_replace(" ", "-", str_replace(",", " ", $post->title)))), "-");
                                         ?>
                                         <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item blog-post-link-item">

@@ -14,9 +14,35 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
-        $path = FCPATH . 'admin_data/blogs.json';
-        if (!file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?: [];
+        $this->load->database();
+        // Query active blogs from the database
+        $this->db->where('status', 1);
+        $this->db->order_by('b_id', 'asc'); // Keep asc because the caller array_reverse()s them to show newest first
+        $query = $this->db->get('blog');
+        $blogs = [];
+        if ($query) {
+            foreach ($query->result_array() as $row) {
+                $blogs[] = array(
+                    'id' => (int) $row['b_id'],
+                    'title' => $row['title'],
+                    'slug' => $row['slug'],
+                    'date' => $row['date'],
+                    'time' => $row['time'],
+                    'author' => $row['author'],
+                    'image' => $row['image'],
+                    'status' => (int) $row['status'],
+                    'description' => $row['description'],
+                    'content' => $row['description'],
+                    'tags' => $row['tags'],
+                    'meta_title' => $row['meta_title'],
+                    'meta_desc' => $row['meta_desc'],
+                    'views' => (int) $row['views'],
+                    'main_title' => $row['main_title'],
+                    'created_at' => $row['timestamp']
+                );
+            }
+        }
+        return $blogs;
     }
 
     function index() {
@@ -102,7 +128,7 @@ class Blog extends MX_Controller {
             $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
             
             $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $data['img'] = ($image_file && file_exists(FCPATH . 'assets/uploads/blog/' . $image_file)) ? base_url('assets/uploads/blog/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 
