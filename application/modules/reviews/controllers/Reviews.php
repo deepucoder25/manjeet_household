@@ -1,65 +1,147 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+
 class Reviews extends MX_Controller
 {
     public function __construct()
     {
         parent::__construct();
+        $this->load->database();
         $this->load->library('session');
         $this->load->helper('url');
-    }
-
-    private function loadReviews() {
-        $path = FCPATH . 'admin_data/reviews.json';
-        if (!file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?: [];
-    }
-
-    private function saveReviews($reviews) {
-        $path = FCPATH . 'admin_data/reviews.json';
-        file_put_contents($path, json_encode($reviews, JSON_PRETTY_PRINT));
+        $this->load->model('ReviewMdl');
     }
 
     function index()
     {
-        $reviews = $this->loadReviews();
+        $this->load->library('pagination');
         
         // Filter by star rating if requested
         $star_filter = $this->input->get('star');
+        
+        // Count total active reviews
+        $this->db->where('status', 1);
         if ($star_filter) {
-            $reviews = array_filter($reviews, function($r) use ($star_filter) {
-                return ($r['rating'] ?? 5) == $star_filter;
-            });
+            $this->db->where('stars', $star_filter);
         }
-
-        // Show only 'show' status
-        $data['reviews'] = array_filter($reviews, function($r) {
-            return ($r['status'] ?? 'show') === 'show';
-        });
+        $total_rows = $this->db->count_all_results('reviews');
+        
+        $config['base_url'] = site_url('reviews');
+        $config['total_rows'] = $total_rows;
+        $config['per_page'] = 10;
+        $config['uri_segment'] = 2;
+        $config['reuse_query_string'] = TRUE;
+        
+        // Bootstrap pagination styling
+        $config['full_tag_open'] = '<ul class="pagination pagination-sm m-0">';
+        $config['full_tag_close'] = '</ul>';
+        $config['num_tag_open'] = '<li class="page-item">';
+        $config['num_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li class="page-item active"><span class="page-link">';
+        $config['cur_tag_close'] = '</span></li>';
+        $config['next_tag_open'] = '<li class="page-item">';
+        $config['next_tag_close'] = '</li>';
+        $config['prev_tag_open'] = '<li class="page-item">';
+        $config['prev_tag_close'] = '</li>';
+        $config['first_tag_open'] = '<li class="page-item">';
+        $config['first_tag_close'] = '</li>';
+        $config['last_tag_open'] = '<li class="page-item">';
+        $config['last_tag_close'] = '</li>';
+        $config['attributes'] = array('class' => 'page-link');
+        
+        $this->pagination->initialize($config);
+        
+        $page = ($this->uri->segment(2)) ? $this->uri->segment(2) : 0;
+        
+        $this->db->where('status', 1);
+        if ($star_filter) {
+            $this->db->where('stars', $star_filter);
+        }
+        $this->db->order_by('r_id', 'desc');
+        $this->db->limit($config['per_page'], $page);
+        $data['reviews'] = $this->db->get('reviews');
         
         $data['title'] = "Customer Reviews & Ratings | " . $this->comp['company3'];
         $data['description'] = "Detailed feedback and ratings from our satisfied clients. Read real reviews about our relocation services at " . $this->comp['company3'] . ".";
-        $data['module'] = "about";
+        $data['module'] = "reviews";
         $data['view_file'] = "reviews";
         echo Modules::run('template/layout2', $data);
     }
 
-    function submit() {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $reviews = $this->loadReviews();
+    // Handles AJAX review posting from modal
+    function review()
+    {
+        if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            $name = $this->input->post('name');
+            $email = $this->input->post('email');
+            $title = $this->input->post('title');
+            $stars = (int) $this->input->post('stars');
+            $r_desc = $this->input->post('desc');
             
-            $new_review = [
-                "id" => time(),
-                "name" => $this->input->post('name'),
-                "city" => $this->input->post('city'),
-                "rating" => (int) $this->input->post('rating'),
-                "review" => $this->input->post('review'),
-                "status" => "hide", // Pending approval
-                "created_at" => date('Y-m-d H:i:s')
+            if (empty($name) || empty($email) || empty($r_desc)) {
+                $response = ['err' => 1, 'msg' => 'Please fill in all required fields (Name, Email, and Experience).'];
+                $this->output->set_content_type('application/json')->set_output(json_encode($response));
+                return;
+            }
+            
+            // Handle optional image upload
+            $r_img = '';
+            if (isset($_FILES['img']) && !empty($_FILES['img']['name'])) {
+                $upload_path = './assets/images/reviews/';
+                if (!is_dir($upload_path)) {
+                    mkdir($upload_path, 0755, true);
+                }
+                
+                $config['upload_path']   = $upload_path;
+                $config['allowed_types'] = 'gif|jpg|jpeg|png|webp';
+                $config['max_size']      = 2048; // 2MB
+                $config['encrypt_name']  = TRUE;
+                
+                $this->load->library('upload', $config);
+                if ($this->upload->do_upload('img')) {
+                    $uploadData = $this->upload->data();
+                    $r_img = $uploadData['file_name'];
+                }
+            }
+            
+            $data = [
+                'name' => $name,
+                'email' => $email,
+                'r_title' => $title,
+                'stars' => $stars ?: 5,
+                'r_desc' => $r_desc,
+                'r_img' => $r_img,
+                'status' => 0, // Pending approval
+                'posted_date' => date('Y-m-d H:i:s')
             ];
             
-            $reviews[] = $new_review;
-            $this->saveReviews($reviews);
+            $this->ReviewMdl->insert_reviews($data);
             
+            $response = ['err' => 0, 'msg' => 'Success! Thank you for your review! We appreciate your feedback and will approve it shortly.'];
+            $this->output->set_content_type('application/json')->set_output(json_encode($response));
+        }
+    }
+
+    // Fallback legacy submit redirect method
+    function submit()
+    {
+        if ($this->input->server('REQUEST_METHOD') === 'POST') {
+            $name = $this->input->post('name');
+            $email = $this->input->post('email');
+            $title = $this->input->post('title');
+            $stars = (int) $this->input->post('stars');
+            $r_desc = $this->input->post('desc');
+            
+            $data = [
+                'name' => $name,
+                'email' => $email,
+                'r_title' => $title,
+                'stars' => $stars ?: 5,
+                'r_desc' => $r_desc,
+                'status' => 0, // Pending approval
+                'posted_date' => date('Y-m-d H:i:s')
+            ];
+            
+            $this->ReviewMdl->insert_reviews($data);
             $this->session->set_flashdata('success', 'Thank you! Your review has been submitted for approval.');
             redirect('reviews');
         }

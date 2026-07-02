@@ -117,11 +117,16 @@
     height: 32px;
     background: var(--primary-red);
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    color: var(--white);
+    color: var(--white) !important;
     font-size: 14px;
     flex-shrink: 0;
-    transition: transform 0.2s ease;
+    transition: all 0.2s ease;
 }
+.bc-home-icon-wrap:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-red-hover);
+}
+
 
 /* Animation Keyframes */
 @keyframes fadeInUp {
