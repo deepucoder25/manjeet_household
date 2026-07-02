@@ -59,7 +59,7 @@ class MX_Controller
 		$this->comp['replyToMail'] = 'support@mycompany.com';
 		$this->comp['mail'] = 'support@mycompany.com';    
 		$this->comp['mailhtml'] = "mailto:support@mycompany.com";
-		$this->comp['company3'] = 'Divyansh Packers and Movers';
+		$this->comp['company3'] = 'Manjeet House Hold Packers and Movers';
 		$this->comp['companydomain'] = 'divyanshpackersandmovers.com';
 
 		$this->comp['facebookhtml'] = "";

@@ -5,7 +5,7 @@
             <input type="text" ng-model="search_text" placeholder="Search here...">
 		</div>
 		<div class="admin-table-title">Records</div>
-        <div class="table-data admin-table">
+        <div class="table-data admin-table table-responsive" style="overflow-x: auto;">
 			<table class="table table-hover">
 				<thead>
 					<tr class="active">

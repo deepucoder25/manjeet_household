@@ -155,6 +155,14 @@
 	#hoe-left-panel::-webkit-scrollbar-thumb:hover {
 		background: #9fb0c3;
 	}
+
+	/* Global Admin Table Responsiveness Overrides */
+	.table-data.admin-table {
+		display: block !important;
+		width: 100% !important;
+		overflow-x: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+	}
 </style>
 <div id="hoeapp-container" hoe-lpanel-effect="default">
 	<aside id="hoe-left-panel" hoe-position-type="absolute"
@@ -164,7 +172,7 @@
 				<a href="#/home" title="Go to dashboard">
 					<div class="media-body">
 						<h5 class="media-heading">
-							Welcome! <b><?=$this->session->userdata('name');?></b>
+							Welcome! <b><?=$this->comp['company3'];?></b>
 						</h5>
 						<small>Administrator</small>
 					</div>
@@ -172,42 +180,52 @@
 			</div>
 		</div>
 		<ul class="nav panel-list">
-			<li><a accesskey="h" href="#/home" title="Dashboard (Alt+H)"><i class="fa fa-dashboard"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="h" href="#/home" title="Dashboard (Alt+H)"><i class="fa fa-dashboard"></i>
 				<span class="menu-text">Dashboard</span></a>
 			</li>
-			<li><a accesskey="b" href="#/blog" title="Blog Management (Alt+B)"><i class="fa fa-newspaper-o"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="b" href="#/blog" title="Blog Management (Alt+B)"><i class="fa fa-newspaper-o"></i>
 				<span class="menu-text">Blog</span></a>
 			</li>
-			<li><a accesskey="k" href="#/booking" title="Booking Management (Alt+K)"><i class="fa fa-calendar"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="k" href="#/booking" title="Booking Management (Alt+K)"><i class="fa fa-calendar"></i>
 				<span class="menu-text">Bookings</span></a>
 			</li>
-			<li><a accesskey="c" href="#/contact" title="Contact Messages (Alt+C)"><i class="fa fa-envelope"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="c" href="#/contact" title="Contact Messages (Alt+C)"><i class="fa fa-envelope"></i>
 				<span class="menu-text">Contacts</span></a>
 			</li>
-			<li><a accesskey="n" href="#/newsletter" title="Newsletter Management (Alt+N)"><i class="fa fa-paper-plane"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="n" href="#/newsletter" title="Newsletter Management (Alt+N)"><i class="fa fa-paper-plane"></i>
 				<span class="menu-text">Newsletter</span></a>
 			</li>
-			<li><a accesskey="r" href="#/reviews" title="Reviews & Ratings (Alt+R)"><i class="fa fa-star"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="r" href="#/reviews" title="Reviews & Ratings (Alt+R)"><i class="fa fa-star"></i>
 				<span class="menu-text">Reviews</span></a>
 			</li>
-			<li><a accesskey="l" href="#/city" title="City Management (Alt+L)"><i class="fa fa-map-marker"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="l" href="#/city" title="City Management (Alt+L)"><i class="fa fa-map-marker"></i>
 				<span class="menu-text">City</span></a>
 			</li>
-			<li><a accesskey="o" href="#/offers" title="Offers & Promotions (Alt+O)"><i class="fa fa-tag"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="o" href="#/offers" title="Offers & Promotions (Alt+O)"><i class="fa fa-tag"></i>
 				<span class="menu-text">Offers</span></a>
 			</li>
-			<li><a accesskey="a" href="#/album" title="Album Management (Alt+A)"><i class="fa fa-folder-open"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="a" href="#/album" title="Album Management (Alt+A)"><i class="fa fa-folder-open"></i>
 				<span class="menu-text">Albums</span></a>
 			</li>
-			<li><a accesskey="s" href="#/ship_main" title="Shipment Management (Alt+S)"><i class="fa fa-truck"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="s" href="#/ship_main" title="Shipment Management (Alt+S)"><i class="fa fa-truck"></i>
 				<span class="menu-text">Shipments</span></a>
 			</li>
-			<li><a accesskey="t" href="#/ship_tracking" title="Tracking Updates (Alt+T)"><i class="fa fa-location-arrow"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="t" href="#/ship_tracking" title="Tracking Updates (Alt+T)"><i class="fa fa-location-arrow"></i>
 				<span class="menu-text">Tracking</span></a>
 			</li>
-			<li><a accesskey="x" href="#/logs" title="System Logs (Alt+X)"><i class="fa fa-list-alt"></i>
+			<li><a onclick="closeSidebarMobile()" accesskey="x" href="#/logs" title="System Logs (Alt+X)"><i class="fa fa-list-alt"></i>
 				<span class="menu-text">Logs</span></a>
 			</li>
 		</ul>
 	</aside>
+	<script type="text/javascript">
+	function closeSidebarMobile() {
+		if (window.innerWidth < 768) {
+			var wrapper = document.getElementById('hoeapp-wrapper');
+			if (wrapper) {
+				wrapper.classList.add('hoe-hide-lpanel');
+			}
+		}
+	}
+	</script>
 	<section id="main-content">

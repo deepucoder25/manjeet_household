@@ -477,17 +477,14 @@ body{position:relative;}
 /******************* Theme Content Section Style Close Here *******************************/
 /****************** 4.3 Minimized Left Panel Style Start Here *********************************/
 #hoe-header.hoe-minimized-lpanel > .hoe-right-header[hoe-position-type="fixed"] {
-  margin-left: 50px;
+  margin-left: 230px;
   padding-right: 50px;
 }
 #hoe-header.hoe-minimized-lpanel > .hoe-left-header {
-    width: 50px;
-}
-#hoe-header.hoe-minimized-lpanel > .hoe-left-header > a > span {
-    display: none;
+    width: 230px;
 }
 #hoe-header.hoe-minimized-lpanel > .hoe-right-header {
-  margin-left: 50px;
+  margin-left: 230px;
   padding-right:0px;
 }
 .hoe-minimized-lpanel #hoe-left-panel {
@@ -649,11 +646,16 @@ body{position:relative;}
     width: 70%;
     float: none;
 }
+#hoeapp-wrapper[hoe-device-type="phone"] #logo1a {
+    max-width: 140px !important;
+    max-height: 38px !important;
+    margin-top: 6px !important;
+}
 #hoeapp-wrapper[hoe-device-type="phone"] #hoe-left-panel[hoe-position-type="fixed"] {
   top: 100px;
 }
 #hoeapp-wrapper[hoe-device-type="phone"] .hoe-right-header {
-    width: 50%;
+    width: 30%;
 	padding-left: 0px !important;
 	position: relative;
 	z-index: 999;

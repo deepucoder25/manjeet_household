@@ -27,7 +27,7 @@
             <div class="hoe-left-header">
                 <span class="hoe-sidebar-toggle mobile-toggle"><a id="sidebtn" href=""></a></span>
                 <a href="#">
-                    <img id="logo1a" src="<?= base_url() ?>assets/images/logo/logo.png" style="display:inline-block;">
+                    <img id="logo1a" src="<?= base_url() ?>assets/images/logo/logo.png" style="display:inline-block; max-height:45px; max-width:180px; object-fit:contain; margin-top:5px; margin-left:5px;">
                 </a>
             </div>
             <div class="hoe-right-header" hoe-position-type="relative">
