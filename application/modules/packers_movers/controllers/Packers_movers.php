@@ -66,7 +66,7 @@ class Packers_movers extends MX_Controller
         $data = array(
             "city" => $city,
             "state" => $state,
-            'img' => base_url('assets') . "/images/state/google/$statelink.png",
+            // 'img' => base_url('assets') . "/images/state/google/$statelink.png",
             "title" => $seo['title'],
             "description" => $seo['desc'],
             "keywords" => "movers and packers in $city, Movers Packers $city, Movers near me $city, Packers and movers in $city, Moving companies near me $city, Movers $city, Packers and movers near me $city",

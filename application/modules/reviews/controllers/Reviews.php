@@ -73,12 +73,22 @@ class Reviews extends MX_Controller
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             $name = $this->input->post('name');
             $email = $this->input->post('email');
-            $title = $this->input->post('title');
-            $stars = (int) $this->input->post('stars');
-            $r_desc = $this->input->post('desc');
+            
+            $stars = (int) $this->input->post('rating');
+            if ($stars <= 0) {
+                $stars = (int) $this->input->post('stars') ?: 5;
+            }
+            
+            $r_desc = $this->input->post('review');
+            if (empty($r_desc)) {
+                $r_desc = $this->input->post('desc');
+            }
+            
+            $city = $this->input->post('city');
+            $title = $this->input->post('title') ?: ($city ? 'Shifting feedback from ' . $city : 'Customer Experience');
             
             if (empty($name) || empty($email) || empty($r_desc)) {
-                $response = ['err' => 1, 'msg' => 'Please fill in all required fields (Name, Email, and Experience).'];
+                $response = ['err' => 1, 'msg' => 'Please fill in all required fields (Name, Email, and Message).'];
                 $this->output->set_content_type('application/json')->set_output(json_encode($response));
                 return;
             }
@@ -104,12 +114,14 @@ class Reviews extends MX_Controller
             }
             
             $data = [
+                'b_id' => 0,
                 'name' => $name,
                 'email' => $email,
                 'r_title' => $title,
-                'stars' => $stars ?: 5,
+                'stars' => $stars,
                 'r_desc' => $r_desc,
                 'r_img' => $r_img,
+                'views' => 0,
                 'status' => 0, // Pending approval
                 'posted_date' => date('Y-m-d H:i:s')
             ];
@@ -127,16 +139,29 @@ class Reviews extends MX_Controller
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             $name = $this->input->post('name');
             $email = $this->input->post('email');
-            $title = $this->input->post('title');
-            $stars = (int) $this->input->post('stars');
-            $r_desc = $this->input->post('desc');
+            
+            $stars = (int) $this->input->post('rating');
+            if ($stars <= 0) {
+                $stars = (int) $this->input->post('stars') ?: 5;
+            }
+            
+            $r_desc = $this->input->post('review');
+            if (empty($r_desc)) {
+                $r_desc = $this->input->post('desc');
+            }
+            
+            $city = $this->input->post('city');
+            $title = $this->input->post('title') ?: ($city ? 'Shifting feedback from ' . $city : 'Customer Experience');
             
             $data = [
+                'b_id' => 0,
                 'name' => $name,
                 'email' => $email,
                 'r_title' => $title,
-                'stars' => $stars ?: 5,
+                'stars' => $stars,
                 'r_desc' => $r_desc,
+                'r_img' => '',
+                'views' => 0,
                 'status' => 0, // Pending approval
                 'posted_date' => date('Y-m-d H:i:s')
             ];
