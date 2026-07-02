@@ -7,26 +7,92 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Heavy Industrial Shifting &amp; Machinery Transport</h2>
-                    <div class="about-service-text">
-                        <p>
-                            Moving an industrial unit, factory machinery, or heavy corporate inventory is a massive project requiring special logistics and planning. At <strong><?= $company3 ?></strong>, we have specialized tools and certified operators to move heavy machinery safely.
+                    <!-- Hero Image Banner -->
+                    <div class="service-details-hero">
+                        <img src="<?= base_url('assets/images/home_modules/industrial.jpg') ?>" class="service-details-img" alt="Industrial Shifting Services">
+                        <div class="service-details-overlay"></div>
+                    </div>
+
+                    <h2 class="service-section-title">Heavy Industrial Shifting</h2>
+                    <div class="about-service-text mb-5">
+                        <p class="lead">
+                            Moving industrial units, factory machinery, and heavy warehousing inventory is a massive project requiring special logistics, planning, and cranes.
                         </p>
                         <p>
-                            We provide comprehensive industrial relocations, including assembly lines, heavy CNC machines, manufacturing tools, laboratory equipment, and complete warehouse inventories. We coordinate closely with plant managers to build a detailed transition schedule, minimizing production downtime.
+                            At <strong><?= $company3 ?></strong>, we have specialized tools and certified crane operators to move heavy machinery safely. We provide comprehensive industrial relocations, including assembly lines, heavy CNC machines, manufacturing tools, laboratory setups, and complete stock reserves.
                         </p>
                         <p>
-                            Our transportation fleet includes flatbed trucks, heavy-duty container carriers, and custom trailers designed to move oversized loads. Every machine is secured with heavy-grade straps and lashing chains to guarantee safety across long transit distances.
+                            Our heavy transportation fleet includes flatbed trucks, low-bed heavy carriers, and customized trailers designed to transport oversized loads safely over long highway routes.
                         </p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Industrial Shifting Features</h2>
-                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted">
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Custom crane, forklift, and loading equipment layout.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Transit lashing and heavy cargo packaging options.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Structured scheduling to minimize downtime and work losses.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Fully insured transit to protect expensive factory machinery.</li>
-                    </ul>
+                    <!-- Standards Highlights Cards -->
+                    <h3 class="service-section-title">Industrial Shifting Features</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-truck-flatbed"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Heavy Fleet Carriers</h5>
+                                <p class="small text-muted mb-0">Flatbeds, low-bed multi-axle pullers, and containerized structures designed for industrial weights.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Transit Insurance</h5>
+                                <p class="small text-muted mb-0">High-valuation commercial insurance covering heavy machineries, CNC blocks, and raw stocks during moves.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-diagram-3"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Production Scheduling</h5>
+                                <p class="small text-muted mb-0">Meticulous phase-by-phase relocation layouts designed to keep factory production downtimes as low as possible.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-gear-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Rigging &amp; Lifting Crane</h5>
+                                <p class="small text-muted mb-0">Hydraulic lifters, specialized heavy forklifts, and chain-pulleys operated by certified, insured staff.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Timeline -->
+                    <h3 class="service-section-title">The Industrial Shifting Process</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">1</div>
+                                <h6 class="fw-bold">Plant Assessment</h6>
+                                <p class="small text-muted mb-0">Measuring dimensions, weights, and load parameters.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">2</div>
+                                <h6 class="fw-bold">Rigging &amp; Anchor</h6>
+                                <p class="small text-muted mb-0">Unbolting machinery, lifting, and locking onto flatbeds.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">3</div>
+                                <h6 class="fw-bold">Delivery &amp; Re-bolt</h6>
+                                <p class="small text-muted mb-0">Unloading and aligning machinery inside the new plant.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4">

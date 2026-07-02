@@ -8,147 +8,159 @@
 
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Hassle-Free Household Shifting for a Smooth Move</h2>
-                    <div class="about-service-text">
-                        <p>
-                            Our company <strong><?= $company3 ?></strong> is a leading service provider that offers quality household shifting services. To make sure that all your household items are packed, transported and conveyed to your new homestead, we hire trained professionals.
+                    <!-- Hero Image Banner -->
+                    <div class="service-details-hero">
+                        <img src="<?= base_url('assets/images/home_modules/household.jpg') ?>" class="service-details-img" alt="Household Shifting Services">
+                        <div class="service-details-overlay"></div>
+                    </div>
+
+                    <h2 class="service-section-title">Hassle-Free Household Shifting</h2>
+                    <div class="about-service-text mb-5">
+                        <p class="lead">
+                            Relocating your home is a major milestone, and at <strong><?= $company3 ?></strong>, we make it completely stress-free.
                         </p>
                         <p>
-                            With us, your valuables are safe as we employ high-quality packing materials and sophisticated methods of moving your items hence making us the cheapest and most effective household shifting company.
+                            We offer door-to-door shifting solutions tailored in response to your requirements. From disassembling double beds and heavy wardrobes to packing fragile crockery in customized safety sheets, our skilled crew manages everything. We utilize secure container trucks to protect your inventory during long-distance highway hauls.
                         </p>
                         <p>
-                            We can provide service packages to our clients that are affordable efficient and suited in response to your unique requirements. We arrange door-to-door moving services of packing and unpacking so that, you can move from your current home to the new one without any hustle. Another of our pillars we uphold hence guaranteeing that your items get to your new home at the right time.
-                        </p>
-                        <p>
-                            Having years of experience in the field makes us a reliable and reputed company in the field of household shifting. This concept incorporates the customers’ perspective since it will help us determine your unique needs and expectations.
-                        </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/home.jpg') ?>" alt="household shifting" class="img-fluid rounded my-3 w-100">
-                        <p>
-                            In addition, we provide tracking of your possessions and their condition in real-time, so that you always know everything. Hire the best household shifting company in Ghaziabad and avail of the best service at <strong><?= $company3 ?></strong>
-                        </p>
-                        <p>
-                            All our services are safe and efficient with particular emphasis on quality and affordable prices to give you a stress-free moving experience. Hire us for excellent household shifting services, and we will ensure your move to a new home is a joyful one.
+                            Additionally, we provide live GPS updates so you remain informed during transit, delivering complete peace of mind.
                         </p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Our Household Shifting Process</h2>
-                    <p class="text-muted">Our professional packers follow a systematic, step-by-step process:</p>
-                    <div class="process-timeline">
-
-                        <div class="process-step">
-                            <span class="step-number">1</span>
-                            <h4>Dismantling &amp; Packing</h4>
-                            <p>We disassemble large furniture pieces (beds, wardrobes) and wrap each item in multiple layers of bubble sheet and cardboard boxes.</p>
-                        </div>
-
-                        <div class="process-step">
-                            <span class="step-number">2</span>
-                            <h4>Safe Loading</h4>
-                            <p>Our loading crew systematically places heavy furniture at the bottom of the truck and stacks lighter boxes on top, using blankets for padding.</p>
-                        </div>
-
-                        <div class="process-step">
-                            <span class="step-number">3</span>
-                            <h4>Secure Transit</h4>
-                            <p>Your goods are transported via our GPS-tracked container trucks to ensure on-time delivery with full highway safety.</p>
-                        </div>
-
-                        <div class="process-step">
-                            <span class="step-number">4</span>
-                            <h4>Unloading &amp; Reassembly</h4>
-                            <p>We unload all boxes, unpack your furniture, and reassemble items like double beds and dining tables in your new rooms.</p>
-                        </div>
-                    </div>
-
-                    <h2 class="service-section-title mt-5">Why Choose Us</h2>
-                    <div class="why-choose-grid">
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-box-seam-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>Premium Packing</h5>
-                                <p>We use high-quality bubble sheets, foam rolls, and heavy corrugated boxes.</p>
+                    <!-- Steps Timeline -->
+                    <h3 class="service-section-title">Our Household Shifting Process</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-3">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">1</div>
+                                <h6 class="fw-bold">Survey &amp; Plan</h6>
+                                <p class="small text-muted mb-0">Assessing volume and mapping the logistics.</p>
                             </div>
                         </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-tools"></i></div>
-                            <div class="choose-content">
-                                <h5>Furniture Reassembly</h5>
-                                <p>Expert dismantling and setup of beds, wardrobes, and dining tables.</p>
+                        <div class="col-md-3">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">2</div>
+                                <h6 class="fw-bold">Dismantle &amp; Wrap</h6>
+                                <p class="small text-muted mb-0">Securing furniture and packing items.</p>
                             </div>
                         </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-people-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>Trained Staff</h5>
-                                <p>Polite and experienced movers who handle goods with care.</p>
+                        <div class="col-md-3">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">3</div>
+                                <h6 class="fw-bold">Safe Highway Transit</h6>
+                                <p class="small text-muted mb-0">GPS-tracked container transport.</p>
                             </div>
                         </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-cash-stack"></i></div>
-                            <div class="choose-content">
-                                <h5>No Hidden Charges</h5>
-                                <p>Transparent quotes covering all packing, loading, toll, and taxes.</p>
+                        <div class="col-md-3">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">4</div>
+                                <h6 class="fw-bold">Unload &amp; Setup</h6>
+                                <p class="small text-muted mb-0">Reassembling beds and tables on-site.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="service-reviews-slice">
-                        <div class="rating-row">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
+                    <!-- Why Choose Us Grid -->
+                    <h3 class="service-section-title">Why Choose Us</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-box-seam-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Premium Packing</h5>
+                                <p class="small text-muted mb-0">We use high-grade double bubble sheets, robust foam blocks, and customized card cartons.</p>
+                            </div>
                         </div>
-                        <p class="review-text">
-                            "Excellent service! I relocated my household items locally in Siliguri. The boys packed everything with double layers of bubble wrap. Nothing got damaged, and they reassembled our bed perfectly. Truly professional!"
-                        </p>
-                        <div class="review-user">
-                            <div class="user-avatar">S</div>
-                            <div class="user-name">
-                                <h6>Sneha Roy</h6>
-                                <span>Siliguri, India</span>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-tools"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Furniture Reassembly</h5>
+                                <p class="small text-muted mb-0">Expert dismantling and clean setup of large wardrobes, double beds, and dining sets.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-people-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Trained Movers</h5>
+                                <p class="small text-muted mb-0">Polite, background-verified professionals who handle your possessions with caution.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-cash-stack"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">No Hidden Charges</h5>
+                                <p class="small text-muted mb-0">Completely transparent shifting bills covering packaging, tolls, and loading costs upfront.</p>
                             </div>
                         </div>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
-                    <div class="service-faq-container">
-
-                        <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Do you dismantle and reassemble double beds and wardrobes?</span>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
+                    <!-- Custom Slice Testimonial -->
+                    <div class="about-testimonial-wrapper mb-5">
+                        <div class="about-testimonial-quote-box shadow-sm">
+                            <span class="about-quote-decorator"><i class="bi bi-quote"></i></span>
+                            <div class="about-testimonial-stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
                             </div>
-                            <div id="faq-s-1" class="collapse">
-                                <div class="faq-card-body">
-                                    Yes. Our packing crew is equipped with tools (screwdrivers, wrenches, hammers) to carefully disassemble large beds, wardrobes, and tables, and reassemble them at your new home.
+                            <h6 class="fw-bold text-dark mb-2">Flawless Shifting!</h6>
+                            <p class="small text-muted mb-0">
+                                "Excellent service! I relocated my household items locally. The crew packed everything with double layers of bubble wrap. Nothing got damaged, and they reassembled our bed perfectly. Highly recommended!"
+                            </p>
+                        </div>
+                        <div class="about-testimonial-card-meta">
+                            <div class="about-testimonial-avatar">S</div>
+                            <div>
+                                <h6 class="about-testimonial-author-name">Sneha Roy</h6>
+                                <span class="about-testimonial-author-city">Household Shifting Client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion FAQs -->
+                    <h3 class="service-section-title">Frequently Asked Questions</h3>
+                    <div class="accordion about-custom-faq-accordion mb-4" id="homeShiftingFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    Do you dismantle and reassemble double beds and wardrobes?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#homeShiftingFaq">
+                                <div class="accordion-body">
+                                    Yes. Our packing crew is equipped with the necessary tools (screwdrivers, wrenches, hammers) to carefully disassemble large beds, wardrobes, and tables, and reassemble them at your new home.
                                 </div>
                             </div>
                         </div>
-
-                        <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">What items are NOT packed or transported?</span>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
-                            </div>
-                            <div id="faq-s-2" class="collapse">
-                                <div class="faq-card-body">
-                                    For safety, we do not transport hazardous materials, cylinders, gasoline, paint thinners, fireworks, jewelry, gold, cash, or important personal deeds and legal documents.
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    What items are NOT packed or transported?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#homeShiftingFaq">
+                                <div class="accordion-body">
+                                    For safety and legal reasons, we do not transport hazardous materials, cylinders, gasoline, paint thinners, fireworks, jewelry, gold, cash, or important personal deeds and legal documents.
                                 </div>
                             </div>
                         </div>
-
-                        <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
-                                <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Do you offer packing-only or loading-only services?</span>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
-                            </div>
-                            <div id="faq-s-3" class="collapse">
-                                <div class="faq-card-body">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    Do you offer packing-only or loading-only services?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#homeShiftingFaq">
+                                <div class="accordion-body">
                                     We offer complete, end-to-end relocation packages (packing, loading, transport, unloading, unpacking) to ensure safety. However, we can customize a plan based on your request.
                                 </div>
                             </div>
@@ -164,4 +176,3 @@
         </div>
     </div>
 </section>
-

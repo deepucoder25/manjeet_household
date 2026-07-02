@@ -7,26 +7,92 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Secure two-wheeler &amp; Bike Transportation Services</h2>
-                    <div class="about-service-text">
-                        <p>
-                            Your motorcycle is one of your most prized assets. At <strong><?= $company3 ?></strong>, we specialize in offering safe, scratch-free, and timely bike shifting services across Indore, Bhopal, and the rest of India.
+                    <!-- Hero Image Banner -->
+                    <div class="service-details-hero">
+                        <img src="<?= base_url('assets/images/home_modules/car.jpg') ?>" class="service-details-img" alt="Bike Transportation Services">
+                        <div class="service-details-overlay"></div>
+                    </div>
+
+                    <h2 class="service-section-title">Secure Bike Shifting Services</h2>
+                    <div class="about-service-text mb-5">
+                        <p class="lead">
+                            Your motorcycle, scooter, or sports bike is one of your most prized possessions. We move it with complete safety and care.
                         </p>
                         <p>
-                            We treat every bike with utmost care. Before loading, we bubble wrap the mirrors, indicators, handles, and exhaust to shield them from scratches. The bike is then loaded onto specialized enclosed auto-carriers or secure wooden crates.
+                            At <strong><?= $company3 ?></strong>, we specialize in offering safe, scratch-free, and timely bike shifting services across Indore, Bhopal, and the rest of India. We utilize a dedicated wrapping approach, using foam padding and bubble sheets to isolate handles, indicators, and mirrors before transit.
                         </p>
                         <p>
                             Once loaded into our container carriers, each bike is firmly locked using wheel chocks and safety straps, preventing any lateral movement or tipping over during transit on the highway.
                         </p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Our Shifting Features</h2>
-                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted">
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Custom bubble wrap padding for delicate components.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Firm anchoring with wheel chocks and heavy lashing straps.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Transported via specialized closed car/bike carriers.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Real-time transit updates and complete transit insurance.</li>
-                    </ul>
+                    <!-- Standards Highlights Cards -->
+                    <h3 class="service-section-title">Our Shifting Features</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-box-seam"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Thick Multi-Layer Wrap</h5>
+                                <p class="small text-muted mb-0">High-grade bubble wrapping around mirrors, indicators, exhaust pipelines, and metallic frame components.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-layers-half"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Wheel Chock Anchors</h5>
+                                <p class="small text-muted mb-0">Bikes are locked to custom floor plates using heavy nylon straps to prevent vibrations or tipping over.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-truck"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Closed Auto Carriers</h5>
+                                <p class="small text-muted mb-0">Transported inside weatherproof enclosed containers to safeguard vehicles from rain, dust, and highway accidents.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Full Transit Cover</h5>
+                                <p class="small text-muted mb-0">Complete transit insurance options protecting against any unforeseen road incidents during highway haulage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Timeline -->
+                    <h3 class="service-section-title">The Bike Shifting Process</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">1</div>
+                                <h6 class="fw-bold">Inspection &amp; Empty</h6>
+                                <p class="small text-muted mb-0">Auditing body status and emptying extra fuel from the fuel tank.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">2</div>
+                                <h6 class="fw-bold">Foam &amp; Bubble Wrap</h6>
+                                <p class="small text-muted mb-0">Padding fragile handle grips, brakes, and headlights.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">3</div>
+                                <h6 class="fw-bold">Deck Tie-Down</h6>
+                                <p class="small text-muted mb-0">Ramping up, locking the wheels, and securing straps.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4">

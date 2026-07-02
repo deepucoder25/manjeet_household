@@ -7,26 +7,92 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Comprehensive Transit &amp; General Insurance</h2>
-                    <div class="about-service-text">
-                        <p>
-                            Relocation involves moving valuable belongings over long distances, which carries inherent transit risks. At <strong><?= $company3 ?></strong>, we prioritize the safety of your goods above all else, which is why we offer comprehensive transit insurance cover for all domestic shifting services.
+                    <!-- Hero Image Banner -->
+                    <div class="service-details-hero">
+                        <img src="<?= base_url('assets/images/home_modules/testimonial_bg.jpg') ?>" class="service-details-img" alt="General Shifting Insurance">
+                        <div class="service-details-overlay"></div>
+                    </div>
+
+                    <h2 class="service-section-title">Transit &amp; General Insurance</h2>
+                    <div class="about-service-text mb-5">
+                        <p class="lead">
+                            Relocation involves transporting precious family assets over vast national highways, carrying inherent transit hazards.
                         </p>
                         <p>
-                            Our transit insurance covers accidental damages, fires, collisions, road hazards, and unforeseen natural events during transportation. We assist you with complete documentation, asset valuation, and invoice generation, making sure every item is accounted for.
+                            At <strong><?= $company3 ?></strong>, we prioritize the complete safety of your inventory above all else, which is why we provide comprehensive transit insurance covers for all domestic shifts.
                         </p>
                         <p>
-                            In case of any damage, our claim settlement process is fast, transparent, and hassle-free. We work with leading national insurance partners to ensure your claims are approved and processed quickly, offering complete peace of mind.
+                            Our transit policy protects against accidental damage, highway collisions, fires, water leakage, and unforeseen natural events. We coordinate with you to create transparent asset valuation reports, generating clean and licensed invoices for premium items.
                         </p>
                     </div>
 
-                    <h2 class="service-section-title mt-5">Our Insurance Benefits</h2>
-                    <ul class="list-unstyled d-flex flex-column gap-2 text-muted">
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Comprehensive protection against transit collision and road hazards.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Easy valuation sheets for appliances and high-value furniture.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Collaborations with leading national transit insurance providers.</li>
-                        <li><i class="bi bi-check-circle-fill text-danger me-2"></i> Quick claim processing and transparent settlement evaluations.</li>
-                    </ul>
+                    <!-- Standards Highlights Cards -->
+                    <h3 class="service-section-title">Insurance Policy Benefits</h3>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-shield-lock-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Total Transit Shield</h5>
+                                <p class="small text-muted mb-0">Protects your household inventory from any accidental impacts, collision shocks, fires, or water damages.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Itemized Valuations</h5>
+                                <p class="small text-muted mb-0">We assist you in building clear, itemized value declarations for high-worth furniture, appliances, and items.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-heart-pulse-fill"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Reputed Partners</h5>
+                                <p class="small text-muted mb-0">Collaborated with India's leading national insurance agencies to guarantee secure, licensed coverage policies.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
+                                <div class="service-icon-wrap">
+                                    <i class="bi bi-check2-circle"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark mb-2">Quick Claims</h5>
+                                <p class="small text-muted mb-0">Fast-track claim review processes and transparent evaluations to settle balances with zero hurdles.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Steps Timeline -->
+                    <h3 class="service-section-title">The Insurance Claim Timeline</h3>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">1</div>
+                                <h6 class="fw-bold">Declare Value</h6>
+                                <p class="small text-muted mb-0">Listing items and their estimated market valuation before packing.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">2</div>
+                                <h6 class="fw-bold">Policy Generate</h6>
+                                <p class="small text-muted mb-0">Filing the forms and activating your transit cover certificate.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="process-step-card h-100">
+                                <div class="process-step-number">3</div>
+                                <h6 class="fw-bold">Hassle-Free Settlement</h6>
+                                <p class="small text-muted mb-0">Filing claim documentation if any transit impact is verified.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-lg-4">
