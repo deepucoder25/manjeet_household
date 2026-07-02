@@ -15,14 +15,16 @@
         <ul class="sidebar-services-list-new">
             <?php
             $sidebar_links = [
-                ['slug' => 'about-us',          'name' => 'About Us',          'icon' => 'bi-info-circle'],
-                ['slug' => 'why-choose-us',     'name' => 'Why Choose Us',     'icon' => 'bi-patch-question'],
-                ['slug' => 'faqs',              'name' => 'FAQ',               'icon' => 'bi-chat-left-text'],
-                ['slug' => 'moving-tips',       'name' => 'Moving Tips',       'icon' => 'bi-lightbulb'],
-                ['slug' => 'testimonials',      'name' => 'Testimonial',       'icon' => 'bi-chat-quote'],
-                ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-half'],
-                ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
-                ['slug' => 'video-gallery',     'name' => 'Video Gallery',     'icon' => 'bi-play-circle'],
+                ['slug' => 'about-us',              'name' => 'About Us',              'icon' => 'bi-info-circle'],
+                ['slug' => 'why-choose-us',         'name' => 'Why Choose Us',         'icon' => 'bi-patch-question'],
+                ['slug' => 'faqs',                  'name' => 'FAQ',                   'icon' => 'bi-chat-left-text'],
+                ['slug' => 'moving-tips',           'name' => 'Moving Tips',           'icon' => 'bi-lightbulb'],
+                ['slug' => 'testimonials',          'name' => 'Testimonial',           'icon' => 'bi-chat-quote'],
+                ['slug' => 'reviews',               'name' => 'Customer Reviews',      'icon' => 'bi-star-half'],
+                ['slug' => 'photo-gallery',         'name' => 'Photo Gallery',         'icon' => 'bi-images'],
+                ['slug' => 'blog',                  'name' => 'Blog',                  'icon' => 'bi-newspaper'],
+                ['slug' => 'terms-and-conditions',  'name' => 'Terms & Conditions',    'icon' => 'bi-file-earmark-ruled'],
+                ['slug' => 'privacy-policy',        'name' => 'Privacy Policy',        'icon' => 'bi-shield-check'],
             ];
 
             foreach ($sidebar_links as $link):
