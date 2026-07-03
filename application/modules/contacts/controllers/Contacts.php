@@ -7,8 +7,8 @@ class Contacts extends MX_Controller
     }
     function index()
     {
-        $data['title'] = "Contact Us | " . $this->comp['company3'];
-        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for all your relocation and transportation needs. Call us at " . $this->comp['phone'] . ".";
+        $data['title'] = "Contact Us - Packers and Movers Customer Support | " . $this->comp['company3'];
+        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for bookings, queries, or complaints. Call our packers and movers support at " . $this->comp['phone'] . " or visit our office.";
         $data['module'] = "contacts";
         $data['view_file'] = "contacts";
         echo Modules::run('template/layout2', $data);
@@ -121,8 +121,8 @@ class Contacts extends MX_Controller
 
     function trackingpage()
     {
-        $data['title'] = "Track Your Shipment | Get Real-Time Shipping Updates";
-        $data['description'] = "Track shipment with tracking number or LR number. Get real-time updates of your household shifting, cargo, or vehicle transportation. Get instant tracking with accurate status";
+        $data['title'] = "Track Your Shipment - Shifting Status Tracking | " . $this->comp['company3'];
+        $data['description'] = "Track your relocation shipment in real-time. Enter your tracking ID or LR number to get instant updates on your home shifting or vehicle transport consignment status.";
         $data['module'] = "contacts";
         $data['view_file'] = "tracking";
         echo Modules::run('template/layout2', $data);

@@ -15,7 +15,7 @@ include 'city_content.php';
           <div class="pm-about-layered-border position-absolute rounded-4"></div>
           <!-- Main Image Card -->
           <div class="pm-city-about-img-frame position-relative overflow-hidden rounded-4 shadow-sm bg-white">
-            <img src="<?= base_url('assets/images/home_modules/industrial.jpg') ?>" class="w-100 h-100 object-fit-cover d-block" alt="<?= $company3 ?>">
+            <img loading="lazy" src="<?= base_url('assets/images/home_modules/industrial.jpg') ?>" class="w-100 h-100 object-fit-cover d-block" alt="<?= $company3 ?>">
           </div>
           <!-- Floating Live Badge -->
           <div class="pm-about-floating-badge bg-white rounded-3 shadow-sm p-3 d-flex align-items-center gap-3 position-absolute">

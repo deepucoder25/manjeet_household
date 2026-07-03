@@ -9,7 +9,7 @@
                 <div class="service-main-content">
                     <!-- Hero Image Banner -->
                     <div class="service-details-hero">
-                        <img src="<?= base_url('assets/images/home_modules/testimonial_bg.jpg') ?>" class="service-details-img" alt="General Shifting Insurance">
+                        <img loading="lazy" src="<?= base_url('assets/images/home_modules/testimonial_bg.jpg') ?>" class="service-details-img" alt="General Shifting Insurance">
                         <div class="service-details-overlay"></div>
                     </div>
 

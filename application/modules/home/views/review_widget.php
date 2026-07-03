@@ -4,7 +4,7 @@ $reviews = [
     [
         'name' => 'Rohit Sharma',
         'route' => 'Gurugram to Pune',
-        'text' => 'Manjeet Packers made our home shifting experience so easy and stress-free. Their team was punctual, polite, and handled everything with great care.',
+        'text' => $company3 . ' made our home shifting experience so easy and stress-free. Their team was punctual, polite, and handled everything with great care.',
         'rating' => 5
     ],
     [
@@ -47,7 +47,7 @@ $reviews = [
         WHAT OUR <span class="text-danger position-relative d-inline-block">CLIENTS<span class="title-accent-line-new"></span></span> SAY
       </h2>
       <p class="services-subtitle text-dark mx-auto mt-3">
-        Real stories from real people who trusted Manjeet House Hold Packers & Movers for their relocation needs.
+        Real stories from real people who trusted <?= $company3 ?> for their relocation needs.
       </p>
     </div>
 

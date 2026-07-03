@@ -90,7 +90,7 @@ $rev = $reviews->result();
                                     <?php if (@$r->r_img) { ?>
                                         <div class="content-icon">
                                             <a target="_blank" href="<?= base_url('assets/uploads/reviewimg/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>">
-                                                <img class="img4 img-fluid" src="<?= base_url('assets/uploads/reviewimg/thumb/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>">
+                                                <img loading="lazy" class="img4 img-fluid" src="<?= base_url('assets/uploads/reviewimg/thumb/') . $r->r_img ?>" alt="<?= $r->name ?> review <?= $company3 ?>">
                                             </a>
                                         </div>
                                     <?php } ?>

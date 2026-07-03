@@ -10,7 +10,7 @@
                 <div class="service-main-content">
                     <!-- Hero Image Banner -->
                     <div class="service-details-hero">
-                        <img src="<?= base_url('assets/images/home_modules/household.jpg') ?>" class="service-details-img" alt="Household Shifting Services">
+                        <img loading="lazy" src="<?= base_url('assets/images/home_modules/household.jpg') ?>" class="service-details-img" alt="Household Shifting Services">
                         <div class="service-details-overlay"></div>
                     </div>
 

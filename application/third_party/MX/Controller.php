@@ -57,6 +57,8 @@ class MX_Controller
         $this->comp['indore_phonehtml'] = 'tel:+919893701992';
         $this->comp['indore_phone1'] = '+91 9111111593';
         $this->comp['indore_phonehtml1'] = 'tel:+919111111593';
+        $this->comp['phone'] = '+91 9893701992';
+        $this->comp['phonehtml'] = 'tel:+919893701992';
         $this->comp['supportmail'] = 'support@mycompany.com';
         $this->comp['replyToMail'] = 'support@mycompany.com';
         $this->comp['mail'] = 'manjeetpackersindore@gmail.com';    

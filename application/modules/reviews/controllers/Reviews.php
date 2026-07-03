@@ -60,8 +60,8 @@ class Reviews extends MX_Controller
         $this->db->limit($config['per_page'], $page);
         $data['reviews'] = $this->db->get('reviews');
         
-        $data['title'] = "Customer Reviews & Ratings | " . $this->comp['company3'];
-        $data['description'] = "Detailed feedback and ratings from our satisfied clients. Read real reviews about our relocation services at " . $this->comp['company3'] . ".";
+        $data['title'] = "Verified Shifting Reviews & Ratings | " . $this->comp['company3'];
+        $data['description'] = "Read genuine reviews, ratings, and testimonials from our clients about their home moving and vehicle shifting experience with " . $this->comp['company3'] . ".";
         $data['module'] = "reviews";
         $data['view_file'] = "reviews";
         echo Modules::run('template/layout2', $data);

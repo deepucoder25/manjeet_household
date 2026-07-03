@@ -59,7 +59,7 @@
                         <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden blog-card blog-transition-hover">
                             <div class="position-relative">
                                 <a href="<?= $link ?>">
-                                    <img src="<?= $img ?>" class="card-img-top blog-card-img" alt="<?= htmlspecialchars($b->title) ?>">
+                                    <img loading="lazy" src="<?= $img ?>" class="card-img-top blog-card-img" alt="<?= htmlspecialchars($b->title) ?>">
                                 </a>
                                 <div class="position-absolute top-0 end-0 bg-warning text-dark fw-bold px-3 py-2 rounded-bottom-start shadow-sm blog-date-badge">
                                     <?= $day ?> <?= $month ?>

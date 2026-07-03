@@ -15,9 +15,9 @@
                             <?php 
                             $image_path = FCPATH . 'assets/uploads/blog/' . @$query[0]->image;
                             if (@$query[0]->image && file_exists($image_path)): ?>
-                                <img src="<?= base_url('assets/uploads/blog/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
+                                <img loading="lazy" src="<?= base_url('assets/uploads/blog/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
                             <?php else: ?>
-                                <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
+                                <img loading="lazy" src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
                             <?php endif; ?>
                         </div>
 
@@ -55,7 +55,7 @@
                                         ?>
                                         <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item blog-post-link-item">
                                             <div class="flex-shrink-0">
-                                                <img src="<?= $imagePath ?>" alt="thumb" class="rounded-3 shadow-sm blog-recent-post-img">
+                                                <img loading="lazy" src="<?= $imagePath ?>" alt="thumb" class="rounded-3 shadow-sm blog-recent-post-img">
                                             </div>
                                             <div>
                                                 <h6 class="fw-bold text-dark mb-1 blog-post-title"><?= $post->title ?></h6>

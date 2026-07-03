@@ -10,7 +10,7 @@
 
                     <div class="about-badge-new mb-3">
                         <span class="pill-line"></span>
-                        <span class="text-danger fw-bold text-uppercase small letter-spacing-1">MANJEET HOUSE HOLD PACKERS AND MOVERS</span>
+                        <span class="text-danger fw-bold text-uppercase small letter-spacing-1"><?= $company3 ?></span>
                     </div>
 
                     <h2 class="about-title-main-new fw-bold text-dark text-uppercase">
@@ -18,7 +18,7 @@
                     </h2>
 
                     <p class="about-desc-lead-new">
-                        At Manjeet House Hold Packers and Movers, we make every move simple, safe, and stress-free. With years of experience and a highly trained relocation team, we provide customized packing, loading, and transit solutions tailored to your unique requirements. We utilize premium packaging materials and advanced carrier vehicles to ensure that your household belongings, office goods, and vehicles are shifted securely without any hassle or delays. Whether you are shifting locally within Indore or Bhopal, or relocating to any destination across India, we stand by our promise of safety, efficiency, and absolute peace of mind for every single customer.
+                        At <?= $company3 ?>, we make every move simple, safe, and stress-free. With years of experience and a highly trained relocation team, we provide customized packing, loading, and transit solutions tailored to your unique requirements. We utilize premium packaging materials and advanced carrier vehicles to ensure that your household belongings, office goods, and vehicles are shifted securely without any hassle or delays. Whether you are shifting locally within Indore or Bhopal, or relocating to any destination across India, we stand by our promise of safety, efficiency, and absolute peace of mind for every single customer.
                     </p>
 
                     <div class="mt-4 pt-2">
@@ -76,7 +76,7 @@
 
                 <div class="col-lg-6 col-12">
                     <p class="about-middle-desc">
-                        Manjeet House Hold Packers and Movers is a trusted name in the relocation industry, known for reliability, transparency, and care. We understand that moving is more than just shifting items—it's about moving your life. That's why we handle every belonging as if it were our own.
+                        <?= $company3 ?> is a trusted name in the relocation industry, known for reliability, transparency, and care. We understand that moving is more than just shifting items—it's about moving your life. That's why we handle every belonging as if it were our own.
                     </p>
                     <p class="about-middle-desc">
                         From careful packing to safe transportation and on-time delivery, our team ensures a smooth and hassle-free moving experience from start to finish.

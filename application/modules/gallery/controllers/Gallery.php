@@ -14,16 +14,15 @@ class Gallery extends MX_Controller {
             foreach ($db_images as $img) {
                 $db_photos[] = array(
                     'image' => $img['image'],
-                    'alt' => htmlspecialchars($img['title']) . ' - Manjeet Packers and Movers',
+                    'alt' => htmlspecialchars($img['title']) . ' - ' . $this->comp['company3'],
                     'title' => htmlspecialchars($img['title']),
                     'is_default' => false
                 );
             }
         }
         
-        $data['db_photos'] = $db_photos;
-        $data['title'] = "Photo Gallery | " . $this->comp['company3'];
-        $data['description'] = "Explore visual highlights of our packaging quality, warehouse storage, specialized container carriers, and relocation operations at " . $this->comp['company3'] . ".";
+        $data['title'] = "Shifting & Packing Photo Gallery - Moving Images | " . $this->comp['company3'];
+        $data['description'] = "Browse through photos of our professional household packing techniques, loading procedures, specialized vehicle carrier trucks, and warehouses at " . $this->comp['company3'] . ".";
         $data['module'] = "gallery";
         $data['view_file'] = "photo-gallery";
         echo Modules::run('template/layout2', $data);
@@ -31,8 +30,8 @@ class Gallery extends MX_Controller {
 
     function video_gallery()
     {
-        $data['title'] = "Video Gallery | " . $this->comp['company3'];
-        $data['description'] = "Watch our step-by-step packing processes, transport safety standards, and commercial office relocations in action at " . $this->comp['company3'] . ".";
+        $data['title'] = "Watch House Shifting & Packing Process Videos | " . $this->comp['company3'];
+        $data['description'] = "Watch our live relocation videos showing step-by-step household packing, heavy machinery loading, and vehicle transportation processes handled by " . $this->comp['company3'] . ".";
         $data['module'] = "gallery";
         $data['view_file'] = "video-gallery";
         echo Modules::run('template/layout2', $data);

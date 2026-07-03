@@ -5,37 +5,37 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 $default_photos = array(
     array(
         'image' => 'packing.jpg',
-        'alt' => 'Household packaging services with multi-layer bubble wrapping by Manjeet Packers and Movers',
+        'alt' => 'Household packaging services with multi-layer bubble wrapping by ' . $company3,
         'title' => 'Multi-Layer Bubble Wrapping',
         'is_default' => true
     ),
     array(
         'image' => 'loading.jpg',
-        'alt' => 'Professional loaders handling freight stacking at cargo terminal by Manjeet Packers and Movers',
+        'alt' => 'Professional loaders handling freight stacking at cargo terminal by ' . $company3,
         'title' => 'Organized Cargo Loading',
         'is_default' => true
     ),
     array(
         'image' => 'household.jpg',
-        'alt' => 'Secure local and intercity household goods relocation delivery truck by Manjeet Packers and Movers',
+        'alt' => 'Secure local and intercity household goods relocation delivery truck by ' . $company3,
         'title' => 'Household Shifting',
         'is_default' => true
     ),
     array(
         'image' => 'office.jpg',
-        'alt' => 'IT servers and modular desks office relocation setup by Manjeet Packers and Movers',
+        'alt' => 'IT servers and modular desks office relocation setup by ' . $company3,
         'title' => 'Office Shifting',
         'is_default' => true
     ),
     array(
         'image' => 'industrial.jpg',
-        'alt' => 'Heavy duty machinery rigging and plant logistics transfer using cranes by Manjeet Packers and Movers',
+        'alt' => 'Heavy duty machinery rigging and plant logistics transfer using cranes by ' . $company3,
         'title' => 'Industrial Shifting',
         'is_default' => true
     ),
     array(
         'image' => 'car.jpg',
-        'alt' => 'Enclosed double-deck automobile shipping carrier loading passenger cars by Manjeet Packers and Movers',
+        'alt' => 'Enclosed double-deck automobile shipping carrier loading passenger cars by ' . $company3,
         'title' => 'Car Transportation',
         'is_default' => true
     )
