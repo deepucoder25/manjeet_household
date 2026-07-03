@@ -63,11 +63,14 @@ include 'city_content.php';
       <h3 class="fw-bold mt-2">Need Professional Shifting Assistance in <?= htmlspecialchars($city) ?>?</h3>
       <p class="text-white-50 col-lg-6 mx-auto mb-4">Get a free consultation from our local relocation experts. We are available 24/7 to plan your move.</p>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <a href="<?= $phonehtml ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark rounded-pill pm-banner-btn-call">
-          <i class="bi bi-telephone-fill me-2"></i> Call: <?= htmlspecialchars($phone) ?>
+        <a href="<?= $indore_phonehtml ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark rounded-pill pm-banner-btn-call">
+          <i class="bi bi-telephone-fill me-2"></i> Indore Office: <?= htmlspecialchars($indore_phone) ?>
         </a>
-        <a href="<?= $whatsapphtml ?>" target="_blank" class="btn btn-success px-4 py-2 fw-bold text-white rounded-pill pm-banner-btn-wa">
-          <i class="bi bi-whatsapp me-2"></i> WhatsApp Shifting Support
+        <a href="<?= $indore_phonehtml1 ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark rounded-pill pm-banner-btn-call">
+          <i class="bi bi-telephone-fill me-2"></i> Indore Support: <?= htmlspecialchars($indore_phone1) ?>
+        </a>
+        <a href="<?= $bhopal_phonehtml ?>" class="btn btn-warning px-4 py-2 fw-bold text-dark rounded-pill pm-banner-btn-call">
+          <i class="bi bi-telephone-fill me-2"></i> Bhopal Office: <?= htmlspecialchars($bhopal_phone) ?>
         </a>
       </div>
     </div>
