@@ -4,15 +4,15 @@
 <section class="pm-process-section">
   
   <!-- Map Outline Accent Watermark in Backdrop -->
-  <i class="bi bi-globe position-absolute text-white" style="font-size: 25rem; opacity: 0.01; right: -50px; bottom: -50px; pointer-events: none;"></i>
+  <i class="bi bi-globe position-absolute text-white pm-process-globe-watermark"></i>
   
   <div class="container position-relative z-1">
     
     <!-- Top icon decoration -->
     <div class="d-flex align-items-center justify-content-center gap-3 mb-2">
-      <span style="width: 40px; height: 1px; background-color: rgba(255, 255, 255, 0.2); display: inline-block;"></span>
-      <div class="text-danger" style="font-size: 24px;"><i class="bi bi-truck"></i></div>
-      <span style="width: 40px; height: 1px; background-color: rgba(255, 255, 255, 0.2); display: inline-block;"></span>
+      <span class="pm-process-top-line"></span>
+      <div class="text-danger pm-process-top-icon"><i class="bi bi-truck"></i></div>
+      <span class="pm-process-top-line"></span>
     </div>
 
     <!-- Headers -->
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Responsive Steps Grid -->
-    <div class="row g-4 justify-content-center">
+    <div class="row justify-content-center">
       
       <!-- Step 01 -->
       <div class="col-lg-2-4 col-md-4 col-sm-6 col-6 pm-process-card-col">

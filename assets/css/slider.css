@@ -508,30 +508,37 @@
         flex-wrap: nowrap;
         gap: 0;
         justify-content: space-between;
-        padding: 14px 4px;
+        padding: 14px 2px;
         overflow: hidden;
     }
     .trust-badge-item {
-        flex: 1 1 0%;
-        padding: 0 2px;
+        flex: 1 1 20%;
+        min-width: 0;
+        padding: 0 1px;
         border-right: 1px solid rgba(3, 15, 38, 0.08) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .trust-badge-item:last-child {
         border-right: none !important;
     }
     .trust-badge-icon {
-        font-size: 16px !important;
+        font-size: 14px !important;
         margin-bottom: 4px !important;
         height: auto !important;
     }
     .trust-badge-title {
-        font-size: 8px !important;
-        margin-bottom: 2px !important;
+        font-size: 7.5px !important;
+        margin-bottom: 0px !important;
         line-height: 1.1 !important;
     }
     .trust-badge-desc {
-        font-size: 7px !important;
+        font-size: 6.5px !important;
         line-height: 1.15 !important;
+        display: block !important;
+        margin-top: 2px;
     }
     .container-slider-custom {
         padding-left: 20px;
@@ -539,18 +546,22 @@
     }
     .stats-bar-wrapper {
         border-radius: 24px;
-        padding: 10px 4px;
+        padding: 10px 2px;
         flex-wrap: nowrap;
-        overflow: hidden;
         gap: 0;
         justify-content: space-between;
+        overflow: hidden;
     }
     .stats-bar-item {
-        flex: 1 1 0%;
+        flex: 1 1 20%;
+        min-width: 0;
         padding: 0 2px;
         border-right: 1px solid rgba(0, 0, 0, 0.06) !important;
         justify-content: center;
         gap: 2px !important;
+    }
+    .stats-bar-item:last-child {
+        border-right: none !important;
     }
     .stats-text {
         flex-shrink: 1 !important;
@@ -562,12 +573,6 @@
         flex: 1;
         min-width: 0;
     }
-    .stats-bar-item:last-child {
-        border-right: none !important;
-    }
-    .google-rating-item {
-        border-right: none !important;
-    }
     .stats-icon {
         width: 28px !important;
         height: 28px !important;
@@ -578,8 +583,18 @@
     .stats-text strong {
         font-size: 9px !important;
     }
-    .stats-text span {
-        font-size: 7px !important;
+    .stats-text span,
+    .rating-stars-wrap span {
+        font-size: 6.5px !important;
+        line-height: 1.15 !important;
+        display: block !important;
+    }
+    .rating-stars {
+        display: flex !important;
+        gap: 1px;
+    }
+    .rating-stars i {
+        font-size: 5px !important;
     }
     .google-logo-wrap svg {
         width: 13px !important;
@@ -587,12 +602,6 @@
     }
     .rating-top-row strong {
         font-size: 9px !important;
-    }
-    .rating-stars i {
-        font-size: 6.5px !important;
-    }
-    .rating-stars-wrap span {
-        font-size: 7px !important;
     }
 }
 

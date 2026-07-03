@@ -49,7 +49,7 @@ $photos = !empty($db_photos) ? array_merge($db_photos, $default_photos) : $defau
 
 <section class="gallery-section py-5 mb-5 pb-5">
     <div class="container">
-        <div class="row g-5">
+        <div class="row">
 
             <!-- Main Content Area -->
             <div class="col-lg-8">
@@ -61,7 +61,7 @@ $photos = !empty($db_photos) ? array_merge($db_photos, $default_photos) : $defau
                     </p>
 
                     <!-- Gallery Grid -->
-                    <div class="row g-4">
+                    <div class="row">
                         <?php 
                         $count = 0;
                         foreach ($photos as $i => $photo): 

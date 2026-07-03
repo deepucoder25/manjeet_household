@@ -4,7 +4,7 @@
 
 <section class="reviews-section py-5 mb-5 pb-5">
     <div class="container">
-        <div class="row g-5">
+        <div class="row">
 
             <!-- Main Content Area -->
             <div class="col-lg-8">
@@ -45,7 +45,7 @@
                                 <p class="text-muted mb-0">Be the first to share your relocation experience with us!</p>
                             </div>
                         <?php else: ?>
-                            <div class="row g-4">
+                            <div class="row">
                                 <?php 
                                 foreach ($reviews->result() as $r): 
                                     $pdate = explode(" ", $r->posted_date)[0];

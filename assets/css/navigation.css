@@ -2,6 +2,8 @@
 
 html, body {
     font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 :root {
@@ -92,8 +94,19 @@ html, body {
     box-shadow: 0 6px 18px rgba(214, 9, 18, 0.35);
 }
 
-.btn-quote i {
+.btn-quote-icon {
     font-size: 16px;
+    display: none;
+}
+
+.btn-quote-text {
+    display: inline;
+}
+
+@media (min-width: 576px) {
+    .btn-quote-icon {
+        display: inline-block;
+    }
 }
 
 /* Header Phone Callout (Mobile & Tablet) */
@@ -561,5 +574,25 @@ body.menu-open {
     .btn-quote {
         padding: 6px 10px;
         font-size: 11px;
+    }
+
+    @media (max-width: 380px) {
+        .btn-quote-text {
+            display: none;
+        }
+        .btn-quote-icon {
+            display: inline-block !important;
+            font-size: 14px;
+        }
+        .btn-quote {
+            padding: 8px;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            gap: 0 !important;
+        }
     }
 }

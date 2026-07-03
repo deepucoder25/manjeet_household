@@ -50,8 +50,8 @@
         </div>
 
         <a href="#" class="btn-quote d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#qteModal">
-          <i class="bi bi-file-earmark-text d-none d-sm-inline-block"></i>
-          <span>Get a Quote</span>
+          <i class="bi bi-file-earmark-text btn-quote-icon"></i>
+          <span class="btn-quote-text">Get a Quote</span>
         </a>
 
         <button class="hamburger d-flex" id="openMenu" aria-label="Open navigation menu">

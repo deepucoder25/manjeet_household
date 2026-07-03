@@ -6,7 +6,7 @@
     <div class="container">
         
         <!-- Two Office Info Boxes on Top -->
-        <div class="row g-4 mb-5">
+        <div class="row mb-5">
             <!-- Box 1: Indore Head Office -->
             <div class="col-md-6">
                 <div class="contact-office-card shadow-sm h-100 p-4 border rounded-4">
@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <div class="row g-5">
+        <div class="row">
             <!-- Left Info Panel (SEO Optimized & Accessible) -->
             <div class="col-lg-5">
                 <div class="contact-info-panel pe-lg-4">
@@ -86,7 +86,7 @@
                     <p class="text-muted mb-4">Fields marked with asterisk (*) are mandatory for verification.</p>
                     
                     <form id="contactform" class="ajax-form" data-url="<?php echo site_url('contacts/contact') ?>" data-result="contactformresults" onsubmit="return false;">
-                        <div class="row g-4">
+                        <div class="row">
                             <div class="col-md-6">
                                 <label for="contact_name" class="form-label fw-bold text-dark mb-1">Your Full Name *</label>
                                 <div class="contact-custom-input-group">
