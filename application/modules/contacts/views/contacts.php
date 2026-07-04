@@ -7,16 +7,39 @@
         
         <!-- Two Office Info Boxes on Top -->
         <div class="row mb-5">
-            <!-- Box 1: Indore Head Office -->
-            <div class="col-md-6">
+            <!-- Box 1: Bhopal Head Office -->
+            <div class="col-md-6 mb-4 mb-md-0">
                 <div class="contact-office-card shadow-sm h-100 p-4 border rounded-4">
                     <div class="d-flex align-items-center mb-3">
                         <div class="contact-circle-icon me-3">
                             <i class="bi bi-building-fill"></i>
                         </div>
                         <div>
-                            <span class="contact-office-badge contact-office-badge-head">Office</span>
-                            <h3 class="contact-office-name">Indore Branch</h3>
+                            <span class="contact-office-badge contact-office-badge-head">Head Office</span>
+                            <h3 class="contact-office-name">Bhopal Head Office</h3>
+                        </div>
+                    </div>
+                    <div class="contact-office-details">
+                        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-danger"></i><?= $bhopal_address ?></p>
+                        <p class="mb-2">
+                            <i class="bi bi-telephone-fill me-2 text-danger"></i>
+                            <a href="<?= $bhopal_phonehtml ?>" class="text-decoration-none fw-bold"><?= $bhopal_phone ?></a>
+                        </p>
+                        <p class="mb-0"><i class="bi bi-envelope-fill me-2 text-danger"></i><a href="<?= $bhopal_mailhtml ?>" class="text-decoration-none"><?= $bhopal_mail ?></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2: Indore Branch Office -->
+            <div class="col-md-6">
+                <div class="contact-office-card shadow-sm h-100 p-4 border rounded-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="contact-circle-icon me-3">
+                            <i class="bi bi-building"></i>
+                        </div>
+                        <div>
+                            <span class="contact-office-badge contact-office-badge-branch">Branch Office</span>
+                            <h3 class="contact-office-name">Indore Branch Office</h3>
                         </div>
                     </div>
                     <div class="contact-office-details">
@@ -27,30 +50,7 @@
                             <span class="mx-2 text-muted">|</span>
                             <a href="<?= $indore_phonehtml1 ?>" class="text-decoration-none fw-bold"><?= $indore_phone1 ?></a>
                         </p>
-                        <p class="mb-0"><i class="bi bi-envelope-fill me-2 text-danger"></i><a href="<?= $mailhtml ?>" class="text-decoration-none"><?= $mail ?></a></p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Box 2: Bhopal Branch Office -->
-            <div class="col-md-6">
-                <div class="contact-office-card shadow-sm h-100 p-4 border rounded-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="contact-circle-icon me-3">
-                            <i class="bi bi-building"></i>
-                        </div>
-                        <div>
-                            <span class="contact-office-badge contact-office-badge-branch">Office</span>
-                            <h3 class="contact-office-name">Bhopal Branch</h3>
-                        </div>
-                    </div>
-                    <div class="contact-office-details">
-                        <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-danger"></i><?= $bhopal_address ?></p>
-                        <p class="mb-2">
-                            <i class="bi bi-telephone-fill me-2 text-danger"></i>
-                            <a href="<?= $bhopal_phonehtml ?>" class="text-decoration-none fw-bold"><?= $bhopal_phone ?></a>
-                        </p>
-                        <p class="mb-0"><i class="bi bi-envelope-fill me-2 text-danger"></i><a href="<?= $mailhtml ?>" class="text-decoration-none"><?= $mail ?></a></p>
+                        <p class="mb-0"><i class="bi bi-envelope-fill me-2 text-danger"></i><a href="<?= $indore_mailhtml ?>" class="text-decoration-none"><?= $indore_mail ?></a></p>
                     </div>
                 </div>
             </div>

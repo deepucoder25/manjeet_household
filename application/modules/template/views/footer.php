@@ -120,7 +120,33 @@
           <div class="footer-contact-box-new row g-4 row-cols-1 row-cols-md-2 row-cols-lg-1">
 
             <div class="col branch-block">
-              <h6 class="branch-subtitle text-danger fw-bold mb-2">Indore Office</h6>
+              <h6 class="branch-subtitle text-danger fw-bold mb-2">Bhopal Head Office</h6>
+              <div class="contact-info-item-new mb-2">
+                <i class="bi bi-telephone-fill text-danger me-2"></i>
+                <div class="info-content">
+                  <div class="contact-phones-wrap">
+                    <a href="<?= $bhopal_phonehtml ?>" class="contact-link"><?= $bhopal_phone ?></a>
+                  </div>
+                  <span class="info-subtext">Call Us Anytime</span>
+                </div>
+              </div>
+              <div class="contact-info-item-new mb-2">
+                <i class="bi bi-envelope-fill text-danger me-2"></i>
+                <div class="info-content">
+                  <a href="<?= $bhopal_mailhtml ?>" class="contact-link"><?= $bhopal_mail ?></a>
+                  <span class="info-subtext">Drop us an email</span>
+                </div>
+              </div>
+              <div class="contact-info-item-new">
+                <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+                <div class="info-content">
+                  <span class="contact-address-text"><?= $bhopal_address ?></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col branch-block">
+              <h6 class="branch-subtitle text-danger fw-bold mb-2">Indore Branch Office</h6>
               <div class="contact-info-item-new mb-2">
                 <i class="bi bi-telephone-fill text-danger me-2"></i>
                 <div class="info-content">
@@ -134,7 +160,7 @@
               <div class="contact-info-item-new mb-2">
                 <i class="bi bi-envelope-fill text-danger me-2"></i>
                 <div class="info-content">
-                  <a href="<?= $mailhtml ?>" class="contact-link"><?= $mail ?></a>
+                  <a href="<?= $indore_mailhtml ?>" class="contact-link"><?= $indore_mail ?></a>
                   <span class="info-subtext">Drop us an email</span>
                 </div>
               </div>
@@ -142,32 +168,6 @@
                 <i class="bi bi-geo-alt-fill text-danger me-2"></i>
                 <div class="info-content">
                   <span class="contact-address-text"><?= $indore_address ?></span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col branch-block">
-              <h6 class="branch-subtitle text-danger fw-bold mb-2">Bhopal Office</h6>
-              <div class="contact-info-item-new mb-2">
-                <i class="bi bi-telephone-fill text-danger me-2"></i>
-                <div class="info-content">
-                  <div class="contact-phones-wrap">
-                    <a href="<?= $bhopal_phonehtml ?>" class="contact-link"><?= $bhopal_phone ?></a>
-                  </div>
-                  <span class="info-subtext">Call Us Anytime</span>
-                </div>
-              </div>
-              <div class="contact-info-item-new mb-2">
-                <i class="bi bi-envelope-fill text-danger me-2"></i>
-                <div class="info-content">
-                  <a href="<?= $mailhtml ?>" class="contact-link"><?= $mail ?></a>
-                  <span class="info-subtext">Drop us an email</span>
-                </div>
-              </div>
-              <div class="contact-info-item-new">
-                <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-                <div class="info-content">
-                  <span class="contact-address-text"><?= $bhopal_address ?></span>
                 </div>
               </div>
             </div>
@@ -264,6 +264,94 @@
   <?php $this->load->view('contacts/quotemodal'); ?>
   <?php $this->load->view('contacts/callmeback_modal'); ?>
   <?php $this->load->view('contacts/review_modal'); ?>
+
+  <!-- Floating Contact Widget -->
+  <div class="floating-contact-widget">
+    <!-- Call Options Popup -->
+    <div class="popup-options-container" id="call-options">
+      <?php if (!empty($bhopal_phone)): ?>
+        <a href="<?= $bhopal_phonehtml ?>" class="popup-option option-left">
+          <span class="popup-icon-badge call-badge"><i class="bi bi-telephone-fill"></i></span>
+          <span class="popup-label">Bhopal (Head Office)</span>
+        </a>
+      <?php endif; ?>
+      <?php if (!empty($indore_phone)): ?>
+        <a href="<?= $indore_phonehtml ?>" class="popup-option option-left">
+          <span class="popup-icon-badge call-badge"><i class="bi bi-telephone-fill"></i></span>
+          <span class="popup-label">Indore (Branch Office)</span>
+        </a>
+      <?php endif; ?>
+      <?php if (!empty($indore_phone1)): ?>
+        <a href="<?= $indore_phonehtml1 ?>" class="popup-option option-left">
+          <span class="popup-icon-badge call-badge"><i class="bi bi-telephone-fill"></i></span>
+          <span class="popup-label">Indore Support</span>
+        </a>
+      <?php endif; ?>
+    </div>
+
+    <!-- WhatsApp Options Popup -->
+    <div class="popup-options-container" id="whatsapp-options">
+      <?php if (!empty($bhopal_whatsapphtml)): ?>
+        <a href="<?= $bhopal_whatsapphtml ?>" target="_blank" rel="noopener" class="popup-option option-right">
+          <span class="popup-label">Bhopal (Head Office)</span>
+          <span class="popup-icon-badge whatsapp-badge"><i class="bi bi-whatsapp"></i></span>
+        </a>
+      <?php endif; ?>
+      <?php if (!empty($indore_whatsapphtml)): ?>
+        <a href="<?= $indore_whatsapphtml ?>" target="_blank" rel="noopener" class="popup-option option-right">
+          <span class="popup-label">Indore (Branch Office)</span>
+          <span class="popup-icon-badge whatsapp-badge"><i class="bi bi-whatsapp"></i></span>
+        </a>
+      <?php endif; ?>
+      <?php if (!empty($indore_whatsapphtml1)): ?>
+        <a href="<?= $indore_whatsapphtml1 ?>" target="_blank" rel="noopener" class="popup-option option-right">
+          <span class="popup-label">Indore Support</span>
+          <span class="popup-icon-badge whatsapp-badge"><i class="bi bi-whatsapp"></i></span>
+        </a>
+      <?php endif; ?>
+    </div>
+
+    <!-- Trigger Buttons -->
+    <button type="button" class="floating-contact-btn floating-btn-call" id="call-trigger" aria-label="Call Us">
+      <i class="bi bi-telephone-fill"></i>
+      <span class="btn-text">Call Now</span>
+    </button>
+    
+    <button type="button" class="floating-contact-btn floating-btn-whatsapp" id="whatsapp-trigger" aria-label="Chat with Us">
+      <i class="bi bi-whatsapp"></i>
+      <span class="btn-text">Chat with Us</span>
+    </button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const whatsappTrigger = document.getElementById("whatsapp-trigger");
+      const whatsappOptions = document.getElementById("whatsapp-options");
+      const callTrigger = document.getElementById("call-trigger");
+      const callOptions = document.getElementById("call-options");
+
+      whatsappTrigger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        whatsappOptions.classList.toggle("show");
+        callOptions.classList.remove("show");
+      });
+
+      callTrigger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        callOptions.classList.toggle("show");
+        whatsappOptions.classList.remove("show");
+      });
+
+      // Close when clicking outside
+      document.addEventListener("click", function (e) {
+        if (!e.target.closest(".floating-contact-widget")) {
+          whatsappOptions.classList.remove("show");
+          callOptions.classList.remove("show");
+        }
+      });
+    });
+  </script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?=base_url()?>assets/js/form.js"></script>
 </body>

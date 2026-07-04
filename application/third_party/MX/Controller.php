@@ -57,12 +57,12 @@ class MX_Controller
         $this->comp['indore_phonehtml'] = 'tel:+919893701992';
         $this->comp['indore_phone1'] = '+91 9111111593';
         $this->comp['indore_phonehtml1'] = 'tel:+919111111593';
-        $this->comp['phone'] = '+91 9893701992';
-        $this->comp['phonehtml'] = 'tel:+919893701992';
         $this->comp['supportmail'] = 'support@mycompany.com';
         $this->comp['replyToMail'] = 'support@mycompany.com';
-        $this->comp['mail'] = 'manjeetpackersindore@gmail.com';    
-        $this->comp['mailhtml'] = "mailto:manjeetpackersindore@gmail.com";
+        $this->comp['bhopal_mail'] = 'manjeetpackersandmovers@gmail.com';
+        $this->comp['bhopal_mailhtml'] = "mailto:manjeetpackersandmovers@gmail.com";
+        $this->comp['indore_mail'] = 'manjeetpackersindore@gmail.com';    
+        $this->comp['indore_mailhtml'] = "mailto:manjeetpackersindore@gmail.com";
         $this->comp['company3'] = 'Manjeet House Hold Packers and Movers';
         $this->comp['companydomain'] = 'mycompany.com';
 
@@ -71,7 +71,9 @@ class MX_Controller
         $this->comp['instagramhtml'] = "";
         $this->comp['twitterhtml'] = "";
         $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "https://wa.me/919893701992";
+        $this->comp['bhopal_whatsapphtml'] = "https://wa.me/919713314455";
+        $this->comp['indore_whatsapphtml'] = "https://wa.me/919893701992";
+        $this->comp['indore_whatsapphtml1'] = "https://wa.me/919111111593";
 
         $this->comp['bhopal_address'] = "Shop no G-09 , balaji parisar, shopping complex, block -A, Near Trupati Abhinav homes,  Ayodhya by pass road Bhopal, Pincode -462010";
         $this->comp['indore_address'] = "Shop no-26, Scheme no-78, behind ckd, Dewas Naka, Indore, pincode-452010";
