@@ -9,82 +9,85 @@
             <div class="col-lg-8">
                 <div class="service-main-content">
 
-                    <h2 class="service-section-title">The Difference We Make</h2>
-                    <div class="about-service-text mb-5">
-                        <p class="lead">
-                            Relocation is not just about moving boxes; it's about moving lives, memories, and valuable assets. At <strong><?= $company3 ?></strong>, we are committed to making your transition seamless, safe, and stress-free.
-                        </p>
+                    <h2 class="service-section-title">Why Choose <?= $company3 ?></h2>
                         <p>
-                            Over our long journey in the relocation industry, we have refined our processes to become India's most trusted name in packers and movers. We employ only seasoned packing professionals, utilize superior packing materials, and possess a vast fleet of specialized transport carriers. Our transparent pricing structure and pan-India presence ensure you receive high-quality service at the most reasonable prices, with no hidden surprises.
+                            Choosing a moving firm does not involve selecting some vehicle and staff alone. The selection should be made by considering those aspects that ensure that everything will be handled professionally and responsibly. The <strong><?= $company3 ?></strong> is a reliable and trusted choice because we have a great team that guarantees all relocations of your belongings are done in accordance with the highest industry standards.
                         </p>
-                    </div>
 
                     <h2 class="service-section-title">Our Key Pillars of Trust</h2>
                     <div class="row mt-4 g-4 mb-5">
                         <div class="col-md-6">
                             <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
                                 <div class="about-icon-box-lg">
-                                    <i class="bi bi-shield-lock-fill"></i>
+                                    <i class="bi bi-shield-check"></i>
                                 </div>
-                                <h5 class="fw-bold text-dark">100% Safe Shifting</h5>
-                                <p class="small text-muted mb-0">
-                                    We use heavy-duty multi-layered bubble wraps, customized wooden crates, and premium carton sheets to guard your belongings against impact, moisture, and dust during the entire journey.
+                                <h5 class="fw-bold text-dark">Experience of Our Professional Team</h5>
+                                <p class="text-muted mb-0">
+                                   The team of trained movers has practical skills and the knowledge that helps them plan the relocations carefully and efficiently. Each of the moving workers knows how to transport household goods, office equipment, fragile items, heavy furniture, cars, and other belongings properly.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
                                 <div class="about-icon-box-lg">
-                                    <i class="bi bi-truck"></i>
+                                    <i class="bi bi-box-seam"></i>
                                 </div>
-                                <h5 class="fw-bold text-dark">Specialized Covered Carriers</h5>
-                                <p class="small text-muted mb-0">
-                                    Our cars and bikes are moved inside enclosed container carriers to ensure they are shielded from road debris, weather, and external damage, providing door-to-door delivery.
+                                <h5 class="fw-bold text-dark">Careful Packaging of Your Belongings</h5>
+                                <p class="text-muted mb-0">
+                                  All relocations are safe only when the belongings are transported safely. We pack each item before loading it using appropriate packaging material, including corrugated boxes, bubble wrap, foam sheets, stretch film, packing paper, and tape.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
                                 <div class="about-icon-box-lg">
-                                    <i class="bi bi-tags-fill"></i>
+                                    <i class="bi bi-calculator"></i>
                                 </div>
-                                <h5 class="fw-bold text-dark">Transparent Fair Pricing</h5>
-                                <p class="small text-muted mb-0">
-                                    No hidden costs. We provide a detailed itemized breakdown of expenses upfront so you know exactly what you are paying for, eliminating any post-move disputes.
+                                <h5 class="fw-bold text-dark">Complete Transparency of Prices</h5>
+                                <p class="text-muted mb-0">
+                                   It is difficult to tolerate hidden charges when one books some services. At <b><?= $company3 ?></b> you will not face any unpleasant surprises because the pricing is fully transparent. Before making a quotation, we inform you about the price of the service in detail.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
                                 <div class="about-icon-box-lg">
-                                    <i class="bi bi-clock-history"></i>
+                                    <i class="bi bi-map"></i>
                                 </div>
-                                <h5 class="fw-bold text-dark">Punctual &amp; Prompt Delivery</h5>
-                                <p class="small text-muted mb-0">
-                                    Time is crucial. We carefully map logistics routes, utilize advanced tracking systems, and plan departures to guarantee your items arrive precisely when expected.
+                                <h5 class="fw-bold text-dark">Safe Transporting</h5>
+                                <p class="text-muted mb-0">
+                                   The transport planning involves the selection of the safest routes and vehicles. The belongings are delivered punctually and timely. We do our best to provide our customers with punctual deliveries of the belongings.
                                 </p>
                             </div>
                         </div>
-                    </div>
-
-                    <h2 class="service-section-title">Industry Credentials</h2>
-                    <div class="about-service-text mb-5">
-                        <p>
-                            <strong><?= $company3 ?></strong> is fully accredited with major relocation and standard certifications. Our logistics team operates on the highest standards of safety guidelines.
-                        </p>
-                        <div class="p-3 border rounded-3 bg-light mt-3">
-                            <ul class="about-tip-list mb-0">
-                                <li><strong>ISO Certified Quality Systems</strong>: Complies with strict international standards of service management.</li>
-                                <li><strong>IBA Approved Transporters</strong>: Offering official, bank-approved billing and shifting options for corporate and government relocations.</li>
-                                <li><strong>Full Transit Insurance Options</strong>: Offering peace of mind with complete cargo valuation and swift claim settlements.</li>
-                            </ul>
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
+                                <div class="about-icon-box-lg">
+                                    <i class="bi bi-list"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark">Individual Moving Plans</h5>
+                                <p class="text-muted mb-0">
+                                   All clients have various needs related to their relocations. Some customers require professional packing and unpacking, some only need transportation and loading. We analyze your requirements and give recommendations regarding moving plans.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4 border-0 shadow-sm rounded-4 about-card-hover">
+                                <div class="about-icon-box-lg">
+                                    <i class="bi bi-headset"></i>
+                                </div>
+                                <h5 class="fw-bold text-dark">Customer Service</h5>
+                                <p class="text-muted mb-0">
+                                  Any relocation requires the cooperation of a customer with a mover. The contact of a moving company and its client should not be interrupted during the process of relocation of belongings. Good communication makes the moving experience pleasant.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="p-4 bg-light border-start border-5 border-danger rounded-3">
-                        <h5 class="fw-bold text-danger mb-2">Our Quality Commitment</h5>
-                        <p class="mb-0 text-muted small italic">
-                            "We believe that a satisfied client is our greatest advertisement. Every single move receives the absolute dedication of our branch managers, supervisors, packing experts, and customer care executives."
+                        <h5 class="fw-bold text-danger mb-2">Our Guarantee</h5>
+                        <p class="mb-0 text-muted">
+                            "We believe that a moving company does not earn the trust due to the advertising of its services. The trust of our customers is earned when we carry out our activities responsibly and professionally. Every relocation allows providing our high-quality services."
                         </p>
                     </div>
 

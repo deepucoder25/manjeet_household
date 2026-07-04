@@ -20,16 +20,14 @@ if (!function_exists('format_stat_with_span')) {
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <!-- Heading -->
-                    <h2 class="service-section-title">Who We Are</h2>
-                    
-                    <div class="about-service-text mb-4">
-                        <p class="lead">
-                            For over three decades, <strong><?= $company3 ?></strong> has set the benchmark for secure, efficient, and seamless relocation services across India.
-                        </p>
-                        <p>
-                            What started as a single-truck operation has grown into one of the country's most respected logistics and packing companies. Today, we handle household goods shifting, corporate relocation, vehicle carrier shipping, and warehousing storage options with the utmost care and professional precision.
-                        </p>
-                    </div>
+                    <h2 class="service-section-title">About <?= $company3 ?></h2>
+                        <span class="fw-bold">Moving People's Life with Credibility, Professionalism, and Responsibility</span>
+                        <p>When it comes to moving services at <strong><?= $company3 ?></strong> we consider every relocation to be much more than the process of transporting people's belongings. Each relocation is associated with families starting a new life, businesses entering a new stage of development, individuals getting a second chance. That is why our duty doesn't finish with packing and transporting people's belongings; we are moving people's lives forward with credibility and reliability.</p>
+                        <p>For a number of years, we have established ourselves as a reliable moving company thanks to professionalism, credibility, and responsible approach to the work. Our highly experienced team takes great care in performing every project safely and punctually providing safe and comfortable moving solutions to households, offices, commercial and industrial enterprises of India.</p>
+                    <span class="fs-3 fw-bold">Our History</span>
+                    <p>Our history started from one idea: the moving process shouldn't become stressful. We understood that many people were concerned about the issues of damaged goods, late delivery, additional expenses, and bad communications during the process of relocation. So we decided to create a company where there would always be trust, transparency, and client care.</p>
+
+                    <p>What started as a small moving company has been growing with time due to positive recommendations and stable relations with our clients. Instead of trying to perform a large number of moving projects, we tried to do everything in the right way, and each successful project proved to us that honesty is the best policy.</p>
 
                     <!-- Stats Dashboard Grid -->
                     <div class="row g-4 mb-5">
@@ -68,7 +66,7 @@ if (!function_exists('format_stat_with_span')) {
                                 </div>
                                 <h4 class="fw-bold mb-3">Our Vision</h4>
                                 <p class="text-muted small mb-0">
-                                    To establish ourselves as India's ultimate logistics and relocation provider by delivering modern, tech-enabled, safe, and transparent shifting services to every corner of the nation.
+                                    Our mission is to provide the safe, cheap and reliable relocation services that will make the moving process easier for every customer. We are devoted to the performance of professional packing, secure transportation, prompt delivery, and client support while keeping the entire process of relocation completely transparent.
                                 </p>
                             </div>
                         </div>
@@ -79,7 +77,7 @@ if (!function_exists('format_stat_with_span')) {
                                 </div>
                                 <h4 class="fw-bold mb-3">Our Mission</h4>
                                 <p class="text-muted small mb-0">
-                                    To provide peace of mind during shifting processes by employing skilled packing professionals, using premium materials, offering honest pricing, and maintaining strict safety standards.
+                                    Our vision is to become one of the most reputable names in packing and moving services in India by constantly providing dependable services, implementing new and better moving practices and establishing long-lasting relations with our clients based on credibility, professionalism, and excellence.
                                 </p>
                             </div>
                         </div>
@@ -89,7 +87,7 @@ if (!function_exists('format_stat_with_span')) {
                     <h2 class="service-section-title">Our Core Values</h2>
                     <div class="about-service-text mb-4">
                         <p>
-                            At the heart of our operations are four pillars that guide our team's daily interactions with clients, partners, and each other:
+                            Each decision of ours starts from one question "Is it going to improve the client's moving experience?" Your satisfaction stays our highest priority.
                         </p>
                     </div>
                     <div class="row g-4">
@@ -97,8 +95,8 @@ if (!function_exists('format_stat_with_span')) {
                             <div class="d-flex align-items-start gap-3 p-4 border rounded-4 shadow-sm about-card-hover">
                                 <div class="fs-3 text-danger about-icon-box-lg m-0"><i class="bi bi-patch-check-fill"></i></div>
                                 <div>
-                                    <h5 class="fw-bold mb-1">Absolute Integrity</h5>
-                                    <p class="text-muted small mb-0">Transparent billing, verified transport agreements, and zero surprise hidden costs.</p>
+                                    <h5 class="fw-bold mb-1">Client First</h5>
+                                    <p class="text-muted small mb-0">Each decision of ours starts from one question "Is it going to improve the client's moving experience?" Your satisfaction stays our highest priority.</p>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +104,8 @@ if (!function_exists('format_stat_with_span')) {
                             <div class="d-flex align-items-start gap-3 p-4 border rounded-4 shadow-sm about-card-hover">
                                 <div class="fs-3 text-danger about-icon-box-lg m-0"><i class="bi bi-award-fill"></i></div>
                                 <div>
-                                    <h5 class="fw-bold mb-1">Quality Without Compromise</h5>
-                                    <p class="text-muted small mb-0">Heavy duty multi-layered bubbles and customized robust wooden crates for delicate goods.</p>
+                                    <h5 class="fw-bold mb-1">Honesty and Transparency</h5>
+                                    <p class="text-muted small mb-0">We believe that the trust is being created through the means of transparent communications, reasonable prices and fulfillment of all our commitments.</p>
                                 </div>
                             </div>
                         </div>
@@ -115,8 +113,8 @@ if (!function_exists('format_stat_with_span')) {
                             <div class="d-flex align-items-start gap-3 p-4 border rounded-4 shadow-sm about-card-hover">
                                 <div class="fs-3 text-danger about-icon-box-lg m-0"><i class="bi bi-person-fill-check"></i></div>
                                 <div>
-                                    <h5 class="fw-bold mb-1">Customer First Approach</h5>
-                                    <p class="text-muted small mb-0">Dedicated support coordinators, custom package allocations, and easy claim resolution.</p>
+                                   <h5 class="fw-bold mb-1">Safety without Compromises</h5>
+                                    <p class="text-muted small mb-0">From high-quality packing materials to responsible loading and secure transportation - the protection of your property remains our main responsibility.</p>
                                 </div>
                             </div>
                         </div>
@@ -124,12 +122,20 @@ if (!function_exists('format_stat_with_span')) {
                             <div class="d-flex align-items-start gap-3 p-4 border rounded-4 shadow-sm about-card-hover">
                                 <div class="fs-3 text-danger about-icon-box-lg m-0"><i class="bi bi-speedometer2"></i></div>
                                 <div>
-                                    <h5 class="fw-bold mb-1">Speed and Safety</h5>
-                                    <p class="text-muted small mb-0">Optimal route mappings, specialized container trucks, and punctual delivery guarantees.</p>
+                                    <h5 class="fw-bold mb-1">Professional Excellence</h5>
+                                    <p class="text-muted small mb-0">Our specially trained team of movers undertakes each task following carefully planned out steps and according to industry standards.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <h4 class="mt-4">Why Do Our Clients Choose Us?</h4>
+                    <p>Our clients rely on us as a company which values such qualities as trust and reliability very much. We do not give any false promises; instead, we concentrate on proper planning, reliable services, affordable prices and fast results.</p>
+                    <p>Our professional team understands that every case is unique, and listens to our clients, makes necessary plans and coordinates their actions during the whole moving process.</p>
+
+                    <h5>Our Commitment to You</h5>
+                    <p>A successful moving process isn't just about reaching the destination point. It's about feeling confident throughout the whole journey.</p>
+
+                    <p>At <b><?= $company3 ?></b>, we are dedicated to making each relocation process smooth, well-organized and stress-free for you. No matter if you need to move your household items, office, vehicle or industrial equipment - you can be sure that we will perform each task with great care, professionalism and respect.</p>
 
                 </div>
             </div>

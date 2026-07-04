@@ -22,12 +22,12 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true" aria-controls="faq-collapse-1">
-                                    What services does <?= $company3 ?> provide?
+                                    Are you just involved in shifting households?
                                 </button>
                             </h2>
                             <div id="faq-collapse-1" class="accordion-collapse collapse show" aria-labelledby="faq-heading-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    We offer complete, end-to-end relocation services across India including household shifting, office relocation, vehicle (car/bike) carrier transport, warehouse storage, domestic shifting, corporate movements, international relocations, and pet relocations.
+                                   No. In addition to household shifting, we offer shifting of offices, cars and motorcycles transportation, packing, loading, unloading, storage, and long distance shifting all across India.
                                 </div>
                             </div>
                         </div>
@@ -36,12 +36,12 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-2">
-                                    How are the packing and moving charges calculated?
+                                   Will you do the packing for me?
                                 </button>
                             </h2>
                             <div id="faq-collapse-2" class="accordion-collapse collapse" aria-labelledby="faq-heading-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Relocation costs depend on several key factors: the total volume of goods, the amount of packing material needed (e.g. bubble wraps, boxes, custom wooden crates), travel distance, the floor levels of the locations, access to lifts, and additional options like warehousing or transit insurance.
+                                  Yes. All the required packing material is carried by our staff to pack your furniture, appliances, kitchen wares and other things prior to the loading process.
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,12 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-3">
-                                    Do you provide insurance for my household goods during transit?
+                                   Is my furniture going to be safe during the shifting process?
                                 </button>
                             </h2>
                             <div id="faq-collapse-3" class="accordion-collapse collapse" aria-labelledby="faq-heading-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Yes, we provide full transit insurance options. We strongly advise taking transit insurance as it covers financial liability for any damage arising due to unexpected road conditions, weather events, or traffic accidents. Our customer service team handles claims smoothly and quickly.
+                                  Yes, safety of your goods is our primary concern. Your items will be packed in the right way and handled with due care during the entire transportation period to minimize the risk of any kind of damage.
                                 </div>
                             </div>
                         </div>
@@ -64,12 +64,12 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-4" aria-expanded="false" aria-controls="faq-collapse-4">
-                                    How much time will it take to relocate my goods?
+                                    Do you do local and outstation shifting?
                                 </button>
                             </h2>
                             <div id="faq-collapse-4" class="accordion-collapse collapse" aria-labelledby="faq-heading-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Local shifting within a city is usually completed in a single day (typically taking 4 to 8 hours depending on size). For intercity shifting, transit times depend on the distance, route conditions, and checkpoint regulations, usually ranging between 2 to 7 business days.
+                                    Yes. You can rely on us for doing your local shifting as well as outstation shifting from one city to another in India.
                                 </div>
                             </div>
                         </div>
@@ -78,12 +78,12 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-5" aria-expanded="false" aria-controls="faq-collapse-5">
-                                    Can I track my shipment during transit?
+                                    Do you transport cars and bikes?
                                 </button>
                             </h2>
                             <div id="faq-collapse-5" class="accordion-collapse collapse" aria-labelledby="faq-heading-5" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Yes. We supply tracking options and maintain a dedicated support desk. The branch manager coordinating your shifting will remain in direct contact to provide regular status updates on where the vehicle is and its estimated arrival time.
+                                   Yes, our staff provides you with a dedicated transportation service for shifting of cars or motorcycles.
                                 </div>
                             </div>
                         </div>
@@ -92,12 +92,40 @@
                         <div class="accordion-item shadow-sm">
                             <h2 class="accordion-header" id="faq-heading-6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
-                                    What items are restricted or not loaded for transit?
+                                    Is transit insurance provided?
                                 </button>
                             </h2>
                             <div id="faq-collapse-6" class="accordion-collapse collapse" aria-labelledby="faq-heading-6" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    For safety reasons, we do not transport hazardous materials, inflammable substances (gas cylinders, fuel), contraband, perishables, jewelry, cash, and highly valuable documents. We advise clients to carry jewelry, cash, and documents personally.
+                                    Yes. In case of requirement, we can help you arrange a transit insurance for your goods.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 7 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq-heading-7">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-7" aria-expanded="false" aria-controls="faq-collapse-7">
+                                    When should I book my shift?
+                                </button>
+                            </h2>
+                            <div id="faq-collapse-7" class="accordion-collapse collapse" aria-labelledby="faq-heading-7" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The earlier the better. A few days ahead is fine enough so that we can make a plan for your shift and book your desired date.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 8 -->
+                        <div class="accordion-item shadow-sm">
+                            <h2 class="accordion-header" id="faq-heading-8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-8" aria-expanded="false" aria-controls="faq-collapse-8">
+                                   Why should I opt for <?= $company3 ?>?
+                                </button>
+                            </h2>
+                            <div id="faq-collapse-8" class="accordion-collapse collapse" aria-labelledby="faq-heading-8" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We consider that quality services start with a proper planning, fair pricing and true care of your belongings.
                                 </div>
                             </div>
                         </div>

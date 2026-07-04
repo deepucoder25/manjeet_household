@@ -30,16 +30,16 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                     </div>
-                                    <h6 class="fw-bold text-dark mb-2">Excellent Household Shifting</h6>
+                                    <h6 class="fw-bold text-dark mb-2">Best Household Shifting Company</h6>
                                     <p class="small text-muted mb-0">
-                                        "I shifted my entire household goods from Delhi to Bangalore. The crew arrived on time and packed everything carefully using double-layered bubble wrap. Not even a single glass item broke during the transit. Highly recommended!"
+                                        "The entire moving process was very well planned out from start to finish. The packing team came on time and packed our household stuff very efficiently, delivering all the stuff in one piece and without causing any damage. <?= $company3 ?> is highly recommended by me for all those planning their move."
                                     </p>
                                 </div>
                                 <div class="about-testimonial-card-meta">
                                     <div class="about-testimonial-avatar">R</div>
                                     <div>
-                                        <h6 class="about-testimonial-author-name">Ramanuj Sharma</h6>
-                                        <span class="about-testimonial-author-city">Delhi to Bangalore</span>
+                                        <h6 class="about-testimonial-author-name">Rahul Sharma</h6>
+                                        <span class="about-testimonial-author-city">Indore</span>
                                     </div>
                                 </div>
                             </div>
@@ -57,16 +57,16 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                     </div>
-                                    <h6 class="fw-bold text-dark mb-2">Safe Car &amp; Bike Carrier Service</h6>
+                                    <h6 class="fw-bold text-dark mb-2">Top Office Shifting Company</h6>
                                     <p class="small text-muted mb-0">
-                                        "We relocated our Hyundai i20 and Royal Enfield from Mumbai to Gurgaon. <?= $company3 ?> used a dedicated car carrier and delivered both vehicles door-to-door without a single scratch. Very transparent pricing as well."
+                                        "Our office shifting was done faster than we had imagined. We have very sensitive stuff including computers and documents which were handled very professionally."
                                     </p>
                                 </div>
                                 <div class="about-testimonial-card-meta">
                                     <div class="about-testimonial-avatar">P</div>
                                     <div>
-                                        <h6 class="about-testimonial-author-name">Priya Nair</h6>
-                                        <span class="about-testimonial-author-city">Mumbai to Gurgaon</span>
+                                        <h6 class="about-testimonial-author-name">Priya Verma</h6>
+                                        <span class="about-testimonial-author-city">Bhopal</span>
                                     </div>
                                 </div>
                             </div>
@@ -84,16 +84,16 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                     </div>
-                                    <h6 class="fw-bold text-dark mb-2">Smooth Office Relocation</h6>
+                                    <h6 class="fw-bold text-dark mb-2">Safest Moving of Car and Household Goods</h6>
                                     <p class="small text-muted mb-0">
-                                        "We had to move our IT office branch with 45 workstations from Pune to Hyderabad. The planning and execution by <?= $company3 ?> was flawless. We resumed our operations on Monday morning without any downtime."
+                                        "I was very nervous about the transport of both my car and household things together; but everything reached safe and on time. The entire process was monitored by the staff and I was updated every now and then."
                                     </p>
                                 </div>
                                 <div class="about-testimonial-card-meta">
-                                    <div class="about-testimonial-avatar">V</div>
+                                    <div class="about-testimonial-avatar">A</div>
                                     <div>
-                                        <h6 class="about-testimonial-author-name">Vikram Malhotra</h6>
-                                        <span class="about-testimonial-author-city">Pune to Hyderabad</span>
+                                        <h6 class="about-testimonial-author-name">Amit Patel</h6>
+                                        <span class="about-testimonial-author-city">Dewas</span>
                                     </div>
                                 </div>
                             </div>
@@ -113,14 +113,41 @@
                                     </div>
                                     <h6 class="fw-bold text-dark mb-2">Reliable Local Shifting</h6>
                                     <p class="small text-muted mb-0">
-                                        "Shifted our 3 BHK flat within Kolkata. The team completed the loading, transport, and unloading in just under 6 hours. Their pricing was highly competitive and the crew was incredibly polite and helpful."
+                                        "There were no hidden charges in the quotation, the entire process was hassle-free and all of my fragile kitchenware was separated in a different category along with my heavy stuff. Good work!"
                                     </p>
                                 </div>
                                 <div class="about-testimonial-card-meta">
-                                    <div class="about-testimonial-avatar">A</div>
+                                    <div class="about-testimonial-avatar">N</div>
                                     <div>
-                                        <h6 class="about-testimonial-author-name">Amitava Bose</h6>
-                                        <span class="about-testimonial-author-city">Local Kolkata Shifting</span>
+                                        <h6 class="about-testimonial-author-name">Neha Joshi</h6>
+                                        <span class="about-testimonial-author-city">Ujjain</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="col-md-6">
+                            <div class="about-testimonial-wrapper h-100 d-flex flex-column">
+                                <div class="about-testimonial-quote-box flex-grow-1 shadow-sm">
+                                    <span class="about-quote-decorator"><i class="bi bi-quote"></i></span>
+                                    <div class="about-testimonial-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </div>
+                                    <h6 class="fw-bold text-dark mb-2">Best Interstate Relocation Service</h6>
+                                    <p class="small text-muted mb-0">
+                                        "It was my first interstate relocation and hence I had a lot of questions; but everything was explained to me and the entire shifting was done without any problem. Very good company."
+                                    </p>
+                                </div>
+                                <div class="about-testimonial-card-meta">
+                                    <div class="about-testimonial-avatar">S</div>
+                                    <div>
+                                        <h6 class="about-testimonial-author-name">Sandeep Mishra</h6>
+                                        <span class="about-testimonial-author-city">Bhopal</span>
                                     </div>
                                 </div>
                             </div>
