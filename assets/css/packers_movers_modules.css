@@ -1099,3 +1099,124 @@
         padding: 24px;
     }
 }
+
+/* Intercity Shifting Routes Section in from_to_list.php */
+.pm-intercity-card {
+    background-color: var(--white);
+    border-color: #edf2f7 !important;
+}
+.pm-intercity-badge {
+    background-color: rgba(214, 9, 18, 0.08);
+    color: var(--primary-red);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 30px;
+    display: inline-block;
+}
+.pm-intercity-title {
+    color: var(--text-dark);
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+}
+.pm-intercity-city-highlight {
+    color: var(--primary-red);
+}
+.pm-intercity-desc {
+    font-size: 14.5px;
+    color: #64748b;
+}
+
+/* Scrollable Container with Fixed Height */
+.pm-intercity-scroll-container {
+    max-height: 420px; /* Fixed height for scrollable view */
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-red) #f1f5f9;
+}
+
+/* Intercity Grid Layout */
+.pm-intercity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* Custom Scrollbar Styles for Webkit */
+.pm-intercity-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+.pm-intercity-scroll-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 4px;
+}
+.pm-intercity-scroll-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-red);
+    border-radius: 4px;
+}
+
+.pm-intercity-route-card {
+    border: 1px solid #e2e8f0;
+    background-color: #f8fafc;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.pm-intercity-route-card:hover {
+    background-color: var(--white) !important;
+    border-color: var(--primary-red) !important;
+    box-shadow: 0 8px 20px rgba(214, 9, 18, 0.08);
+    transform: translateY(-2px);
+}
+.pm-route-icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(214, 9, 18, 0.08);
+    color: var(--primary-red);
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+.pm-intercity-route-card:hover .pm-route-icon-box {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+.pm-route-info {
+    flex: 1;
+}
+.pm-route-label {
+    display: block;
+    font-size: 11px;
+    color: #64748b;
+}
+.pm-route-name {
+    display: block;
+    font-size: 14.5px;
+    color: var(--text-dark);
+    font-weight: 700;
+}
+.pm-route-arrow {
+    color: #94a3b8;
+    transition: all 0.25s ease;
+}
+.pm-intercity-route-card:hover .pm-route-arrow {
+    color: var(--primary-red);
+    transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+    .pm-intercity-title {
+        font-size: 20px;
+    }
+    .pm-intercity-desc {
+        font-size: 13px;
+    }
+    .pm-route-name {
+        font-size: 13.5px;
+    }
+    .pm-intercity-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile view */
+        gap: 10px;
+    }
+}

@@ -78,5 +78,39 @@ class Packers_movers extends MX_Controller
         );
         echo Modules::run('template/layout2', $data);
     }
-   
+
+    function city_to_city($from_city = 'indore', $to_city = 'mumbai')
+    {
+        $this->load->helper('text');
+        $from = ucwords(str_replace("-", " ", $from_city));
+        $to = ucwords(str_replace("-", " ", $to_city));
+        
+        $state = 'Maharashtra'; // Default fallback
+        $states_list = ['bihar', 'delhi', 'madhya-pradesh', 'west-bengal', 'gujarat', 'punjab', 'maharashtra', 'haryana', 'rajasthan', 'uttar-pradesh', 'jharkhand', 'assam', 'karnataka', 'tamil-nadu', 'telangana'];
+        foreach ($states_list as $st_name) {
+            if (file_exists("./application/modules/packers_movers/views/data/$st_name.php")) {
+                include "data/$st_name.php";
+                foreach ($cities as $ct) {
+                    if (strtolower($ct['nm']) == strtolower($to)) {
+                        $state = ucwords(str_replace("-", " ", $st_name));
+                        break 2;
+                    }
+                }
+            }
+        }
+
+        $data = array(
+            "city" => $to,
+            "state" => $state,
+            "from_city" => $from,
+            "is_intercity" => true,
+            "title" => "Best Packers and Movers from $from to $to | " . $this->comp['company3'],
+            "description" => "Hire top-rated packers and movers from $from to $to. " . $this->comp['company3'] . " offers reliable household shifting and vehicle transport services at affordable rates.",
+            "keywords" => "movers and packers from $from to $to, Packers and movers from $from to $to",
+            "module" => "packers_movers",
+            "view_file" => "from_to_page",
+        );
+        echo Modules::run('template/layout2', $data);
+    }
 }
+

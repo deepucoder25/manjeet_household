@@ -41,7 +41,7 @@
                             <label for="modal_mfrom" class="visually-hidden">From City</label>
                             <div class="form-icon">
                                 <i class="bi bi-geo-alt-fill"></i>
-                                <input type="text" class="form-control" name="mfrom" id="modal_mfrom" placeholder="From City">
+                                <input type="text" class="form-control" name="mfrom" id="modal_mfrom" value="<?= isset($from_city) ? htmlspecialchars($from_city) : @$city ?>" placeholder="From City">
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                             <label for="modal_mto" class="visually-hidden">To City</label>
                             <div class="form-icon">
                                 <i class="bi bi-map-fill"></i>
-                                <input type="text" class="form-control" name="mto" id="modal_mto" placeholder="To City">
+                                <input type="text" class="form-control" name="mto" id="modal_mto" value="<?= isset($from_city) ? htmlspecialchars($city) : '' ?>" placeholder="To City">
                             </div>
                         </div>
                     </div>

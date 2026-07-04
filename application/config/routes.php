@@ -77,5 +77,6 @@ $route["assam"] = "packers_movers/state_services/assam";
 $route["karnataka"] = "packers_movers/state_services/karnataka";
 $route["bangalore"] = "packers_movers/state_services/bangalore";
 $route["tamil-nadu"] = "packers_movers/state_services/tamil-nadu";
+$route["packers-and-movers-from-(:any)-to-(:any)"] = "packers_movers/city_to_city/$1/$2";
 $route["(:any).htm"] = "home/error";
 $route['translate_uri_dashes'] = FALSE;

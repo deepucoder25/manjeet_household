@@ -33,7 +33,7 @@
             <label for="quote_mfrom" class="visually-hidden">Moving From</label>
             <div class="input-wrap-custom">
               <i class="bi bi-geo-alt input-icon-custom"></i>
-              <input type="text" name="mfrom" id="quote_mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From">
+              <input type="text" name="mfrom" id="quote_mfrom" class="form-control-custom" value="<?= isset($from_city) ? htmlspecialchars($from_city) : @$city ?>" placeholder="Moving From">
             </div>
           </div>
           
@@ -42,7 +42,7 @@
             <label for="quote_mto" class="visually-hidden">Moving To</label>
             <div class="input-wrap-custom">
               <i class="bi bi-geo-alt input-icon-custom"></i>
-              <input type="text" name="mto" id="quote_mto" class="form-control-custom" placeholder="Moving To">
+              <input type="text" name="mto" id="quote_mto" class="form-control-custom" value="<?= isset($from_city) ? htmlspecialchars($city) : '' ?>" placeholder="Moving To">
             </div>
           </div>
           

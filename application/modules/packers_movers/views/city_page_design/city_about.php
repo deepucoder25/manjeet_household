@@ -9,16 +9,12 @@ include 'city_map_content.php';
     <!-- About Row 1: Layered Image Card & Creative Content -->
     <div class="row align-items-center mb-5 pb-lg-4">
       
-      <!-- Creative Image Column -->
       <div class="col-lg-6">
         <div class="pm-about-layered-wrapper position-relative px-3 py-3">
-          <!-- Back offset border -->
           <div class="pm-about-layered-border position-absolute rounded-4"></div>
-          <!-- Main Image Card -->
           <div class="pm-city-about-img-frame position-relative overflow-hidden rounded-4 shadow-sm bg-white">
             <img loading="lazy" src="<?= base_url('assets/images/home_modules/industrial.jpg') ?>" class="w-100 h-100 object-fit-cover d-block" alt="<?= $company3 ?>">
           </div>
-          <!-- Floating Live Badge -->
           <div class="pm-about-floating-badge bg-white rounded-3 shadow-sm p-3 d-flex align-items-center gap-3 position-absolute">
             <span class="pm-badge-dot-live d-flex align-items-center justify-content-center rounded-circle"><span class="pm-dot-pulse"></span></span>
             <div>
@@ -46,15 +42,18 @@ include 'city_map_content.php';
 
     <!-- About Row 2: Injected via city_map.php -->
     <?php include 'city_map.php'; ?>
-  </div><!-- /container -->
 
-  <!-- Process Steps: Injected via city_process.php (contains its own container) -->
+    <!-- About Row 3: Intercity Routes list -->
+    <?php include 'from_to_list.php'; ?>
+  </div>
+
+  <!-- Process Steps -->
   <?php include 'city_process.php'; ?>
 
-  <!-- Testimonials Slide Row (contains its own container) -->
+  <!-- Testimonials Slide Row -->
   <?php include 'city_reviews.php'; ?>
 
-  <!-- FAQ Accordion Row (contains its own container) -->
+  <!-- FAQ Accordion Row -->
   <?php include 'city_faq.php'; ?>
 
   <!-- Shifting Help CTA Banner Wrapper -->
