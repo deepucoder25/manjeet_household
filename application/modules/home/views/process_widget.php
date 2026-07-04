@@ -9,8 +9,8 @@ $steps = [
     ],
     [
         'number' => '02',
-        'title' => 'Get a Free Quote',
-        'desc' => 'We analyze your requirements and provide a transparent, no-obligation moving quote.',
+        'title' => 'Receive a Free Quotation',
+        'desc' => 'We analyze your relocation requirements and provide transparent and obligation-free quotations.',
         'icon' => '<div class="position-relative d-inline-block"><i class="bi bi-file-earmark text-dark fs-2"></i><span class="position-absolute start-50 top-50 translate-middle fw-bold text-danger" style="font-size: 13px; margin-top: 3px; margin-left: 0.5px;">₹</span></div>'
     ],
     [
@@ -21,20 +21,20 @@ $steps = [
     ],
     [
         'number' => '04',
-        'title' => 'Safe Packing & Loading',
-        'desc' => 'Our experts pack your items securely and load them carefully for safe transportation.',
+        'title' => 'Packing & Loading',
+        'desc' => 'Our professionals pack your belongings using quality packing materials and load them.',
         'icon' => '<div class="position-relative d-inline-block"><i class="bi bi-box-seam text-dark fs-2"></i></div>'
     ],
     [
         'number' => '05',
-        'title' => 'Transportation',
-        'desc' => 'We transport your belongings safely and on-time to your new destination.',
+        'title' => 'Safe Transportation',
+        'desc' => 'Transportation of your belongings happens through a planned route using suitable vehicles.',
         'icon' => '<div class="d-flex align-items-center justify-content-center position-relative"><span class="text-danger fw-bold lh-1 me-1" style="font-size: 16px; letter-spacing: -1.5px; margin-top: -2px;">=</span><i class="bi bi-truck text-dark fs-2"></i></div>'
     ],
     [
         'number' => '06',
-        'title' => 'Delivery & Setup',
-        'desc' => 'We unload, unpack and set up your items with care so you can settle in comfortably.',
+        'title' => 'Delivery & Placement',
+        'desc' => 'Unloading your items and placing them according to your instructions.',
         'icon' => '<div class="d-flex align-items-center justify-content-center"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7" stroke="var(--primary-red)" /><path d="M9 22V12h6v10M5 12v10h14V12" stroke="#1e293b" /></svg></div>'
     ]
 ];
@@ -53,7 +53,7 @@ $steps = [
         A SIMPLE PROCESS FOR <span class="text-danger">A SMOOTH MOVE</span>
       </h2>
       <p class="services-subtitle text-muted mx-auto mt-3">
-        We follow a proven process to ensure your move is safe, efficient, and completely hassle-free.
+        Please call us, WhatsApp or contact us via the website and tell us about your relocation requirements.
       </p>
     </div>
 

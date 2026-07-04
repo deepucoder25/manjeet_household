@@ -98,6 +98,24 @@ $faqs = [
                 </div>
             <?php endforeach; ?>
         </div>
+
+        <!-- Closing CTA Section -->
+        <div class="about-closing-card mt-5 p-4 p-md-5 rounded-4 text-center text-white position-relative overflow-hidden">
+            <div class="position-relative z-index-2">
+                <h3 class="fw-bold text-white mb-3">Making Your Next Move Easy</h3>
+                <p class="lead-text mb-4 mx-auto">Are you looking for packers and movers that really care about your belongings? Then <?= $company3 ?> are just right for you.</p>
+                <p class="text-white mb-4 mx-auto">Contact us today for a free moving estimate and get professional packing, safe transportation, transparent pricing and reliable relocation services.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                    <a href="<?= site_url('contact-us') ?>" class="btn btn-light rounded-pill px-4 py-2 fw-bold text-danger">
+                        <i class="bi bi-telephone-fill me-2"></i> Contact Us
+                    </a>
+                    <button class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#qteModal">
+                        <i class="bi bi-chat-text-fill me-2"></i> Get Free Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 

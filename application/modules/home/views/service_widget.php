@@ -4,21 +4,21 @@ $services = [
     [
         'number' => '01',
         'title' => 'Packing & Unpacking',
-        'desc' => 'Premium multi-layer packing using high-quality bubble wraps and sturdy cartons to protect your delicate belongings during transit.',
+        'desc' => 'Utilizing good quality packing material in wrapping up and arranging for un-packaging.',
         'link' => 'our-services',
         'image' => 'packing.jpg'
     ],
     [
         'number' => '02',
         'title' => 'Loading & Unloading',
-        'desc' => 'Careful and structured handling of heavy goods, household items, and appliances by our trained experts to ensure zero damage.',
+        'desc' => 'Skilled and professional handling of your furniture, electrical appliances and other breakables.',
         'link' => 'our-services',
         'image' => 'loading.jpg'
     ],
     [
         'number' => '03',
         'title' => 'Household Shifting',
-        'desc' => 'Safe, seamless, and stress-free home relocation solutions across India with complete loading, transport, and unloading support.',
+        'desc' => 'Proper packing, transportation and organized unloading of items in all types of households.',
         'link' => 'home-shifting',
         'image' => 'household.jpg'
     ],
@@ -32,7 +32,7 @@ $services = [
     [
         'number' => '05',
         'title' => 'Industrial Shifting',
-        'desc' => 'Specialized moving services for heavy machinery, manufacturing equipment, and industrial raw materials with highly secure logistics.',
+        'desc' => 'Professional relocation of factory machinery and equipment, warehouse items and other commercial goods.',
         'link' => 'corporate-shifting',
         'image' => 'industrial.jpg'
     ],
@@ -57,10 +57,10 @@ $services = [
         <span class="pill-line"></span>
       </div>
       <h2 class="services-main-title fw-bold text-dark">
-        MOVING SOLUTIONS <span class="text-danger">THAT YOU CAN TRUST</span>
+        Moving Services That You Can Trust <span class="text-danger">THAT YOU CAN TRUST</span>
       </h2>
       <p class="services-subtitle text-muted mx-auto mt-3">
-        From packing to delivery, we offer a complete range of moving and logistics services to make your relocation smooth and worry-free.
+        We offer full relocation services to make moving easy for families, professionals and businesses.
       </p>
     </div>
 

@@ -747,53 +747,64 @@
     box-shadow: 0 5px 15px rgba(214, 9, 18, 0.15);
 }
 
-.about-features-card-new {
-    background: var(--white);
-    border: 1.5px solid var(--border-color);
-    border-radius: 16px;
+.about-feature-box {
+    background-color: var(--white);
+    border: 1px solid #edf2f7;
+    border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.01);
+    height: 100%;
+    transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    position: relative;
+    overflow: hidden;
 }
-
-.feature-item-new {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
+.about-feature-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-red-hover));
+    transition: width 0.35s ease;
 }
-
-.feature-item-new:not(:last-child) {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 18px;
-    margin-bottom: 18px;
+.about-feature-box:hover::after {
+    width: 100%;
 }
-
-.feature-check-icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 1.5px solid var(--primary-red);
+.about-feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(214, 9, 18, 0.06);
+    border-color: rgba(214, 9, 18, 0.15);
+}
+.about-feature-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: rgba(214, 9, 18, 0.08);
     color: var(--primary-red);
+    font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
-    flex-shrink: 0;
-    margin-top: 2px;
-    background-color: #fdf2f2;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
-
-.feature-title-new {
-    font-size: 15px;
-    font-weight: 700;
+.about-feature-box:hover .about-feature-icon {
+    background-color: var(--primary-red);
+    color: var(--white);
+    transform: scale(1.05);
+}
+.about-feature-title {
+    font-size: 17px;
+    font-weight: 800;
     color: var(--text-dark);
-    margin-bottom: 4px;
+    margin-bottom: 12px;
 }
-
-.feature-desc-new {
-    font-size: 12.5px;
+.about-feature-desc {
+    font-size: 14px;
     color: #64748b;
+    line-height: 1.6;
     margin-bottom: 0;
-    line-height: 1.4;
 }
 
 .about-values-section-new {
@@ -1206,7 +1217,7 @@
 /* FAQ Section Styles */
 
 .faq-section {
-    background-color: #f8fafc;
+    background-color: transparent;
     padding: 70px 0;
     position: relative;
     overflow: hidden;
@@ -1453,4 +1464,75 @@
         font-size: 16px;
         margin-bottom: 12px;
     }
+}
+
+/* Relocation Philosophy Callout Box */
+.about-philosophy-card {
+    background-color: var(--white);
+    border: 1px solid #edf2f7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border-left: 6px solid var(--primary-red);
+}
+.philosophy-badge {
+    letter-spacing: 1.5px;
+    font-size: 11px;
+}
+.philosophy-title {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+}
+.philosophy-lead-text {
+    font-size: 14.5px;
+    line-height: 1.6;
+}
+.philosophy-desc-text {
+    font-size: 14.5px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+@media (min-width: 992px) {
+    .border-lg-start {
+        border-left: 1px solid #e2e8f0 !important;
+    }
+}
+
+/* Commitments styling */
+.commitment-card {
+    background-color: var(--white);
+    border: 1px solid #edf2f7;
+    border-radius: 16px;
+    padding: 25px 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.01);
+}
+.commitment-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(214, 9, 18, 0.15);
+    box-shadow: 0 10px 25px rgba(214, 9, 18, 0.06);
+}
+.commitment-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+.commitment-title {
+    font-size: 16px;
+}
+.commitment-desc {
+    line-height: 1.5;
+}
+
+/* Closing CTA styling */
+.about-closing-card {
+    background-color: var(--primary-red) !important;
+    box-shadow: 0 15px 35px rgba(214, 9, 18, 0.15);
+}
+.about-closing-card strong {
+    color: var(--white);
+}
+.about-closing-card .lead-text,
+.about-closing-card .desc-text {
+    max-width: 800px;
 }
