@@ -9,42 +9,30 @@ if (strtolower($city) == "") {
    $htmlcontent2 = "";
 } else {
    $htmlcontent = "
+   <span class='fw-bold'>Professional Packers and Movers in $city for Safe Home, Office & Vehicle Relocation</span>
      <p>
-       Planning a move in <strong>$city</strong>? Here's what you need to know. Traffic delays, society timing rules, narrow lanes, and sudden weather shifts can turn a simple house shifting process into a stressful ordeal. That's where <strong>$company3</strong> step in. We have been facilitating household relocation, office shifting, vehicle transport, and local moving in <strong>$city</strong> with trained crews, premium packing techniques, and well-planned logistics coordinates.
-     </p>
-     <p>
-       Families searching for <strong>Top Packers and Movers in $city</strong> want two main guarantees — safety of their valuables and timely execution. We eliminate double handling, broken furniture, and delivery delays by managing every step with professional excellence.
+      Planning <strong>House Shifting? $company3</strong> offers planned shifting for house holders, offices, vehicles, and other commercial items. Whether you are searching for <b>Top Packers and Movers $city, Best Packers and Movers $city, or Packers and Movers Near Me</b>, it is important that you hire the movers who understand all about the moving conditions of the city along with the building and transport guidelines. Make sure to book your movers on time for a free quote and secure your shifting dates before weekends get booked.
      </p>
    ";
-
-   $htmlcontent1 = "
-     <div class='pm-city-prose-card'>
-       <h4 class='fw-bold text-dark fs-6 mb-2'>Solving Shifting Challenges in $city</h4>
-       <p>
-         Relocation in <strong>$city</strong> comes with unique local considerations. High-rise apartment societies often enforce strict timing restrictions, lift usage guidelines, and entry permissions for moving trucks. Delays can also occur due to heavy traffic on busy city corridors or narrow residential roads.
-       </p>
-       <p>
-         That's why hiring a local shifting specialist is crucial. We prepare in advance by selecting the right truck size, securing entry approvals, and scheduling packing at optimal hours to ensure a seamless door-to-door shifting experience.
-       </p>
-     </div>
-   ";
+    $htmlcontent1 = "
+    <h4 class='mt-4 fw-bold text-dark fs-6'>Household and Vehicle Shifting in $city by Experienced Packers and Movers</h4>
+     <p>
+       We provide household, office, bike, car, loading, unloading, packing, <b>unpacking and storing services in $city</b>. Before the beginning of the shift, our team conducts a survey of the quantity of shipment, lifting facility, permission from the societies, parking facility, and vehicle entry facility. In case of $city monsoons, extra packing material is used in order to provide waterproof facilities to furniture and electrical appliances. The whole process becomes well organized because planning comes before reaching out to the site of shifting.
+     </p>
+    ";
 
    $htmlcontent2 = "
-     <div class='pm-city-prose-card mt-3'>
-       <h4 class='fw-bold text-dark fs-6 mb-2'>Comprehensive Shifting Services Available</h4>
-       <p>
-         We manage diverse shifting services to meet every customer requirement:
-       </p>
-       <ul class='list-unstyled d-flex flex-column gap-2 mb-3'>
-         <li class='d-flex align-items-start gap-2'><i class='bi bi-patch-check-fill text-danger fs-6 mt-1'></i> <span><strong>Household Shifting:</strong> Safe packaging and transport of furniture, electronics, and kitchenware.</span></li>
-         <li class='d-flex align-items-start gap-2'><i class='bi bi-patch-check-fill text-danger fs-6 mt-1'></i> <span><strong>Office Relocation:</strong> Careful packing of servers, IT systems, office files, and modular partitions.</span></li>
-         <li class='d-flex align-items-start gap-2'><i class='bi bi-patch-check-fill text-danger fs-6 mt-1'></i> <span><strong>Vehicle Carrier Support:</strong> Specialized car and bike carriers for zero-scratch transportation.</span></li>
-         <li class='d-flex align-items-start gap-2'><i class='bi bi-patch-check-fill text-danger fs-6 mt-1'></i> <span><strong>Loading &amp; Unloading:</strong> Heavy loading equipment and safety belts handled by experienced professionals.</span></li>
-       </ul>
-       <p>
-         With transparent moving quotes, zero hidden charges, and dedicated customer support, we are your trusted partners for local and domestic shifting in <strong>$city</strong>.
-       </p>
+     <div class='pm-city-prose-card'>
+       <p>This is why careful planning is essential in order to conduct the shift successfully. The trained and experienced people reach out in clean uniforms, practice hygiene while handling the kitchen items, wear gloves wherever needed and follow the packing procedure systematically. Each box is labeled properly making the unloading easier at the destination. Recently, we helped a family with relocation within $city where due to parking restrictions and fixed timings of societies, the usual loading process became impossible. But our team began their work at 8:00 in the morning, managed to complete the loading process even before the permitted time and delivered everything at the destination safely.</p>
      </div>
    ";
+
+   $htmlcontent3 = "
+     <h5>How do our transport vehicles make sure that your consignment is protected?</h5>
+      <p>It all depends on the quantity of your consignment as well as the distance it has to travel. In case of local shifting, the usual vehicles are Tata Ace, Mahindra Bolero Pickup or 14 feet covered trucks. In case of large household shifting or interstate shifting, the consignment travels in the closed container trucks via proper city bypass roads and National Highways so as to prevent unnecessary handling of goods. Routing depends upon the traffic updates, road condition, toll route and delivery schedule prior to dispatch.</p>
+
+      <h5>Packers and Movers Charges in $city | Price Transparency in Packers and Movers</h5>
+      <p>Yes, shifting can become costly but see how we keep prices transparent and low for you. In case of <b>local 1BHK shifting</b>, it normally begins from ₹3,500, in case of 2BHK shifting it begins from ₹6,000, whereas for 3BHK shifting it begins from ₹9,000. The final price depends upon the distance, packing material used, floor level, manpower, vehicle and any other special requirements. The quote of the price is given prior to starting the service.</p>
+    ";
 }
 ?>

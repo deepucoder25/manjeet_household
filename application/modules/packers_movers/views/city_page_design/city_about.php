@@ -29,7 +29,7 @@ include 'city_map_content.php';
       <div class="col-lg-6">
         <div class="pm-city-about-content">
           <span class="pm-city-accent-label fw-bold text-danger mb-2 d-block">— EXPERT RELOCATION —</span>
-          <h2 class="pm-city-section-title mb-3">Professional Relocation Services in <?= htmlspecialchars($city) ?></h2>
+          <h2 class="pm-city-section-title mb-3">Professional Relocation Services in <?= $city ?></h2>
           <div class="pm-city-accent-bar mb-4"></div>
           
           <div class="pm-city-prose mb-4">
@@ -37,6 +37,9 @@ include 'city_map_content.php';
           </div>
 
         </div>
+      </div>
+      <div class="col-12">
+        <?= $htmlcontent1 ?>
       </div>
     </div>
 

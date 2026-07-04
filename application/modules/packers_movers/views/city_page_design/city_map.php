@@ -16,11 +16,11 @@ foreach ($cities as $ct) {
   <div class="col-lg-6 order-2 order-lg-1">
     <div class="pm-city-about-content">
       <span class="pm-city-accent-label fw-bold text-danger mb-2 d-block">— SYSTEMATIC SHIFTING —</span>
-      <h3 class="pm-city-section-subtitle mb-3">Seamless Relocation Across <?= htmlspecialchars($city) ?> & State</h3>
+      <h3 class="pm-city-section-subtitle mb-3">Why Packers and Movers in <?= $city ?> are Preferred by Families?</h3>
       <div class="pm-city-accent-bar mb-4"></div>
       
       <div class="pm-city-prose mb-4">
-        <?= $htmlcontent1 ?>
+        <?= $htmlcontent2 ?>
       </div>
 
 
@@ -50,3 +50,6 @@ foreach ($cities as $ct) {
   </div>
 
 </div>
+<div class="col-12">
+    <?= $htmlcontent3 ?>
+  </div>

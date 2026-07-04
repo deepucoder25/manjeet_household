@@ -2,18 +2,14 @@
 
 <?php
 $faqs = [
-  ["q" => "How early should I book shifting services in $city?",
-   "a" => "Booking at least 5–7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
-  ["q" => "Do you provide packing materials?",
-   "a" => "Yes. Cartons, wrapping sheets, bubble rolls, and protective materials are included based on service type."],
-  ["q" => "Can I move only a few household items?",
-   "a" => "Absolutely. Small shifting requests and part-load transportation are available in $city."],
-  ["q" => "Are goods insured during relocation?",
-   "a" => "Insurance options are available for long-distance and valuable-item transportation."],
-  ["q" => "Do you handle local office shifts in $city?",
-   "a" => "Yes, including workstation packing, file movement, and electronic equipment relocation."],
-  ["q" => "What is the cost of packers and movers in $city?",
-   "a" => "Cost depends on distance, volume of goods, floor, and service type. Contact us for a free detailed quote."],
+  ["q" => "What is the cost of hiring packers and movers in $city?",
+   "a" => "₹3,500 is the starting point for local moving, based on the amount of goods to be moved, distance, manpower, and vehicle used."],
+  ["q" => "Which vehicle will carry the household goods?",
+   "a" => "For small shifts, the vehicle is either Tata Ace or pickup and for bigger consignment, the vehicle is a covered container truck using suitable highway routes."],
+  ["q" => "Are there separate packers for the fragile articles?",
+   "a" => "Glass items, electronic items, mirrors, and ornaments will have separate packing."],
+  ["q" => "Do you maintain hygiene while packing the cargo?",
+   "a" => "Yes, we use clean packing material and maintain cleanliness throughout the whole relocation process."],
 ];
 ?>
 
