@@ -1,5 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 include 'city_content.php';
+include 'city_map_content.php';
 ?>
 
 <section class="pm-city-details-section py-5">

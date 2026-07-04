@@ -71,11 +71,6 @@
                         <p class="text-muted mb-0">Customer Helpline: 09:00 AM to 09:00 PM</p>
                     </div>
 
-                    <div class="d-flex gap-3">
-                        <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="btn btn-outline-success rounded-pill px-4 py-2 fw-semibold">
-                            <i class="bi bi-whatsapp me-2"></i> WhatsApp Support
-                        </a>
-                    </div>
                 </div>
             </div>
 

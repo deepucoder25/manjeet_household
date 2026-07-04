@@ -44,16 +44,7 @@ foreach ($cities as $ct) {
       </div>
       <!-- Google Map frame -->
       <div class="pm-city-map-frame position-relative">
-        <?php if (!empty($lat) && !empty($lon)) { ?>
-          <iframe
-              width="100%"
-              height="400"
-              class="pm-city-map-iframe"
-              loading="lazy"
-              allowfullscreen
-              src="https://www.google.com/maps?q=<?php echo $lat; ?>,<?php echo $lon; ?>&hl=en&z=12&output=embed">
-          </iframe>
-        <?php } ?>
+          <?= $mapcontent ?>
       </div>
     </div>
   </div>

@@ -76,13 +76,18 @@ class MX_Controller
         $this->comp['indore_whatsapphtml1'] = "https://wa.me/919111111593";
 
         $this->comp['bhopal_address'] = "Shop no G-09 , balaji parisar, shopping complex, block -A, Near Trupati Abhinav homes,  Ayodhya by pass road Bhopal, Pincode -462010";
+        $this->comp['bhopal_address1'] = "Shop no G-09 , balaji parisar, shopping complex, block -A, Near Trupati Abhinav homes,  Ayodhya by pass road Bhopal";
+        $this->comp['bhopal_address2'] = "Near Trupati Abhinav homes,  Ayodhya by pass road Bhopal";
+        $this->comp['bhopal_addressRegion'] = "Bhopal";
+        $this->comp['bhopal_postalCode'] = "462010";
+        $this->comp['bhopal_companystate'] = "Madhya Pradesh";
+
         $this->comp['indore_address'] = "Shop no-26, Scheme no-78, behind ckd, Dewas Naka, Indore, pincode-452010";
-        $this->comp['address'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency, Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['address1'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency";
-        $this->comp['address2'] = "Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['addressRegion'] = "Mumbai";
-        $this->comp['postalCode'] = "421302";
-        $this->comp['companystate'] = "Maharashtra";
+        $this->comp['indore_address1'] = "Shop no-26, Scheme no-78, behind ckd, Dewas Naka, Indore";
+        $this->comp['indore_address2'] = "behind ckd, Dewas Naka, Indore, pincode-452010";
+        $this->comp['indore_addressRegion'] = "Indore";
+        $this->comp['indore_postalCode'] = "452010";
+        $this->comp['indore_companystate'] = "Madhya Pradesh";
         $this->comp['themeColor'] = "#DF0E14";
 
         $this->comp['experience'] = "25+";

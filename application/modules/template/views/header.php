@@ -65,14 +65,21 @@
       "url": "<?= site_url() ?>",
       "image": ["<?= base_url() ?>assets/images/logo/favicon.png"],
       "address": {
+        <?php if (isset($city) && stripos($city, 'indore') !== false){?>
         "@type": "PostalAddress",
-        "streetAddress": "  
-        <?= $address1 ?>",
-        "addressLocality": "<?= $address2 ?>",
-        "postalCode": "<?= $postalCode ?>",
-        "addressRegion": "<?= $addressRegion ?>",
+        "streetAddress": "<?= $indore_address1 ?>",
+        "addressLocality": "<?= $indore_address2 ?>",
+        "postalCode": "<?= $indore_postalCode ?>",
+        "addressRegion": "<?= $indore_addressRegion ?>",
         "addressCountry": "India"
-      },
+      }<?php } else {?>
+        "@type": "PostalAddress",
+        "streetAddress": "<?= $bhopal_address1 ?>",
+        "addressLocality": "<?= $bhopal_address2 ?>",
+        "postalCode": "<?= $bhopal_postalCode ?>",
+        "addressRegion": "<?= $bhopal_addressRegion ?>",
+        "addressCountry": "India"
+      }<?php }?>,
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "<?= $ratingValue ?>",
