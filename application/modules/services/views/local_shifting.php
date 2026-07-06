@@ -13,59 +13,16 @@
                         <div class="service-details-overlay"></div>
                     </div>
 
-                    <h2 class="service-section-title">Same-Day Local Shifting</h2>
+                    <h2 class="service-section-title">Local Shifting Services That Save Your Valuable Time, Energy And Trouble Of Any Kind</h2>
                     <div class="about-service-text mb-5">
-                        <p class="lead">
-                            Relocating within the city limits should be rapid, straightforward, and affordable.
-                        </p>
-                        <p>
-                            At <strong><?= $company3 ?></strong>, we specialize in offering same-day local shifting services in Indore, Bhopal, and nearby regions. Our local crew arrives on schedule with a dedicated mini-carrier or container truck optimized to navigate city streets, building properties, and busy traffic routes.
-                        </p>
-                        <p>
-                            We manage everything from packing your daily kitchenware to loading heavy furniture, ensuring the entire process completes in under 6 to 8 hours.
-                        </p>
+                        <p>Moving locally might seem easy enough; but there are certain difficulties that come with it - small streets, society traditions of apartment moving, limited parking space, heavy traffic, last-minute changes of schedule, and others. That is why Local Shifting Services have become so widespread among Indian families, office workers, students, and business companies.</p>
+
+                        <p>Here at <strong><?= $company3 ?></strong>, we deliver reliable Local Shifting Services that guarantee promptness, efficiency, and ease. Trained and skilled relocation specialists deal with the entire process of packing, loading, moving, and unloading, which makes you able to start your life in a new place without being concerned about the whole process of moving. If you're looking for <b>Local Shifting Services Near Me, Local Shifting Near Me, Top Local Shifting Services, or Best Local Shifting Services</b>, our team of professionals will be happy to assist you in your move at affordable rates.</p>
                     </div>
 
-                    <!-- Standards Highlights Cards -->
-                    <h3 class="service-section-title">Why Choose Us for Local Shifting</h3>
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-lightning-charge-fill"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Same-Day Execution</h5>
-                                <p class="small text-muted mb-0">Our packing, loading, transport, and setup processes are executed in a single seamless block.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Compact Urban Fleet</h5>
-                                <p class="small text-muted mb-0">We use compact container vehicles and mini-trucks designed to easily enter narrow colony lanes and basement parkings.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-signpost-split-fill"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Route Optimization</h5>
-                                <p class="small text-muted mb-0">Our drivers are locally experienced and use real-time navigation mapping to bypass peak city congestion zones.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-tags-fill"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Flat Rate Shifting</h5>
-                                <p class="small text-muted mb-0">No surprise hourly rates. We offer fixed-price quotes encompassing fuel, loading, and transit costs upfront.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3>The Reason Why Local Moves Require Professionals</h3>
+                    <p>Usually people think that one does not need any professional assistance if he/she wishes to relocate within the same city. Yet, the vast majority of cases when things get damaged take place due to incorrect packing, loading, and unloading, and not due to the moving process itself. The local relocation services ensure safe transportation due to proper packing, loading, and qualified personnel.</p>
+                    <p>Also, local moving specialists know all about building regulations, permissions, and limitations. For instance, some apartment complexes allow moving only within certain hours. It means that taking into consideration these aspects helps to avoid unnecessary delays (plus, save plenty of frustration on moving day).</p>
 
                     <!-- Steps Timeline -->
                     <h3 class="service-section-title">The Local Moving Timeline</h3>
@@ -91,6 +48,84 @@
                                 <p class="small text-muted mb-0">Unpacking, furniture positioning, and reassembly.</p>
                             </div>
                         </div>
+                    </div>
+
+                    <h4 class="mt-4">Transparency and Affordability Without Hidden Fees</h4>
+                    <p>One of the most frequently asked questions by our clients is the cost of services. The cost of Local Shifting Services depends on such aspects as the size of the household, floor level, packing procedure, manpower, and the type of the vehicle. Indeed, professional Local Shifting Services involve some investment, yet they help to avoid broken items, additional trips, and delays that often lead to extra costs.</p>
+                    <p>We recommend arranging a pre-relocation consultation to get a proper quote for your needs.</p>
+
+                    <h5>The Story of Our Commitment</h5>
+                    <p>Last month, a young couple had to move to another place, which was 8 km far away before the expiration of the rental agreement. Due to the short time span, our team managed to pack all the household stuff early in the morning, transport it carefully and unload all the items before the evening. At night, the kitchen and bedroom in their new place were arranged and they started their new life.</p>
+
+                    <!-- Accordion FAQs -->
+                    <h3 class="service-section-title">Frequently Asked Questions</h3>
+                    <div class="accordion about-custom-faq-accordion mb-4" id="localShiftingFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    How much time does a local relocation take?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#localShiftingFaq">
+                                <div class="accordion-body">
+                                    Usually, the local relocation is done within one day depending on the number of the load.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    Do you provide the packing materials?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#localShiftingFaq">
+                                <div class="accordion-body">
+                                    Yes, we provide quality cartons, bubble wrap, stretch film, and other packing materials.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    Is it possible to book relocation for weekends?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#localShiftingFaq">
+                                <div class="accordion-body">
+                                    Sure. You can order relocation for the weekends and holidays subject to schedule availability.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                   Are fragile items packed separately?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                   Yes, glassware, electronic equipment, artwork, and other delicate items get special protection during the packing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    Do you provide same-day Local Shifting Services?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                   According to the availability, we also provide same-day moving services.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-light border-start border-5 border-danger rounded-3">
+                        <span class="fs-6 fw-bold text-danger mb-2">Help Make Your Local Move Easy</span>
+                        <p class="mb-0 text-muted">
+                            Searching for <b>Best Local Shifting Services, Top Local Shifting Services, or trustworthy Local Shifting Services Near Me? <?= $company3 ?> provide reliable relocation service</b> in hands of experienced professionals who ensure the right packing and timely execution of any relocation. Feel free to contact us and receive a free quote for moving!
+                        </p>
                     </div>
 
                 </div>

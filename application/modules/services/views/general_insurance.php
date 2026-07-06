@@ -13,18 +13,14 @@
                         <div class="service-details-overlay"></div>
                     </div>
 
-                    <h2 class="service-section-title">Transit &amp; General Insurance</h2>
+                    <h2 class="service-section-title">One Accident Can Turn Your Life Around. Get General Insurance for Being Prepared Always!</h2>
                     <div class="about-service-text mb-5">
-                        <p class="lead">
-                            Relocation involves transporting precious family assets over vast national highways, carrying inherent transit hazards.
-                        </p>
-                        <p>
-                            At <strong><?= $company3 ?></strong>, we prioritize the complete safety of your inventory above all else, which is why we provide comprehensive transit insurance covers for all domestic shifts.
-                        </p>
-                        <p>
-                            Our transit policy protects against accidental damage, highway collisions, fires, water leakage, and unforeseen natural events. We coordinate with you to create transparent asset valuation reports, generating clean and licensed invoices for premium items.
-                        </p>
+                        <p>Through the years, you have constructed your home, purchased furniture, accumulated appliances, and made other valuable investments. You wish that all goes well while you are moving, but something unplanned could occur while you are moving. Anything from an accident to natural calamities to fire breaking out may cause damage to your items despite your best efforts. This is when the need for <b>professional General Insurance Services</b> arises.</p>
+                        <p>Our experts at <strong><?= $company3 ?></strong> understand that insurance is not just an additional option in case of any problems. We treat insurance as a means of financial security for our customers. Our General Insurance Services are aimed at assisting customers in minimising any unexpected losses incurred while transporting household goods, office items, industrial machines, automobiles, and other valuable belongings. We explain each aspect of our services to customers who search for <b>General Insurance Services Near Me, Local General Insurance Services, Top General Insurance Services, and the Best General Insurance Services</b>.</p>
                     </div>
+                    <h3>Why Should You Choose Transit Insurance?</h3>
+                    <p>Imagine getting to your new destination and finding out that something unexpected happened during transportation. Even though the professional packing and secure loading decrease the probability of any damage, no logistics company is able to control any accidents or natural disasters that might affect your shipment.</p>
+                    <p>General insurance is a kind of financial safety. Instead of worrying about the potential costs of repair or replacement of your belongings, you get an organised procedure that helps you to protect your investments. This is one of the reasons why experienced relocation companies recommend customers to choose insurance, especially if it comes to long-distance transportation.</p>
 
                     <!-- Standards Highlights Cards -->
                     <h3 class="service-section-title">Insurance Policy Benefits</h3>
@@ -91,6 +87,95 @@
                                 <p class="small text-muted mb-0">Filing claim documentation if any transit impact is verified.</p>
                             </div>
                         </div>
+                    </div>
+                    <h4>What is Covered by General Insurance?</h4>
+                    <p>Although there might be certain differences, our General Insurance Services usually cover the following risks associated with transportations.</p>
+                    <ul>
+                        <li>Accidental damage incurred during transit.</li>
+                        <li>Any fire-related incidents.</li>
+                        <li>Natural disasters that affect your transportation.</li>
+                        <li>Theft during the insured movement.</li>
+                        <li>Overturning or collision of the vehicle.</li>
+                        <li>Losses from unexpected events that happen during transportation.</li>
+                    </ul>
+                    <p>We help our customers to understand all policy terms in plain language.</p>
+                    <span class="fs-4">Why the Type of Coverage You Choose Is Important</span>
+                    <p>All relocations require various kinds of insurance coverage. There is a difference in insurance needs between a student who transports basic household items and a company relocating its expensive office assets or a family transporting antique furniture.</p>
+
+                    <p>For instance, customers who transport high-value electronics or imported furniture usually prefer broader coverage because replacement of such items might cost them a lot of money. Investing a bit more into the proper coverage now might save them thousands in the future. Indeed, General Insurance Services require some extra payment from you, but many customers find this option to be one of the best choices they make during relocation.</p>
+
+                    <h6>Case Study</h6>
+                    <p>Once a family moving across states transported expensive home theatre equipment, imported furniture, and other antique décor items. The journey was complicated due to severe weather conditions that led to some delay and resulted in some external damage to the part of the shipment. Having chosen to transport with the help of general insurance services, the customer easily completed the claim process according to the policy terms.</p>
+
+                    <!-- Accordion FAQs -->
+                    <h3 class="service-section-title">Frequently Asked Questions</h3>
+                    <div class="accordion about-custom-faq-accordion mb-4" id="generalInsuranceFaq">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                                    Is general insurance required during transportation?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#generalInsuranceFaq">
+                                <div class="accordion-body">
+                                   It is not a must, but it is highly recommended for valuable household goods and office assets.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                                    How is the premium of insurance calculated?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#generalInsuranceFaq">
+                                <div class="accordion-body">
+                                    Usually, it is based on the declared value of your belongings and the kind of coverage you have chosen.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                                    Can I insure only selected items?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#generalInsuranceFaq">
+                                <div class="accordion-body">
+                                    Of course, electronics, art pieces, antique pieces, expensive furniture, and other such valuable belongings may be individually insured.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                   How do I make a claim on my insurance?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                   Our experts will assist you in completing this process according to the insurer's requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    Can insurance be used for office and industrial relocation?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                  Of course. Our General Insurance Services cover residential, commercial, and industrial relocation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-light border-start border-5 border-danger rounded-3">
+                        <span class="fs-6 fw-bold text-danger mb-2">Protect Your Transported Belongings Now</span>
+                        <p class="mb-0 text-muted">
+                            Successful relocation is not only about reaching your destination but about doing it safely. If you search for the <b>Best General Insurance Services, Top General Insurance Services, or reliable General Insurance Services Near Me</b>, contact us!
+                        </p>
                     </div>
 
                 </div>

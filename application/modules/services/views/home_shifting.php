@@ -14,18 +14,16 @@
                         <div class="service-details-overlay"></div>
                     </div>
 
-                    <h2 class="service-section-title">Hassle-Free Household Shifting</h2>
+                    <h2 class="service-section-title">Dependable Household Shifting Services for a Smooth Move</h2>
                     <div class="about-service-text mb-5">
-                        <p class="lead">
-                            Relocating your home is a major milestone, and at <strong><?= $company3 ?></strong>, we make it completely stress-free.
-                        </p>
-                        <p>
-                            We offer door-to-door shifting solutions tailored in response to your requirements. From disassembling double beds and heavy wardrobes to packing fragile crockery in customized safety sheets, our skilled crew manages everything. We utilize secure container trucks to protect your inventory during long-distance highway hauls.
-                        </p>
-                        <p>
-                            Additionally, we provide live GPS updates so you remain informed during transit, delivering complete peace of mind.
-                        </p>
+                        <p>Your household move isn't just moving furniture; it involves shifting all that makes up your living space. Every nook, cranny, photo, and furniture is precious, and at <strong><?= $company3 ?></strong>, we know how essential it is to plan as thoroughly as to pack carefully.</p>
+                        <p>If you're looking for Household Shifting Services for your household move, be it a local or an intercity move, we are the experts who will offer you dependable services for your needs. If you have been looking for <b>Household Shifting Services Near Me, Local Household Shifting Services</b>, or the Best Household Shifting Services, we can provide you with a comprehensive household move through experienced professionals and packing material.</p>
                     </div>
+
+                    <h3>Why Families Choose Professional Household Shifting Services</h3>
+                    <p>Professional Household Shifting Services save time and energy and significantly reduce the risk of damage to your property. Our experienced team separates the fragile kitchenware, uses protective packaging for your electronics and wraps your wooden furniture with the stretch film before loading.</p>
+                    <p>While relocating your modular wardrobes, each part and fittings are marked individually. This helps us assemble your furniture quickly after delivering your furniture to your new location and prevent you from missing any hardware.</p>
+                    <p>Yes, Household Shifting Services involve expenses, but the cost of repairing your furniture or replacing valuable household items is much higher. Therefore, most homeowners seeking <b>Top Household Shifting Services</b> prefer experienced moving companies to handle everything on their own.</p>
 
                     <!-- Steps Timeline -->
                     <h3 class="service-section-title">Our Household Shifting Process</h3>
@@ -59,47 +57,29 @@
                             </div>
                         </div>
                     </div>
+                    <h4>What is Included in Our Household Shifting Services</h4>
+                    <p>Everyone has varied household moving needs. Some houses contain fragile décor, while some require heavy furniture and valuable appliances to be moved. Our Household Shifting Services are custom-made according to your inventory.</p>
 
-                    <!-- Why Choose Us Grid -->
-                    <h3 class="service-section-title">Why Choose Us</h3>
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-box-seam-fill"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Premium Packing</h5>
-                                <p class="small text-muted mb-0">We use high-grade double bubble sheets, robust foam blocks, and customized card cartons.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-tools"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Furniture Reassembly</h5>
-                                <p class="small text-muted mb-0">Expert dismantling and clean setup of large wardrobes, double beds, and dining sets.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-people-fill"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">Trained Movers</h5>
-                                <p class="small text-muted mb-0">Polite, background-verified professionals who handle your possessions with caution.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card p-4 border-0 shadow-sm rounded-4 service-feature-card h-100">
-                                <div class="service-icon-wrap">
-                                    <i class="bi bi-cash-stack"></i>
-                                </div>
-                                <h5 class="fw-bold text-dark mb-2">No Hidden Charges</h5>
-                                <p class="small text-muted mb-0">Completely transparent shifting bills covering packaging, tolls, and loading costs upfront.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="fw-bold">Here is what we include in our services:</p>
+                    <ul>
+                        <li>Professional packing and labeling</li>
+                        <li>Professional furniture disassembly and reassembly</li>
+                        <li>Safe loading and unloading of vehicles</li>
+                        <li>Reliable transportation</li>
+                        <li>Safe unpacking and placement</li>
+                        <li>Additional storage and transit insurance</li>
+                    </ul>
+                    <p>A planned approach ensures no confusion at unloading and makes your unpacking a quick process.</p>
+
+                    <span class="fs-5">A Plan to Make Your Move Successful</span>
+                    <p>Each move starts with a pre-move survey to know about the quantity of your household items and special packing requirements. Once we schedule the move, we come with all the right packing material and prepare ourselves for each room. Dismantling of furniture is done, and packing of appliances is carried out in an efficient manner and labeling of cartons with regard to the items inside. After reaching your new destination, your items are unloaded room by room, and this will make unpacking an easier task.</p>
+                    <p>Do you need some assistance with the planning of your move? Just give us a call.</p>
+
+                    <span class="fs-5">Transparent Pricing</span>
+                    <p>The charges of Household Shifting Services depend on the quantity of household goods, distance, packing requirements, accessibility of the floors, manpower needed, and the chosen vehicle. Pre-moves survey helps us give you a clear idea about our charges.</p>
+
+                    <h6>Mini Customer Story</h6>
+                    <p>A family who had to move out of their three-bedroom apartment to move to another one before their children start a new school session. With time constraints and worries regarding the transportation of a piano along with delicate glass cabinets, we scheduled our team for one-day advance packing. We provided additional protective packaging for the piano and relocated their household within the promised timeline. In the evening, their children's study room was already organized, helping the family settle comfortably.</p>
 
                     <!-- Custom Slice Testimonial -->
                     <div class="about-testimonial-wrapper mb-5">
@@ -114,14 +94,14 @@
                             </div>
                             <h6 class="fw-bold text-dark mb-2">Flawless Shifting!</h6>
                             <p class="small text-muted mb-0">
-                                "Excellent service! I relocated my household items locally. The crew packed everything with double layers of bubble wrap. Nothing got damaged, and they reassembled our bed perfectly. Highly recommended!"
+                                "All our household moves were done in one day. Every carton came just like we packed it and nothing was lost."
                             </p>
                         </div>
                         <div class="about-testimonial-card-meta">
                             <div class="about-testimonial-avatar">S</div>
                             <div>
-                                <h6 class="about-testimonial-author-name">Sneha Roy</h6>
-                                <span class="about-testimonial-author-city">Household Shifting Client</span>
+                                <h6 class="about-testimonial-author-name">Sunita Sharma</h6>
+                                <span class="about-testimonial-author-city">Jaipur</span>
                             </div>
                         </div>
                     </div>
@@ -132,39 +112,69 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeading1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
-                                    Do you dismantle and reassemble double beds and wardrobes?
+                                    How much does Household Shifting Services cost?
                                 </button>
                             </h2>
                             <div id="faqCollapse1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1" data-bs-parent="#homeShiftingFaq">
                                 <div class="accordion-body">
-                                    Yes. Our packing crew is equipped with the necessary tools (screwdrivers, wrenches, hammers) to carefully disassemble large beds, wardrobes, and tables, and reassemble them at your new home.
+                                    It depends on the number of household goods, distance of movement, packing material, manpower, and vehicle.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeading2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
-                                    What items are NOT packed or transported?
+                                    Do you disassemble and reassemble furniture?
                                 </button>
                             </h2>
                             <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#homeShiftingFaq">
                                 <div class="accordion-body">
-                                    For safety and legal reasons, we do not transport hazardous materials, cylinders, gasoline, paint thinners, fireworks, jewelry, gold, cash, or important personal deeds and legal documents.
+                                    Yes. We disassemble and reassemble your large furniture safely.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faqHeading3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
-                                    Do you offer packing-only or loading-only services?
+                                    Do you pack fragile household items separately?
                                 </button>
                             </h2>
                             <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#homeShiftingFaq">
                                 <div class="accordion-body">
-                                    We offer complete, end-to-end relocation packages (packing, loading, transport, unloading, unpacking) to ensure safety. However, we can customize a plan based on your request.
+                                    Yes. We pack your fragile items like glassware, crockery, mirrors, artwork, and electronics with protection.
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                                   Can I book Household Shifting Services during the weekend?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                   Yes. Weekend and holiday bookings are possible depending on availability.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqHeading5">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                                    Is there any transit insurance?
+                                </button>
+                            </h2>
+                            <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5" data-bs-parent="#packingUnpackingFaq">
+                                <div class="accordion-body">
+                                  Yes. We provide transit insurance options.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-light border-start border-5 border-danger rounded-3">
+                        <span class="fs-6 fw-bold text-danger mb-2">Book Your Household Move Right Now</span>
+                        <p class="mb-0 text-muted">
+                            Are you searching for <b>Top Household Shifting Services, Best Household Shifting Services, or Reliable Household Shifting Services Near Me? <?= $company3 ?></b> are here to simplify your relocation. Contact us right now for a free consultation and a transparent moving estimate.
+                        </p>
                     </div>
 
                 </div>
